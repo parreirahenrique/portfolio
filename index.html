@@ -53,10 +53,21 @@
     <script defer src="script.js"></script>
 </head>
 
-<body onload="changeTheme(); setHeight()">
+<body onload="changeTheme()" onresize="setHeight()">
     <header>
+        <div id="sidebar-container">
+            <a href="#home-container" class="header-anchor">página inicial</a>
+            <a href="#about-me-container" class="header-anchor">sobre mim</a>
+            <a href="#languages-container" class="header-anchor">habilidades</a>
+            <a href="#certifications-container" class="header-anchor">certificações</a>
+            <a href="#projects-container" class="header-anchor">projetos</a>
+            <a href="#contact-container" class="header-anchor">contato</a>
+        </div>
         <nav id="navigation-bar">
             <div id="header-container">
+                <button id="sidebar-button" onclick="showSidebar()">
+                    <img src="imgs/sidebar.png" id="sidebar-icon">
+                </button>
                 <div id="anchor-container">
                     <a href="#home-container" class="header-anchor">página inicial</a>
                     <p class="header-separator">|</p>
@@ -92,8 +103,8 @@
                 <div id="text-container">
                     <h1 id="name-title">Henrique Castro,</h1>
                     <p id="home-paragraph">
-                        seu próximo Desenvolvedor Full Stack! <strong
-                            style="font-family: Arial, Helvetica, sans-serif; font-size: 50px;">
+                        seu próximo Desenvolvedor Full Stack! <strong style="font-family: Arial, Helvetica, sans-serif;"
+                            id="bold-smiley-face">
                             <font color="red">:)</font>
                         </strong>
                     </p>
@@ -135,7 +146,7 @@
                     <div id="icons-container">
                         <div id="frontend-container">
                             <h2 class="language-title">Frontend</h2>
-                            <div class="language-wrapper" id="html5">
+                            <div class="language-wrapper" id="html5" onclick="changeDescriptionClick(this)">
                                 <div class="language-icon-container">
                                     <img src="imgs/html5.png" alt="" class="language-icon">
                                 </div>
@@ -143,7 +154,17 @@
                                     <p class="language-name">HTML5</p>
                                 </div>
                             </div>
-                            <div class="language-wrapper" id="css3">
+                            <div class="inner-language-description" style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
+                                HTML5, ou Hypertext Markup Language (HTML), é a quinta e mais recente versão de uma das
+                                linguagens de marcação pioneiras e fundamentais da web. Essencialmente, o HTML é
+                                empregado no desenvolvimento de páginas que incorporam conteúdos simples, abrangendo
+                                textos, imagens, áudio, vídeos, entre outros.\n\nEm resumo, essa linguagem desempenha um
+                                papel crucial ao formatar e viabilizar a visualização desse tipo diversificado de
+                                conteúdo em praticamente todos os navegadores atualmente disponíveis no mercado. O HTML
+                                está profundamente enraizado nos primórdios da web, contribuindo para as estruturas mais
+                                elementares dessa plataforma.
+                            </div>
+                            <div class="language-wrapper" id="css3" onclick="changeDescriptionClick(this)">
                                 <div class="language-icon-container">
                                     <img src="imgs/css3.png" alt="" class="language-icon">
                                 </div>
@@ -151,7 +172,16 @@
                                     <p class="language-name">CSS3</p>
                                 </div>
                             </div>
-                            <div class="language-wrapper" id="bootstrap">
+                            <div class="inner-language-description" style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
+                                CSS3 configura-se como a terceira e mais recente versão das chamadas Cascading Style
+                                Sheets (ou simplesmente CSS), destinadas à definição de estilos para projetos web.
+                                Introduzindo elementos como efeitos de transição, manipulação de imagens, background e
+                                outros recursos, confere uma estética inovadora e refinada às suas criações
+                                online.\n\nSurgindo em 2012, o CSS3 apresenta a grande maioria das inovações empregadas
+                                atualmente na estilização de páginas web. Antecedendo-a, encontram-se o CSS2 e o CSS,
+                                originados, respectivamente, em 1998 e 1996.
+                            </div>
+                            <div class="language-wrapper" id="bootstrap" onclick="changeDescriptionClick(this)">
                                 <div class="language-icon-container">
                                     <img src="imgs/bootstrap.png" alt="" class="language-icon">
                                 </div>
@@ -159,7 +189,18 @@
                                     <p class="language-name">Bootstrap</p>
                                 </div>
                             </div>
-                            <div class="language-wrapper" id="react">
+                            <div class="inner-language-description" style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
+                                Bootstrap emerge como um framework front-end que disponibiliza estruturas de CSS para a
+                                construção ágil e descomplicada de websites e aplicações responsivas. Adicionalmente,
+                                sua capacidade abrange tanto sites destinados a desktops quanto páginas otimizadas para
+                                dispositivos móveis.\n\nInicialmente concebido para o Twitter por um grupo de
+                                desenvolvedores liderados por Mark Otto e Jacob Thornton, o Bootstrap, antes de se
+                                tornar uma estrutura de código aberto, era reconhecido como Twitter Blueprint. Após
+                                alguns meses de desenvolvimento, durante a primeira Hack Week do Twitter, o projeto
+                                angariou significativa popularidade, sendo adotado por desenvolvedores de diversos
+                                níveis de habilidade sem orientação externa.
+                            </div>
+                            <div class="language-wrapper" id="react" onclick="changeDescriptionClick(this)">
                                 <div class="language-icon-container">
                                     <img src="imgs/react.png" alt="" class="language-icon">
                                 </div>
@@ -167,18 +208,38 @@
                                     <p class="language-name">React</p>
                                 </div>
                             </div>
+                            <div class="inner-language-description" style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
+                                O React, desenvolvido pelo Facebook (atualmente Meta), representa um framework
+                                JavaScript empregado na criação de interfaces de usuário (UI) para aplicativos web. Sua
+                                popularidade advém da facilidade de uso, notável flexibilidade e escalabilidade, sendo
+                                adotado por diversas empresas de tecnologia, tais como Facebook, Instagram e
+                                Airbnb.\n\nSe você utiliza redes sociais, é provável que tenha notado comportamentos
+                                distintos em determinadas partes da tela. Para enfrentar esse desafio, a equipe de
+                                desenvolvedores do Facebook concebeu uma abordagem altamente especializada na
+                                manipulação de dados e na atualização dessas pequenas porções da aplicação: o React.
+                            </div>
                         </div>
                         <div id="backend-container">
                             <h2 class="language-title">Backend</h2>
-                            <div class="language-wrapper">
-                                <div class="language-icon-container" id="python">
+                            <div class="language-wrapper" id="python" onclick="changeDescriptionClick(this)">
+                                <div class="language-icon-container">
                                     <img src="imgs/python.png" alt="" class="language-icon">
                                 </div>
                                 <div class="language-name-container">
                                     <p class="language-name">Python</p>
                                 </div>
                             </div>
-                            <div class="language-wrapper" id="javascript">
+                            <div class="inner-language-description" style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
+                                Python, uma linguagem de programação de alto nível, é aplicada em diversos contextos,
+                                incluindo desktop, web, servidores e ciência de dados. Concebida por Guido Van Rossum na
+                                década de 90, visa aprimorar a experiência do desenvolvedor, simplificando a criação de
+                                código claro, direto e legível.\n\nA linguagem incorpora características como tipagem
+                                dinâmica e robusta, programação orientada a objetos, multiparadigmas, além de dispor de
+                                recursos poderosos em biblioteca padrão e por meio de módulos e frameworks desenvolvidos
+                                pela comunidade. Python é de código aberto, gratuito e compatível com quase todos os
+                                sistemas operacionais.
+                            </div>
+                            <div class="language-wrapper" id="javascript" onclick="changeDescriptionClick(this)">
                                 <div class="language-icon-container">
                                     <img src="imgs/javascript.png" alt="" class="language-icon">
                                 </div>
@@ -186,7 +247,17 @@
                                     <p class="language-name">JavaScript</p>
                                 </div>
                             </div>
-                            <div class="language-wrapper" id="csharp">
+                            <div class="inner-language-description" style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
+                                JavaScript, conhecido carinhosamente como JS, é uma linguagem de programação
+                                interpretada de alto nível , desfrutando de uma ampla popularidade. Sua predominância
+                                deve-se, principalmente, ao fato de ser a linguagem padrão interpretada pelos
+                                navegadores, formando, juntamente com o HTML (HiperText Markup Language) e CSS
+                                (Cascading Style Sheets), a base fundamental da Web.\n\nAlém de ser essencial para
+                                navegadores, o JavaScript encontra aplicação em diversos ambientes sem navegador, como
+                                node.js, Apache CouchDB e Adobe Acrobat, podendo ser utilizada em todas as camadas de
+                                desenvolvimento, seja front-end, back-end ou full stack.
+                            </div>
+                            <div class="language-wrapper" id="csharp" onclick="changeDescriptionClick(this)">
                                 <div class="language-icon-container">
                                     <img src="imgs/csharp.png" alt="" class="language-icon">
                                 </div>
@@ -194,7 +265,18 @@
                                     <p class="language-name">C#</p>
                                 </div>
                             </div>
-                            <div class="language-wrapper" id="java">
+                            <div class="inner-language-description" style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
+                                O C# (pronunciado como \"C Sharp\") é uma linguagem de programação moderna, orientada a
+                                objetos e de tipagem forte, capacitando os desenvolvedores a criar aplicativos na
+                                plataforma .NET. Com raízes na família de linguagens C, o C# é imediatamente reconhecido
+                                por programadores proeficientes em C, C++, Java e JavaScript.\n\nProfissionais do
+                                desenvolvimento de aplicações desktop e/ou soluções web encontram inúmeras vantagens ao
+                                adotar essa tecnologia. Além disso, ela é amplamente utilizada no cenário mobile,
+                                criando aplicações flexíveis para diversos dispositivos e plataformas. Vem também sendo
+                                usada no desenvolvimento de jogos e empregada com a plataforma Unity, proporcionando uma
+                                experiência de criação simplificada.
+                            </div>
+                            <div class="language-wrapper" id="java" onclick="changeDescriptionClick(this)">
                                 <div class="language-icon-container">
                                     <img src="imgs/java.png" alt="" class="language-icon">
                                 </div>
@@ -202,13 +284,32 @@
                                     <p class="language-name">Java</p>
                                 </div>
                             </div>
-                            <div class="language-wrapper" id="sql">
+                            <div class="inner-language-description" style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
+                                A plataforma de programação Java teve sua origem no ano de 1995, originando-se nos
+                                laboratórios da empresa Sun Microsystems como resultado de uma extensa pesquisa
+                                científica e tecnológica. Java destaca-se como uma das plataformas mais amplamente
+                                utilizadas para o desenvolvimento de aplicações em escala global.\n\nEssa plataforma
+                                oferece um ambiente abrangente para a criação e execução de programas, compreendendo uma
+                                linguagem de programação de alto nível orientada a objetos, uma máquina virtual (Java
+                                Virtual Machine ou JVM), o Java Runtime Environment (JRE) e o Java Development Kit
+                                (JDK).
+                            </div>
+                            <div class="language-wrapper" id="sql" onclick="changeDescriptionClick(this)">
                                 <div class="language-icon-container">
                                     <img src="imgs/sql.png" alt="" class="language-icon">
                                 </div>
                                 <div class="language-name-container">
                                     <p class="language-name">SQL</p>
                                 </div>
+                            </div>
+                            <div class="inner-language-description" style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
+                                O SQL, abreviação de Structured Query Language, teve sua origem na metade da década de
+                                1970, motivado principalmente pela complexidade dos sistemas de gerenciamento de dados.
+                                Trata-se de uma linguagem padrão para interação com bancos de dados relacionais, sendo
+                                amplamente adotada por profissionais de diversas áreas, desde cientistas de dados até
+                                usuários do Excel.\n\nA linguagem SQL apresenta uma notável semelhança entre os
+                                principais Sistemas Gerenciadores de Banco de Dados (SGBDs) disponíveis no mercado,
+                                incluindo Oracle, MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, entre outros.
                             </div>
                         </div>
                     </div>
