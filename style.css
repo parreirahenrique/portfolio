@@ -912,7 +912,7 @@ input[type="submit"] {
     margin-top: 0;
     margin-bottom: 20px;
     margin-right: 10px;
-    margin-left: 20px;
+    margin-left: 0;
     padding: 10px;
     border: 0;
     border-radius: 10px;
@@ -1012,8 +1012,9 @@ input[type="submit"]:hover {
         display: block;
         height: 25px;
         width: auto;
-        position: relative;
-        right: 100px;
+        position: fixed;
+        top:3%;
+        left: 5vw;
         cursor: pointer;
     }
 
@@ -1108,6 +1109,18 @@ input[type="submit"]:hover {
         height: fit-content;
     }
 
+    #flex-container {
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #icons-container {
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
     #inner-languages-container {
         margin-top: var(--container-margin-top-smartphone);
         margin-bottom: var(--container-margin-top-smartphone);
@@ -1120,7 +1133,7 @@ input[type="submit"]:hover {
         margin-right: 20px;
         margin-left: 20px;
         /* padding-right: 100%; */
-        width: auto;
+        /* width: 100%; */
         display: flex;
         flex-direction: column;
     }
@@ -1128,7 +1141,7 @@ input[type="submit"]:hover {
     #backend-container {
         margin-right: 20px;
         margin-left: 20px;
-        width: auto;
+        /* width: 100%; */
         flex-direction: column;
         background-image: var(--inner-container-background);
         box-shadow: var(--box-shadow);
@@ -1146,7 +1159,7 @@ input[type="submit"]:hover {
     }
 
     .language-name {
-        width: calc(100vw - 170px);
+        width: 100%;
     }
 
     #certifications-container {
@@ -1164,7 +1177,7 @@ input[type="submit"]:hover {
     .certification {
         margin: 20px;
         padding-top: 20px 0 20px 0;
-        width: calc(100vw - 100px);
+        width: calc(100% - 40px);
         color: var(--button-font-color);
         border-radius: 10px;
         background-image: var(--inner-container-background);
@@ -1246,13 +1259,29 @@ input[type="submit"]:hover {
         flex-direction: column;
     }
 
+    #input-container {
+        margin-left: 0;
+    }
+
     input,
     label,
     textarea {
-        width: calc(100vw - 100px);
+
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+    }
+
+    .container-form {
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        margin-left: 20px;
     }
 
     input[type="submit"] {
-        width: calc(100vw - 100px);
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
     }
 }
