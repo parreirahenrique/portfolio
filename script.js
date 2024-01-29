@@ -51,6 +51,7 @@ var clickCounter = 0;
 
 function changeTheme() {
     if (themeSwitch.checked) {
+        rootElement.style.setProperty("--anchor-hover", "linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)100%)");
         rootElement.style.setProperty("--nav-background-color", "black");
         sidebarImage.style.filter = "invert(100%)";
         rootElement.style.setProperty("--sidebar-background-color", "rgba(0, 0, 0, .95)")
@@ -61,6 +62,7 @@ function changeTheme() {
         rootElement.style.setProperty("--dark-background", "linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)10%)");
         rootElement.style.setProperty("--light-background", "linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)10%)");
     } else {
+        rootElement.style.setProperty("--anchor-hover", "linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)100%)");
         rootElement.style.setProperty("--nav-background-color", "white");
         sidebarImage.style.filter = "invert(0%)";
         rootElement.style.setProperty("--sidebar-background-color", "rgba(255, 255, 255, .95)")
@@ -120,7 +122,7 @@ function changeLanguage() {
         sectionTitles[3].innerText = "Projects";
         sectionTitles[4].innerText = "Contact";
 
-        homeParagraph.innerHTML = "your next Full Stack Developer! <strong style=\"font-family: Arial, Helvetica, sans-serif; font-size: 50px;\"><font color=\"red\">:)</font></strong>"
+        homeParagraph.innerHTML = "your next Full Stack Developer! <strong style=\"font-family: Arial, Helvetica, sans-serif;\" id=\"bold-smiley-face\"><font color=\"red\">:)</font></strong>"
 
         aboutMeParagraphs[0].innerText = "I am a Full Stack Developer eager to learn new technologies and programming languages. I have projects developed in Python, C#, JavaScript, HTML5, and CSS3.";
         aboutMeParagraphs[1].innerText = "In 2015, during my Electrical Engineering degree, I was first exposured to programming. We utilized the MATLAB software to perform the analysis of eletric power systems, an experience that brought to light my innate aptitude for software development.";
@@ -199,7 +201,7 @@ function changeLanguage() {
         sectionTitles[3].innerText = "Projetos";
         sectionTitles[4].innerText = "Contato";
 
-        homeParagraph.innerHTML = "seu próximo Desenvolvedor Full Stack! <strong style=\"font-family: Arial, Helvetica, sans-serif; font-size: 50px;\"><font color=\"red\">:)</font></strong>"
+        homeParagraph.innerHTML = "seu próximo Desenvolvedor Full Stack! <strong style=\"font-family: Arial, Helvetica, sans-serif;\" id=\"bold-smiley-face\"><font color=\"red\">:)</font></strong>"
 
         aboutMeParagraphs[0].innerText = "Sou um Desenvolvedor Full Stack ávido por conhecer novas tecnologias e linguagens de programação. Tenho projetos elaborados em Python, C#, JavaScript, HTML5 e CCS3.";
         aboutMeParagraphs[1].innerText = "Em 2015, durante minha graduação em Engenharia Elétrica, tive meu primeiro contato com programação. Utilizávamos o software MATLAB para realizar a análise de sistemas elétricos de potência, uma experiência que revelou minha aptidão inata para o desenvolvimento de software.";
