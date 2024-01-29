@@ -939,7 +939,13 @@ input[type="submit"]:hover {
 }
 
 #socials-table {
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 30px;
+    background-color: var(--inner-container-background);
+    overflow: none;
+    border-radius: var(--container-border-radius);
+    box-shadow: var(--box-shadow);
 }
 
 #socials-title {
@@ -951,24 +957,26 @@ input[type="submit"]:hover {
 }
 
 .socials-anchor {
+    margin: 10px;
     padding: 5px;
     font-family: var(--paragraph-font);
-    font-size: var(--paragraph-font-size);
-    color: var(--paragraph-font-color);
+    font-size: 22px;
+    color: var(--title-font-color);
     text-decoration: none;
 }
 
 .socials-anchor:hover {
     border-radius: var(--container-border-radius);
-    color: var(--button-font-color);
+    color: var(--title-font-color);
     background-image: var(--anchor-hover);
     text-decoration: none;
 }
 
 .socials-td {
+    margin: 10px;
     font-family: var(--paragraph-font);
-    font-size: var(--paragraph-font-size);
-    color: var(--paragraph-font-color);
+    font-size: 22px;
+    color: var(--title-font-color);
 }
 
 .fa {
