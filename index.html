@@ -479,37 +479,19 @@
                 <h1 class="section-title">Contato</h1>
                 <div id="contact-wrapper">
                     <div id="input-container">
-                        <form id="send-mail" action="#" method="post">
+                        <form id="send-mail" action="contactform.php" method="post">
                             <div class="container-form">
-                                <form>
-                                    <input type="text" id="name-input" placeholder="Digite seu nome e sobrenome"
-                                        required>
-                                    <label for="name-input" id="name-label">Nome e sobrenome:</label>
-                                </form>
-                            </div>
-                            <div class="container-form">
-                                <form>
-                                    <input type="text" id="email-input" placeholder="Digite seu endereço de email"
-                                        required>
-                                    <label for="email-input" id="email-label">Endereço de email:</label>
-                                </form>
-                            </div>
-                            <div class="container-form">
-                                <form>
-                                    <input type="text" id="subject-input" placeholder="Digite o assunto" required>
-                                    <label for="subject-input" id="subject-label">Assunto:</label>
-                                </form>
-                            </div>
-                            <div class="container-form">
-                                <form>
-                                    <textarea type="text" id="message-input" placeholder="Digite sua mensagem"
-                                        required></textarea>
-                                    <label for="message-input" id="message-label">Mensagem:</label>
-                                </form>
-                            </div>
-                            <div class="container-form">
-                                <input type="submit" value="Enviar" onsubmit="validateForm()" id="submit-button">
-                            </div>
+                                <input type="text" id="name-input" placeholder="Digite seu nome e sobrenome" required>
+                                <label for="name-input" id="name-label">Nome e sobrenome:</label>
+                                <input type="text" id="email-input" placeholder="Digite seu endereço de email" required>
+                                <label for="email-input" id="email-label">Endereço de e-mail:</label>
+                                <input type="text" id="subject-input" placeholder="Digite o assunto" required>
+                                <label for="subject-input" id="subject-label">Assunto:</label>
+                                <textarea type="text" id="message-input" placeholder="Digite sua mensagem"
+                                    required></textarea>
+                                <label for="message-input" id="message-label">Mensagem:</label>
+                                <input type="submit" value="Enviar" id="submit-button">
+
                         </form>
                     </div>
                     <div id="socials-container">
