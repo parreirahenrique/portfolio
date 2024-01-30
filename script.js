@@ -28,12 +28,6 @@ const javaTr = document.getElementById("java");
 const sqlTr = document.getElementById("sql");
 const descriptionTitle = document.getElementById("description-title");
 const descriptionText = document.getElementById("description-text");
-const socialsTitle = document.getElementById("socials-title");
-const nameLabel = document.getElementById("name-label");
-const emailLabel = document.getElementById("email-label");
-const subjectLabel = document.getElementById("subject-label");
-const messageLabel = document.getElementById("message-label");
-const submitButton = document.getElementById("submit-button");
 const certificationContents = document.getElementsByClassName("certification-content");
 const certificationDates = document.getElementsByClassName("certification-date");
 const certificationWorkloads = document.getElementsByClassName("certification-workload");
@@ -46,6 +40,8 @@ const nameInput = document.getElementById("name-input");
 const emailInput = document.getElementById("email-input");
 const subjectInput = document.getElementById("subject-input");
 const messageInput = document.getElementById("message-input");
+
+const languageAnchors = document.getElementsByClassName("language-anchor")
 
 var clickCounter = 0;
 
@@ -163,21 +159,6 @@ function changeLanguage() {
         for (let i = 0; i < repositoryButtons.length; i++) {
             repositoryButtons[i].innerText = "Repository"
         }
-
-        nameLabel.innerText = "First and last names:";
-        emailLabel.innerText = "Email address:"
-        subjectLabel.innerText = "Subject:";
-        messageLabel.innerText = "Message:";
-
-        nameInput.placeholder = "Type your first and last names";
-        emailInput.placeholder = "Type your email address";
-        subjectInput.placeholder = "Type the subject";
-        messageInput.placeholder = "Type your message";
-
-        submitButton.value = "Send";
-
-
-        socialsTitle.innerText = "Find me in other social networks:"
     } else {
         navigationAnchors[0].innerText = "página inicial";
         navigationAnchors[1].innerText = "sobre mim";
@@ -243,19 +224,6 @@ function changeLanguage() {
             repositoryButtons[i].innerText = "Repositório"
         }
 
-        nameLabel.innerText = "Nome e sobrenome:";
-        emailLabel.innerText = "Endereço de email:";
-        subjectLabel.innerText = "Assunto:";
-        messageLabel.innerText = "Mensagem:";
-
-        nameInput.placeholder = "Digite seu nome e sobrenome";
-        emailInput.placeholder = "Digite seu endereço de email";
-        subjectInput.placeholder = "Digite o assunto";
-        messageInput.placeholder = "Digite sua mensagem";
-
-        submitButton.value = "Enviar";
-
-        socialsTitle.innerText = "Me encontre em outras redes sociais:";
     }
 }
 
@@ -385,7 +353,7 @@ function changeDescriptionClick(element) {
             innerLanguageDescriptions[0].style.display = "block";
             innerLanguageDescriptions[0].style.visibility = "visible"
             innerLanguageDescriptions[0].style["boxShadow"] = "0 4px 6px -6px gray";
-            
+
             if (languageSwitch.checked) {
                 innerLanguageDescriptions[0].innerText = "HTML5, or Hypertext Markup Language (HTML), is the fifth and most recent version of one of the pioneering and fundamental markup languages of the web. Essentially, HTML is employed in the development of pages that incorporate simple content, including text, images, audio, videos, and more.\n\nIn summary, this language plays a crucial role in formatting and facilitating the display of such a diverse range of content across virtually all currently available browsers in the market. HTML is deeply rooted in the early days of the web, contributing to the most fundamental structures of this platform.";
             } else {
@@ -395,7 +363,7 @@ function changeDescriptionClick(element) {
             innerLanguageDescriptions[1].style.display = "block";
             innerLanguageDescriptions[1].style.visibility = "visible"
             innerLanguageDescriptions[1].style["boxShadow"] = "0 4px 6px -6px gray";
-            
+
             if (languageSwitch.checked) {
                 innerLanguageDescriptions[1].innerText = "CSS3 stands as the third and most recent version of the renowned Cascading Style Sheets (or simply CSS), designed for defining styles in web projects. Introducing elements such as transition effects, image manipulation, background, and other features, it introduces an innovative and refined aesthetic to your online creations.\n\nEmerging in 2012, CSS3 incorporates the vast majority of innovations currently employed in web page styling. Preceding it are CSS2 and CSS, originating in 1998 and 1996, respectively.";
             } else {
@@ -415,7 +383,7 @@ function changeDescriptionClick(element) {
             innerLanguageDescriptions[3].style.display = "block";
             innerLanguageDescriptions[3].style.visibility = "visible"
             innerLanguageDescriptions[3].style["boxShadow"] = "0 4px 6px -6px gray";
-            
+
             if (languageSwitch.checked) {
                 innerLanguageDescriptions[3].innerText = "React is a JavaScript framework created by Facebook (now Meta) used for building user interfaces (UI) in web applications. Its popularity stems from being user-friendly, highly flexible, and scalable, and it is utilized by numerous technology companies, including Facebook, Instagram, and Airbnb.\n\nIf you are a social media user, you've likely observed that certain parts of the screen exhibit special or independent behaviors. To address this, the Facebook development team devised a highly specific approach to handle displayed data and update these small sections of the application: React.";
             } else {
@@ -425,7 +393,7 @@ function changeDescriptionClick(element) {
             innerLanguageDescriptions[4].style.display = "block";
             innerLanguageDescriptions[4].style.visibility = "visible"
             innerLanguageDescriptions[4].style["boxShadow"] = "0 4px 6px -6px gray";
-            
+
             if (languageSwitch.checked) {
                 innerLanguageDescriptions[4].innerText = "Python, a high-level programming language, is applied in various contexts, including desktop, web, servers, and data science. Conceived by Guido Van Rossum in the '90s, it aims to enhance the developer's experience by simplifying the creation of clear, straightforward, and readable code.\n\nThe language incorporates features such as dynamic and robust typing, object-oriented programming, multiparadigm support, and leverages powerful resources in its standard library, as well as through modules and frameworks developed by the community. Python is open-source, free to use, and compatible with nearly all operating systems.";
             } else {
@@ -435,7 +403,7 @@ function changeDescriptionClick(element) {
             innerLanguageDescriptions[5].style.display = "block";
             innerLanguageDescriptions[5].style.visibility = "visible"
             innerLanguageDescriptions[5].style["boxShadow"] = "0 4px 6px -6px gray";
-            
+
             if (languageSwitch.checked) {
                 innerLanguageDescriptions[5].innerText = "JavaScript, also known as JS, is a high-level interpreted programming language that enjoys widespread popularity. Its prevalence is primarily due to being the default language interpreted by browsers, forming, along with HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets), the fundamental foundation of the Web.\n\nIn addition to its essential role in browsers, JavaScript finds application in various non-browser environments such as node.js, Apache CouchDB, and Adobe Acrobat, and can be utilized across all layers of development, whether it be front-end, back-end, or full stack.";
             } else {
@@ -445,7 +413,7 @@ function changeDescriptionClick(element) {
             innerLanguageDescriptions[6].style.display = "block";
             innerLanguageDescriptions[6].style.visibility = "visible"
             innerLanguageDescriptions[6].style["boxShadow"] = "0 4px 6px -6px gray";
-            
+
             if (languageSwitch.checked) {
                 innerLanguageDescriptions[6].innerText = "C# (pronounced as \"C Sharp\") is a modern, object-oriented, and strongly typed programming language that empowers developers to create applications on the .NET platform. With roots in the C language family, C# is immediately recognizable to proficient programmers in C, C++, Java, and JavaScript.\n\nProfessionals in desktop application development and/or web solutions find numerous advantages in adopting this technology. Moreover, it is widely used in the mobile landscape, creating flexible applications for various devices and platforms. It is also increasingly employed in game development, utilized with the Unity platform, providing a simplified creation experience.";
             } else {
@@ -455,7 +423,7 @@ function changeDescriptionClick(element) {
             innerLanguageDescriptions[7].style.display = "block";
             innerLanguageDescriptions[7].style.visibility = "visible"
             innerLanguageDescriptions[7].style["boxShadow"] = "0 4px 6px -6px gray";
-            
+
             if (languageSwitch.checked) {
                 innerLanguageDescriptions[7].innerText = "The Java programming platform was born in 1995 within the laboratories of Sun Microsystems as a result of extensive scientific and technological research. Java stands out as one of the most widely used platforms for application development worldwide.\n\nThe Java platform provides a comprehensive environment for the development and execution of programs, consisting of a high-level object-oriented programming language, a virtual machine (Java Virtual Machine or JVM), Java Runtime Environment (JRE), and Java Development Kit (JDK).";
             } else {
@@ -465,13 +433,31 @@ function changeDescriptionClick(element) {
             innerLanguageDescriptions[8].style.display = "block";
             innerLanguageDescriptions[8].style.visibility = "visible"
             innerLanguageDescriptions[8].style["boxShadow"] = "0 4px 6px -6px gray";
-            
+
             if (languageSwitch.checked) {
                 innerLanguageDescriptions[8].innerText = "SQL, short for Structured Query Language, was created in the mid-1970s. The main motivation for  its creation was the complexity of data management systems. It is a standard language for working with relational databases, widely used by professionals in various fields, from data scientists to Excel users.\n\nThe SQL language is relatively similar among the main Database Management Systems (DBMS) in the market, such as Oracle, MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, among others.";
             } else {
                 innerLanguageDescriptions[8].innerText = "O SQL, abreviação de Structured Query Language, teve sua origem na metade da década de 1970, motivado principalmente pela complexidade dos sistemas de gerenciamento de dados. Trata-se de uma linguagem padrão para interação com bancos de dados relacionais, sendo amplamente adotada por profissionais de diversas áreas, desde cientistas de dados até usuários do Excel.\n\nA linguagem SQL apresenta uma notável semelhança entre os principais Sistemas Gerenciadores de Banco de Dados (SGBDs) disponíveis no mercado, incluindo Oracle, MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, entre outros.";
             }
         }
+    }
+}
+
+function changeHRef() {
+    if (window.innerWidth >= 800) {
+        for (let i = 0; i < languageAnchors.length; i++) {
+            languageAnchors[i].href = "#languages-container"
+        }
+    } else {
+        languageAnchors[0].href = "#html5-anchor"
+        languageAnchors[1].href = "#css3-anchor"
+        languageAnchors[2].href = "#bootstrap-anchor"
+        languageAnchors[3].href = "#react-anchor"
+        languageAnchors[4].href = "#python-anchor"
+        languageAnchors[5].href = "#javascript-anchor"
+        languageAnchors[6].href = "#csharp-anchor"
+        languageAnchors[7].href = "#java-anchor"
+        languageAnchors[8].href = "#sql-anchor"
     }
 }
 
@@ -500,39 +486,6 @@ function showSidebar() {
         sidebarContainer.style.visibility = "hidden";
         clickCounter = 0;
     }
-}
-
-function validateForm() {
-
-    var error = "";
-
-    if (nameInput.value == "") {
-        error += "Please enter your name.\n";
-    }
-
-    if (emailInput.value == "") {
-        error += "Please enter your email address.\n";
-    } else if (!validateEmail(emailInput.value)) {
-        error += "Please enter a valid email address.\n";
-    }
-
-    if (subjectInput.value == "") {
-        error += "Please enter a subject.\n";
-    }
-
-    if (messageInput.value == "") {
-        error += "Please enter a message.\n";
-    }
-
-    if (error != "") {
-        alert(error);
-        return false;
-    }
-}
-
-function validateEmail(email) {
-    var re = /\S+@\S+\.\S+/;
-    return re.test(email);
 }
 
 themeSwitch.addEventListener("click", changeTheme);

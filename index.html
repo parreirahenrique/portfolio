@@ -53,7 +53,7 @@
     <script defer src="script.js"></script>
 </head>
 
-<body onload="changeTheme()" onresize="setHeight()">
+<body onload="changeTheme(); changeHRef()" onresize="setHeight(); changeHRef()">
     <header>
         <div id="sidebar-container">
             <a href="#home-container" class="header-anchor">página inicial</a>
@@ -146,14 +146,17 @@
                     <div id="icons-container">
                         <div id="frontend-container">
                             <h2 class="language-title">Frontend</h2>
-                            <div class="language-wrapper" id="html5" onclick="changeDescriptionClick(this)">
-                                <div class="language-icon-container">
-                                    <img src="imgs/html5.png" alt="" class="language-icon">
+                            <div class="anchor-placement" id="html5-anchor"></div>
+                            <a href="#html5-anchor" class="language-anchor">
+                                <div class="language-wrapper" id="html5" onclick="changeDescriptionClick(this)">
+                                    <div class="language-icon-container">
+                                        <img src="imgs/html5.png" alt="" class="language-icon">
+                                    </div>
+                                    <div class="language-name-container">
+                                        <p class="language-name">HTML5</p>
+                                    </div>
                                 </div>
-                                <div class="language-name-container">
-                                    <p class="language-name">HTML5</p>
-                                </div>
-                            </div>
+                            </a>
                             <div class="inner-language-description"
                                 style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
                                 HTML5, ou Hypertext Markup Language (HTML), é a quinta e mais recente versão de uma das
@@ -165,6 +168,8 @@
                                 está profundamente enraizado nos primórdios da web, contribuindo para as estruturas mais
                                 elementares dessa plataforma.
                             </div>
+                            <div class="anchor-placement" id="css3-anchor"></div>
+                            <a href="#css3-anchor" class="language-anchor">
                             <div class="language-wrapper" id="css3" onclick="changeDescriptionClick(this)">
                                 <div class="language-icon-container">
                                     <img src="imgs/css3.png" alt="" class="language-icon">
@@ -173,6 +178,7 @@
                                     <p class="language-name">CSS3</p>
                                 </div>
                             </div>
+                            </a>
                             <div class="inner-language-description"
                                 style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
                                 CSS3 configura-se como a terceira e mais recente versão das chamadas Cascading Style
@@ -183,6 +189,8 @@
                                 atualmente na estilização de páginas web. Antecedendo-a, encontram-se o CSS2 e o CSS,
                                 originados, respectivamente, em 1998 e 1996.
                             </div>
+                            <div class="anchor-placement" id="bootstrap-anchor"></div>
+                            <a href="#bootstrap-anchor" class="language-anchor">
                             <div class="language-wrapper" id="bootstrap" onclick="changeDescriptionClick(this)">
                                 <div class="language-icon-container">
                                     <img src="imgs/bootstrap.png" alt="" class="language-icon">
@@ -191,6 +199,7 @@
                                     <p class="language-name">Bootstrap</p>
                                 </div>
                             </div>
+                            </a>
                             <div class="inner-language-description"
                                 style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
                                 Bootstrap emerge como um framework front-end que disponibiliza estruturas de CSS para a
@@ -203,6 +212,8 @@
                                 angariou significativa popularidade, sendo adotado por desenvolvedores de diversos
                                 níveis de habilidade sem orientação externa.
                             </div>
+                            <div class="anchor-placement" id="react-anchor"></div>
+                            <a href="#languages-container" class="language-anchor">
                             <div class="language-wrapper" id="react" onclick="changeDescriptionClick(this)">
                                 <div class="language-icon-container">
                                     <img src="imgs/react.png" alt="" class="language-icon">
@@ -211,6 +222,7 @@
                                     <p class="language-name">React</p>
                                 </div>
                             </div>
+                            </a>
                             <div class="inner-language-description"
                                 style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
                                 O React, desenvolvido pelo Facebook (atualmente Meta), representa um framework
@@ -225,14 +237,18 @@
                         </div>
                         <div id="backend-container">
                             <h2 class="language-title">Backend</h2>
-                            <div class="language-wrapper" id="python" onclick="changeDescriptionClick(this)">
-                                <div class="language-icon-container">
-                                    <img src="imgs/python.png" alt="" class="language-icon">
+                            <div class="anchor-placement" id="python-anchor"></div>
+                            <a href="#python-anchor" class="language-anchor">
+                                <div class="language-wrapper" id="python" onclick="changeDescriptionClick(this)">
+                                    <div class="anchor-placement"></div>
+                                    <div class="language-icon-container">
+                                        <img src="imgs/python.png" alt="" class="language-icon">
+                                    </div>
+                                    <div class="language-name-container">
+                                        <p class="language-name">Python</p>
+                                    </div>
                                 </div>
-                                <div class="language-name-container">
-                                    <p class="language-name">Python</p>
-                                </div>
-                            </div>
+                            </a>
                             <div class="inner-language-description"
                                 style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
                                 Python, uma linguagem de programação de alto nível, é aplicada em diversos contextos,
@@ -244,14 +260,18 @@
                                 pela comunidade. Python é de código aberto, gratuito e compatível com quase todos os
                                 sistemas operacionais.
                             </div>
-                            <div class="language-wrapper" id="javascript" onclick="changeDescriptionClick(this)">
-                                <div class="language-icon-container">
-                                    <img src="imgs/javascript.png" alt="" class="language-icon">
+                            <div class="anchor-placement" id="javascript-anchor"></div>
+                            <a href="#javascript-anchor" class="language-anchor">
+                                <div class="language-wrapper" id="javascript" onclick="changeDescriptionClick(this)">
+
+                                    <div class="language-icon-container">
+                                        <img src="imgs/javascript.png" alt="" class="language-icon">
+                                    </div>
+                                    <div class="language-name-container">
+                                        <p class="language-name">JavaScript</p>
+                                    </div>
                                 </div>
-                                <div class="language-name-container">
-                                    <p class="language-name">JavaScript</p>
-                                </div>
-                            </div>
+                            </a>
                             <div class="inner-language-description"
                                 style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
                                 JavaScript, conhecido carinhosamente como JS, é uma linguagem de programação
@@ -263,14 +283,17 @@
                                 node.js, Apache CouchDB e Adobe Acrobat, podendo ser utilizada em todas as camadas de
                                 desenvolvimento, seja front-end, back-end ou full stack.
                             </div>
-                            <div class="language-wrapper" id="csharp" onclick="changeDescriptionClick(this)">
-                                <div class="language-icon-container">
-                                    <img src="imgs/csharp.png" alt="" class="language-icon">
+                            <div class="anchor-placement" id="csharp-anchor"></div>
+                            <a href="#csharp-anchor" class="language-anchor">
+                                <div class="language-wrapper" id="csharp" onclick="changeDescriptionClick(this)">
+                                    <div class="language-icon-container">
+                                        <img src="imgs/csharp.png" alt="" class="language-icon">
+                                    </div>
+                                    <div class="language-name-container">
+                                        <p class="language-name">C#</p>
+                                    </div>
                                 </div>
-                                <div class="language-name-container">
-                                    <p class="language-name">C#</p>
-                                </div>
-                            </div>
+                            </a>
                             <div class="inner-language-description"
                                 style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
                                 O C# (pronunciado como \"C Sharp\") é uma linguagem de programação moderna, orientada a
@@ -283,14 +306,17 @@
                                 usada no desenvolvimento de jogos e empregada com a plataforma Unity, proporcionando uma
                                 experiência de criação simplificada.
                             </div>
-                            <div class="language-wrapper" id="java" onclick="changeDescriptionClick(this)">
-                                <div class="language-icon-container">
-                                    <img src="imgs/java.png" alt="" class="language-icon">
+                            <div class="anchor-placement" id="java-anchor"></div>
+                            <a href="#java-anchor" class="language-anchor">
+                                <div class="language-wrapper" id="java" onclick="changeDescriptionClick(this)">
+                                    <div class="language-icon-container">
+                                        <img src="imgs/java.png" alt="" class="language-icon">
+                                    </div>
+                                    <div class="language-name-container">
+                                        <p class="language-name">Java</p>
+                                    </div>
                                 </div>
-                                <div class="language-name-container">
-                                    <p class="language-name">Java</p>
-                                </div>
-                            </div>
+                            </a>
                             <div class="inner-language-description"
                                 style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
                                 A plataforma de programação Java teve sua origem no ano de 1995, originando-se nos
@@ -302,14 +328,17 @@
                                 Virtual Machine ou JVM), o Java Runtime Environment (JRE) e o Java Development Kit
                                 (JDK).
                             </div>
-                            <div class="language-wrapper" id="sql" onclick="changeDescriptionClick(this)">
-                                <div class="language-icon-container">
-                                    <img src="imgs/sql.png" alt="" class="language-icon">
+                            <div class="anchor-placement" id="sql-anchor"></div>
+                            <a href="#sql-anchor" class="language-anchor">
+                                <div class="language-wrapper" id="sql" onclick="changeDescriptionClick(this)">
+                                    <div class="language-icon-container">
+                                        <img src="imgs/sql.png" alt="" class="language-icon">
+                                    </div>
+                                    <div class="language-name-container">
+                                        <p class="language-name">SQL</p>
+                                    </div>
                                 </div>
-                                <div class="language-name-container">
-                                    <p class="language-name">SQL</p>
-                                </div>
-                            </div>
+                            </a>
                             <div class="inner-language-description"
                                 style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
                                 O SQL, abreviação de Structured Query Language, teve sua origem na metade da década de
@@ -450,7 +479,8 @@
                         <a href="#" target="_blank" class="check-button">
                             Checar projeto
                         </a>
-                        <a href="https://github.com/parreirahenrique/entrada-dados" target="_blank" class="repository-button">
+                        <a href="https://github.com/parreirahenrique/entrada-dados" target="_blank"
+                            class="repository-button">
                             Repositório
                         </a>
                     </div>
@@ -465,7 +495,8 @@
                         <button class="check-button">
                             Checar projeto
                         </button>
-                        <a href="https://github.com/parreirahenrique/flask-market" target="_blank" class="repository-button">
+                        <a href="https://github.com/parreirahenrique/flask-market" target="_blank"
+                            class="repository-button">
                             Repositório
                         </a>
                     </div>

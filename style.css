@@ -474,6 +474,15 @@ td {
     text-align: start;
 }
 
+.anchor-placement {
+    position: relative;
+    top: -70px;
+}
+
+.language-anchor {
+    text-decoration: none;
+}
+
 .language-wrapper {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -1100,7 +1109,7 @@ input[type="submit"]:hover {
         height: 25px;
         width: auto;
         position: fixed;
-        top:3%;
+        top: 3%;
         left: 5vw;
         cursor: pointer;
     }
@@ -1374,9 +1383,11 @@ input[type="submit"]:hover {
         margin-right: 0px;
         width: 100%;
     }
+
     #socials-table {
         display: none;
     }
+
     #socials-table-smartphone {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -1386,5 +1397,5 @@ input[type="submit"]:hover {
     .socials-td {
         margin: 10px;
         font-size: 20px;
-    } 
+    }
 }
