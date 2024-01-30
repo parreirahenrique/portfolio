@@ -751,11 +751,13 @@ td {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: var(--container-border-radius);
-    width: 120px;
+    width: 130px;
     position: absolute;
     left: 10px;
     bottom: 20px;
     font-family: var(--paragraph-font);
+    text-align: center;
+    text-decoration: none;
     color: var(--button-font-color);
     background-color: var(--button-background);
     box-shadow: var(--button-box-shadow) black;
@@ -763,18 +765,21 @@ td {
 
 .check-button:hover {
     background-color: var(--button-hover-background);
+    color: var(--button-font-color);
 }
 
 .repository-button {
-    margin-right: 10px;
+    /* margin-right: 10px; */
     margin-bottom: 10px;
     padding: 10px;
     border-radius: var(--container-border-radius);
-    width: 120px;
+    width: 130px;
     position: absolute;
     right: 10px;
     bottom: 20px;
     font-family: var(--paragraph-font);
+    text-align: center;
+    text-decoration: none;
     color: var(--button-font-color);
     background-color: var(--button-background);
     box-shadow: var(--button-box-shadow) black;
@@ -782,6 +787,7 @@ td {
 
 .repository-button:hover {
     background-color: var(--button-hover-background);
+    color: var(--button-font-color);
 }
 
 #contact-container {
@@ -1312,7 +1318,7 @@ input[type="submit"]:hover {
     }
 
     .check-button {
-        width: 130px;
+        width: 120px;
     }
 
     .check-button:hover {
@@ -1320,7 +1326,7 @@ input[type="submit"]:hover {
     }
 
     .repository-button {
-        width: 130px;
+        width: 90px;
     }
 
     #contact-container {
