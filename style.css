@@ -751,7 +751,7 @@ td {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: var(--container-border-radius);
-    width: 130px;
+    width: 120px;
     position: absolute;
     left: 10px;
     bottom: 20px;
@@ -770,7 +770,7 @@ td {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: var(--container-border-radius);
-    width: 130px;
+    width: 120px;
     position: absolute;
     right: 10px;
     bottom: 20px;
