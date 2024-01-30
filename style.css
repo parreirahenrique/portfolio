@@ -948,6 +948,17 @@ input[type="submit"]:hover {
     box-shadow: var(--box-shadow);
 }
 
+#socials-table-smartphone {
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    background-color: var(--inner-container-background);
+    overflow: none;
+    border-radius: var(--container-border-radius);
+    box-shadow: var(--box-shadow);
+}
+
 #socials-title {
     margin-top: 32.5px;
     font-size: var(--title-font-size);
@@ -1357,4 +1368,17 @@ input[type="submit"]:hover {
         margin-right: 0px;
         width: 100%;
     }
+    #socials-table {
+        display: none;
+    }
+    #socials-table-smartphone {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: block;
+    }
+
+    .socials-td {
+        margin: 10px;
+        font-size: 20px;
+    } 
 }
