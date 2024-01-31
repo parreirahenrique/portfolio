@@ -740,9 +740,8 @@ td {
     margin-bottom: 20px;
     width: 100%;
     height: auto;
-    /* border: 2px solid var(--nav-background-color); */
     border-radius: 10px;
-    box-shadow: var(--button-box-shadow) black;
+    box-shadow: 4px 4px 12px black;
 }
 
 .project-title {
