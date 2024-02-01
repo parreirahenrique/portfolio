@@ -990,10 +990,10 @@ input[type="submit"]:hover {
     margin-right: auto;
     margin-left: auto;
     margin-top: 30px;
-    background-color: var(--inner-container-background);
-    overflow: none;
-    border-radius: var(--container-border-radius);
-    box-shadow: var(--box-shadow);
+    /* background-color: var(--inner-container-background); */
+    /* overflow: none; */
+    /* border-radius: var(--container-border-radius); */
+    /* box-shadow: var(--box-shadow); */
 }
 
 #socials-table-smartphone {
@@ -1001,32 +1001,30 @@ input[type="submit"]:hover {
     margin-right: auto;
     margin-left: auto;
     margin-top: 30px;
-    background-color: var(--inner-container-background);
-    overflow: none;
-    border-radius: var(--container-border-radius);
-    box-shadow: var(--box-shadow);
+    /* background-color: var(--inner-container-background); */
+    /* overflow: none; */
+    /* border-radius: var(--container-border-radius); */
+    /* box-shadow: var(--box-shadow); */
 }
 
-#socials-title {
-    margin-top: 32.5px;
-    font-size: var(--title-font-size);
-    font-weight: bold;
-    font-family: var(--title-font);
-    color: var(--paragraph-font-color)
+.socials-logo {
+    padding: 10px;
+    background-color: var(--inner-container-background);
+    border-radius: 50%;
 }
 
 .socials-anchor {
     margin: 10px;
-    padding: 5px;
-    font-family: var(--paragraph-font);
+    padding: 10px;
+    font-family: var(--title-font);
     font-size: 22px;
-    color: var(--title-font-color);
+    color: var(--paragraph-font-color);
     text-decoration: none;
 }
 
 .socials-anchor:hover {
     border-radius: var(--container-border-radius);
-    color: var(--title-font-color);
+    color: var(--paragraph-font-color);
     background-image: var(--anchor-hover);
     text-decoration: none;
 }
@@ -1035,7 +1033,12 @@ input[type="submit"]:hover {
     margin: 10px;
     font-family: var(--paragraph-font);
     font-size: 22px;
-    color: var(--title-font-color);
+    text-align: right;
+    color: var(--paragraph-font-color);
+}
+
+.socials-tr {
+    box-shadow: 0 4px 8px -8px gray;
 }
 
 .fa {
@@ -1430,6 +1433,9 @@ input[type="submit"]:hover {
     }
 
     #socials-table-smartphone {
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
         padding-top: 10px;
         padding-bottom: 10px;
         display: block;
@@ -1437,6 +1443,8 @@ input[type="submit"]:hover {
 
     .socials-td {
         margin: 10px;
+        padding-left: 10px;
         font-size: 20px;
+        text-align: left;
     }
 }
