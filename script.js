@@ -13,6 +13,7 @@ const homeParagraph = document.getElementById("home-paragraph");
 const aboutMeParagraphs = document.getElementsByClassName("about-me-paragraph");
 const projectTitles = document.getElementsByClassName("project-title");
 const projectParagraphs = document.getElementsByClassName("project-paragraph");
+const usedLanguagesParagraphs = document.getElementsByClassName("used-languages-paragraph");
 const checkProjectButtons = document.getElementsByClassName("check-button");
 const repositoryButtons = document.getElementsByClassName("repository-button");
 const projects = document.getElementsByClassName("project");
@@ -155,9 +156,15 @@ function changeLanguage() {
 
         projectTitles[0].innerText = "Data input for photovoltaic projects";
         projectTitles[1].innerText = "Market place";
+        projectTitles[2].innerText = "Music player";
 
         projectParagraphs[0].innerText = "Project developed during my time at the last company where I worked, due to the inefficiency found in filling out the spreadsheets and forms required for photovoltaic projects. Therefore, an automation of this process was developed, so that the user only needs to provide the necessary data for the project, and the respective forms would be filled out correctly.";
         projectParagraphs[1].innerText = "Project created for a marketplace where users can buy products listed by others and add their own products for sale.";
+        projectParagraphs[2].innerText = "Basic music player enabling the playback of copyright-free music provided by the freeCodeCamp.org platform.";
+        
+        for (let i = 0; i < usedLanguagesParagraphs.length; i++) {
+            usedLanguagesParagraphs[i].innerText = "Languages and frameworks used:"
+        }
 
         for (let i = 0; i < checkProjectButtons.length; i++) {
             checkProjectButtons[i].innerText = "Check project"
@@ -222,9 +229,15 @@ function changeLanguage() {
 
         projectTitles[0].innerText = "Entrada de dados para projetos fotovoltaicos";
         projectTitles[1].innerText = "Market place";
+        projectTitles[2].innerText = "Reprodutor de músicas";
 
         projectParagraphs[0].innerText = "Projeto elaborado durante meu tempo na última empresa onde trabalhei, devido a ineficência encontrada no preenchimento das planilhas e formulários necessários aos projetos fotovoltaicos. Logo, uma automatização desse processo foi desenvolvida, de modo que o usuário necessita apenas fornecer os dados necessários para o projeto, e os devidos formulários seriam preenchidos corretamente.";
         projectParagraphs[1].innerText = "Projeto feito para um Market Place, onde usuários podem comprar produtos dispostos por outros e incluir seus próprios produtos para venda.";
+        projectParagraphs[2].innerText = "Reprodutor de músicas básico, que permite a reprodução de músicas sem direitos autorais disponibilizadas pela plataforma freeCodeCamp.org.";
+        
+        for (let i = 0; i < usedLanguagesParagraphs.length; i++) {
+            usedLanguagesParagraphs[i].innerText = "Linguagens e frameworks utilizados:"
+        }
 
         for (let i = 0; i < checkProjectButtons.length; i++) {
             checkProjectButtons[i].innerText = "Checar projeto"
@@ -531,6 +544,7 @@ function setHeight() {
     }
     console.log(maxValue)
     for (let i = 0; i < projects.length; i++) {
+        console.log(maxValue.toString() + "px")
         projects[i].style.height = maxValue.toString() + "px";
     }
 }

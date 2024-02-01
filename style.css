@@ -990,10 +990,6 @@ input[type="submit"]:hover {
     margin-right: auto;
     margin-left: auto;
     margin-top: 30px;
-    /* background-color: var(--inner-container-background); */
-    /* overflow: none; */
-    /* border-radius: var(--container-border-radius); */
-    /* box-shadow: var(--box-shadow); */
 }
 
 #socials-table-smartphone {
@@ -1001,10 +997,6 @@ input[type="submit"]:hover {
     margin-right: auto;
     margin-left: auto;
     margin-top: 30px;
-    /* background-color: var(--inner-container-background); */
-    /* overflow: none; */
-    /* border-radius: var(--container-border-radius); */
-    /* box-shadow: var(--box-shadow); */
 }
 
 .socials-logo {
@@ -1020,13 +1012,15 @@ input[type="submit"]:hover {
     font-size: 22px;
     color: var(--paragraph-font-color);
     text-decoration: none;
+    transition: .3s;
 }
 
 .socials-anchor:hover {
     border-radius: var(--container-border-radius);
     color: var(--paragraph-font-color);
-    background-image: var(--anchor-hover);
+    background-color: var(--inner-container-background);
     text-decoration: none;
+    transition: .3s;
 }
 
 .socials-td {
