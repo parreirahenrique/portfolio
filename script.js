@@ -6,6 +6,8 @@ const languageSwitch = document.getElementById("language-switch");
 const navigationAnchors = document.getElementsByClassName("header-anchor")
 const languagePlaceholder = document.getElementById("language-placeholder");
 const themePlaceholder = document.getElementById("theme-placeholder");
+const resumeButton = document.getElementById("cv-anchor");
+const resumeText = document.getElementById("cv-text");
 const sectionTitles = document.getElementsByClassName("section-title");
 const homeParagraph = document.getElementById("home-paragraph");
 const aboutMeParagraphs = document.getElementsByClassName("about-me-paragraph");
@@ -14,7 +16,7 @@ const projectParagraphs = document.getElementsByClassName("project-paragraph");
 const checkProjectButtons = document.getElementsByClassName("check-button");
 const repositoryButtons = document.getElementsByClassName("repository-button");
 const projects = document.getElementsByClassName("project");
-const innerLanguageDescriptions = document.getElementsByClassName("inner-language-description")
+const innerLanguageDescriptions = document.getElementsByClassName("inner-language-description");
 
 const descriptionContainer = document.getElementById("description-container");
 const html5Tr = document.getElementById("html5");
@@ -114,6 +116,9 @@ function changeLanguage() {
         languagePlaceholder.innerText = "language"
         themePlaceholder.innerText = "theme"
 
+        resumeButton.href = "https://fliphtml5.com/api/download/download-file?bookId=21800902&type=1";
+        resumeText.innerText = "Résumé";
+
         sectionTitles[0].innerText = "About me";
         sectionTitles[1].innerText = "Habilities";
         sectionTitles[2].innerText = "Certifications";
@@ -177,6 +182,9 @@ function changeLanguage() {
 
         languagePlaceholder.innerText = "idioma"
         themePlaceholder.innerText = "tema"
+
+        resumeButton.href = "https://fliphtml5.com/api/download/download-file?bookId=82531099&type=1";
+        resumeText.innerText = "Currículo";
 
         sectionTitles[0].innerText = "Sobre mim";
         sectionTitles[1].innerText = "Habilidades";
