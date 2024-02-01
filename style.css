@@ -305,11 +305,15 @@ nav {
     font-size: 50px;
 }
 
-#home-anchor {
+.home-anchor {
     text-decoration: none;
 }
 
-#home-button {
+#linkedin-anchor {
+    margin-bottom: 20px;
+}
+
+.home-button {
     background-color: var(--button-background);
     width: 588.61px;
     height: 70px;
@@ -322,16 +326,21 @@ nav {
     background-image: var(--button-hover-background);
 }
 
-#linkedin-logo {
+.home-button-logo {
     margin-top: 6px;
     margin-left: auto;
-    margin-right: 10px;
     font-size: 25px;
     color: var(--button-font-color);
 }
 
-#linkedin-text {
+#cv-logo {
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.home-button-text {
     margin-right: auto;
+    margin-left: 10px;
     color: var(--button-font-color);
     font-weight: bold;
     font-size: 25px;
@@ -764,6 +773,7 @@ td {
 }
 
 .used-languages-paragraph {
+    margin-right: var(--inner-container-margin);
     padding-bottom: 0;
     font-family: var(--title-font);
     font-size: var(--paragraph-font-size);
@@ -1194,11 +1204,11 @@ input[type="submit"]:hover {
         font-size: 25px;
     }
 
-    #home-anchor {
+    .home-anchor {
         text-decoration: none;
     }
 
-    #home-button {
+    .home-button {
         background-color: var(--button-background);
         width: 308.03px;
         height: 70px;
