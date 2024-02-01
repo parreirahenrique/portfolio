@@ -755,12 +755,27 @@ td {
 }
 
 .project-paragraph {
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     font-family: var(--paragraph-font);
     font-size: var(--paragraph-font-size);
     /* color: var(--paragraph-font-color); */
     color: var(--button-font-color);
     text-align: justify;
+}
+
+.used-languages-paragraph {
+    padding-bottom: 0;
+    font-family: var(--title-font);
+    font-size: var(--paragraph-font-size);
+    /* color: var(--paragraph-font-color); */
+    color: var(--button-font-color);
+    text-align: justify;
+}
+
+.used-languages-wrapper {
+    padding-bottom: 90px;
+    position: absolute;
+    bottom: 10px;
 }
 
 .check-button {
@@ -1332,6 +1347,14 @@ input[type="submit"]:hover {
         display: grid;
         grid-template-columns: 100%;
         justify-content: space-around;
+    }
+
+    .project-paragraph {
+        padding-bottom: 175px;
+    }
+
+    .used-languages-wrapper {
+        bottom: 5px;
     }
 
     .check-button {

@@ -22,6 +22,8 @@ const css3Tr = document.getElementById("css3");
 const bootstrapTr = document.getElementById("bootstrap");
 const reactTr = document.getElementById("react");
 const pythonTr = document.getElementById("python");
+const fastapiTr = document.getElementById("fastapi");
+const flaskTr = document.getElementById("flask");
 const javascriptTr = document.getElementById("javascript");
 const csharpTr = document.getElementById("csharp");
 const javaTr = document.getElementById("java");
@@ -125,26 +127,26 @@ function changeLanguage() {
         aboutMeParagraphs[2].innerText = "The decision to transition to a career in development came in 2023, and since then, I have committed myself to ongoing learning and continual improvement, acquiring knowledge in new languages and technologies.";
         aboutMeParagraphs[3].innerText = "I hope to be able to work with you soon!";
 
-        certificationContents[0].innerHTML = "<strong>Content: </strong>HTML5, CSS3 and JavaScript fundamentals";
-        certificationContents[1].innerHTML = "<strong>Content: </strong>Python fundamentals";
-        certificationContents[2].innerHTML = "<strong>Content: </strong>Data analysis fundamentals, Pandas, Seaborn and Matplotlib libraries";
-        certificationContents[3].innerHTML = "<strong>Content: </strong>Machine learning fundamentals, TensorFlow and Scikit-Learn libraries";
-        certificationContents[4].innerHTML = "<strong>Content: </strong>C# e .NET Framework fundamentals";
-        certificationContents[5].innerHTML = "<strong>Content: </strong>JavaScript fundamentals and its data structures";
+        certificationContents[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>HTML5, CSS3 and JavaScript fundamentals";
+        certificationContents[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>Python fundamentals";
+        certificationContents[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>Data analysis fundamentals, Pandas, Seaborn and Matplotlib libraries";
+        certificationContents[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>Machine learning fundamentals, TensorFlow and Scikit-Learn libraries";
+        certificationContents[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>C# e .NET Framework fundamentals";
+        certificationContents[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>JavaScript fundamentals and its data structures";
 
-        certificationDates[0].innerHTML = "<strong>Date: </strong> 25/08/2021";
-        certificationDates[1].innerHTML = "<strong>Date: </strong> 22/05/2023";
-        certificationDates[2].innerHTML = "<strong>Date: </strong> 30/05/2023";
-        certificationDates[3].innerHTML = "<strong>Date: </strong> 28/06/2023";
-        certificationDates[4].innerHTML = "<strong>Date: </strong> 21/12/2023";
-        certificationDates[5].innerHTML = "<strong>Date: </strong> 05/01/2024";
+        certificationDates[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 25/08/2021";
+        certificationDates[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 22/05/2023";
+        certificationDates[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 30/05/2023";
+        certificationDates[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 28/06/2023";
+        certificationDates[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 21/12/2023";
+        certificationDates[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 05/01/2024";
 
-        certificationWorkloads[0].innerHTML = "<strong>Workload: </strong> 27 hours";
-        certificationWorkloads[1].innerHTML = "<strong>Workload: </strong> 300 hours";
-        certificationWorkloads[2].innerHTML = "<strong>Workload: </strong> 300 hours";
-        certificationWorkloads[3].innerHTML = "<strong>Workload: </strong> 300 hours";
-        certificationWorkloads[4].innerHTML = "<strong>Workload: </strong> 300 hours";
-        certificationWorkloads[5].innerHTML = "<strong>Workload: </strong> 300 hours";
+        certificationWorkloads[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 27 hours";
+        certificationWorkloads[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
+        certificationWorkloads[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
+        certificationWorkloads[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
+        certificationWorkloads[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
+        certificationWorkloads[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
 
         projectTitles[0].innerText = "Data input for photovoltaic projects";
         projectTitles[1].innerText = "Market place";
@@ -189,26 +191,26 @@ function changeLanguage() {
         aboutMeParagraphs[2].innerText = "A decisão de realizar a transição de carreira para o campo do desenvolvimento veio em 2023, e desde então tenho dedicado meu tempo ao estudo e aprimoramento constante, adquirindo conhecimentos em novas linguagens e tecnologias.";
         aboutMeParagraphs[3].innerText = "Espero poder logo trabalhar com vocês!";
 
-        certificationContents[0].innerHTML = "<strong>Conteúdo: </strong> Fundamentos de HTML5, CSS3 e JavaScript";
-        certificationContents[1].innerHTML = "<strong>Conteúdo: </strong> Fundamentos de Python";
-        certificationContents[2].innerHTML = "<strong>Conteúdo: </strong> Fundamentos de análise de dados, bibliotecas Pandas, Seaborn e Matplotlib";
-        certificationContents[3].innerHTML = "<strong>Conteúdo: </strong> Fundamentos de machine learning, bibliotecas TensorFlow e Scikit-Learn";
-        certificationContents[4].innerHTML = "<strong>Conteúdo: </strong> Fundamentos de C# e .NET Framework";
-        certificationContents[5].innerHTML = "<strong>Conteúdo: </strong> Fundamentos de JavaScript e suas estruturas de dados";
+        certificationContents[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de HTML5, CSS3 e JavaScript";
+        certificationContents[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de Python";
+        certificationContents[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de análise de dados, bibliotecas Pandas, Seaborn e Matplotlib";
+        certificationContents[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de machine learning, bibliotecas TensorFlow e Scikit-Learn";
+        certificationContents[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de C# e .NET Framework";
+        certificationContents[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de JavaScript e suas estruturas de dados";
 
-        certificationDates[0].innerHTML = "<strong>Data: </strong> 25/08/2021";
-        certificationDates[1].innerHTML = "<strong>Data: </strong> 22/05/2023";
-        certificationDates[2].innerHTML = "<strong>Data: </strong> 30/05/2023";
-        certificationDates[3].innerHTML = "<strong>Data: </strong> 28/06/2023";
-        certificationDates[4].innerHTML = "<strong>Data: </strong> 21/12/2023";
-        certificationDates[5].innerHTML = "<strong>Data: </strong> 05/01/2024";
+        certificationDates[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 25/08/2021";
+        certificationDates[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 22/05/2023";
+        certificationDates[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 30/05/2023";
+        certificationDates[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 28/06/2023";
+        certificationDates[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 21/12/2023";
+        certificationDates[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 05/01/2024";
 
-        certificationWorkloads[0].innerHTML = "<strong>Carga horária: </strong> 27 horas";
-        certificationWorkloads[1].innerHTML = "<strong>Carga horária: </strong> 300 horas";
-        certificationWorkloads[2].innerHTML = "<strong>Carga horária: </strong> 300 horas";
-        certificationWorkloads[3].innerHTML = "<strong>Carga horária: </strong> 300 horas";
-        certificationWorkloads[4].innerHTML = "<strong>Carga horária: </strong> 300 horas";
-        certificationWorkloads[5].innerHTML = "<strong>Carga horária: </strong> 300 horas";
+        certificationWorkloads[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 27 horas";
+        certificationWorkloads[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
+        certificationWorkloads[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
+        certificationWorkloads[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
+        certificationWorkloads[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
+        certificationWorkloads[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
 
         projectTitles[0].innerText = "Entrada de dados para projetos fotovoltaicos";
         projectTitles[1].innerText = "Market place";
@@ -292,6 +294,30 @@ function changeDescription() {
             } else {
                 descriptionText.innerText = "Python, uma linguagem de programação de alto nível, é aplicada em diversos contextos, incluindo desktop, web, servidores e ciência de dados. Concebida por Guido Van Rossum na década de 90, visa aprimorar a experiência do desenvolvedor, simplificando a criação de código claro, direto e legível.\n\nA linguagem incorpora características como tipagem dinâmica e robusta, programação orientada a objetos, multiparadigmas, além de dispor de recursos poderosos em biblioteca padrão e por meio de módulos e frameworks desenvolvidos pela comunidade. Python é de código aberto, gratuito e compatível com quase todos os sistemas operacionais.";
             }
+        } else if (fastapiTr.matches(':hover')) {
+            descriptionTitle.innerText = "FastAPI";
+
+            if (languageSwitch.checked) {
+                descriptionText.innerText = "FastAPI is a Python framework focused on API development, with its main characteristics being modern, fast, and simple. It is a relatively new framework, with its first version released on November 15, 2018. However, don't be deceived: despite its novelty, it is not inferior to other frameworks in the market.\n\nAmong its extensive list of features, one that stands out is its automatic documentation. By default, it provides two options: Swagger UI (for interactive navigation, calling, and testing of your API directly from the browser) and an alternative, navigable API documentation with the ReDoc library.";
+            } else {
+                descriptionText.innerText = "O FastAPI é um framework Python focado no desenvolvimento de APIs, tendo como principais características ser moderno, rápido e simples. É um framework relativamente novo, e sua primeira versão lançada no dia 15 de Novembro de 2018. Contudo não se engane: apesar de novo, ele não é inferior aos outros frameworks do mercado.\n\nDentre sua grande lista de funcionalidades, uma das que mais se destacam é  sua documentação automática, uma vez que por padrão ele disponibiliza duas opções, sendo elas Swagger UI (para navegar de forma interativa, chamar e testar sua API diretamente do navegador) e documentação navegável e alternativa da API com a biblioteca ReDoc.";
+            }
+        } else if (flaskTr.matches(':hover')) {
+            descriptionTitle.innerText = "Flask";
+
+            if (languageSwitch.checked) {
+                descriptionText.innerText = "Flask is a web development framework in Python known for its simplicity and flexibility. With it, you can quickly and efficiently create websites, web applications, and APIs. Its \"one drop at a time\" approach allows you to add functionalities gradually, starting with the simplest form of a website and then incrementally incorporating features.\n\nIt is labeled as a micro web development framework, but that doesn't mean it can't build complete solutions. This designation is precisely because it starts with simplicity and advances in complexity as functionalities are added. Due to this characteristic, it becomes lighter, easier to use, and more flexible, allowing for better control over applications.";
+            } else {
+                descriptionText.innerText = "O Flask é um framework de desenvolvimento web no Python conhecido por sua simplicidade e flexibilidade. Com ele, é possível criar sites, aplicativos web e APIs de forma rápida e eficiente. Sua abordagem “one drop at a time” permite adicionar funcionalidades gradualmente, tendo como ideia que você comece um site da forma mais simples possível e depois vá adicionando funcionalidades.\n\nEle é conhecido como um micro framework de desenvolvimento web, mas isso não significa que ele não desenvolva soluções completas. Essa nominação se dá justamente por ele começar simples e ir ficando mais complexo à medida que se acrescentam funcionalidades. Por essa característica, ele se torna mais leve, mais fácil de usar e mais flexível porque você pode conduzir melhor as aplicações.";
+            }
+        } else if (flaskTr.matches(':hover')) {
+            descriptionTitle.innerText = "Flask";
+
+            if (languageSwitch.checked) {
+                descriptionText.innerText = "Python, a high-level programming language, is applied in various contexts, including desktop, web, servers, and data science. Conceived by Guido Van Rossum in the '90s, it aims to enhance the developer's experience by simplifying the creation of clear, straightforward, and readable code.\n\nThe language incorporates features such as dynamic and robust typing, object-oriented programming, multiparadigm support, and leverages powerful resources in its standard library, as well as through modules and frameworks developed by the community. Python is open-source, free to use, and compatible with nearly all operating systems.";
+            } else {
+                descriptionText.innerText = "Python, uma linguagem de programação de alto nível, é aplicada em diversos contextos, incluindo desktop, web, servidores e ciência de dados. Concebida por Guido Van Rossum na década de 90, visa aprimorar a experiência do desenvolvedor, simplificando a criação de código claro, direto e legível.\n\nA linguagem incorpora características como tipagem dinâmica e robusta, programação orientada a objetos, multiparadigmas, além de dispor de recursos poderosos em biblioteca padrão e por meio de módulos e frameworks desenvolvidos pela comunidade. Python é de código aberto, gratuito e compatível com quase todos os sistemas operacionais.";
+            }
         } else if (javascriptTr.matches(':hover')) {
             descriptionTitle.innerText = "JavaScript";
 
@@ -348,6 +374,10 @@ function changeDescriptionClick(element) {
         innerLanguageDescriptions[7].style.visibility = "hidden";
         innerLanguageDescriptions[8].style.display = "none";
         innerLanguageDescriptions[8].style.visibility = "hidden";
+        innerLanguageDescriptions[9].style.display = "none";
+        innerLanguageDescriptions[9].style.visibility = "hidden";
+        innerLanguageDescriptions[10].style.display = "none";
+        innerLanguageDescriptions[10].style.visibility = "hidden";
 
         if (element.id === "html5") {
             innerLanguageDescriptions[0].style.display = "block";
@@ -399,45 +429,65 @@ function changeDescriptionClick(element) {
             } else {
                 innerLanguageDescriptions[4].innerText = "Python, uma linguagem de programação de alto nível, é aplicada em diversos contextos, incluindo desktop, web, servidores e ciência de dados. Concebida por Guido Van Rossum na década de 90, visa aprimorar a experiência do desenvolvedor, simplificando a criação de código claro, direto e legível.\n\nA linguagem incorpora características como tipagem dinâmica e robusta, programação orientada a objetos, multiparadigmas, além de dispor de recursos poderosos em biblioteca padrão e por meio de módulos e frameworks desenvolvidos pela comunidade. Python é de código aberto, gratuito e compatível com quase todos os sistemas operacionais.";
             }
-        } else if (element.id === "javascript") {
+        } else if (element.id === "fastapi") {
             innerLanguageDescriptions[5].style.display = "block";
             innerLanguageDescriptions[5].style.visibility = "visible"
             innerLanguageDescriptions[5].style["boxShadow"] = "0 4px 6px -6px gray";
 
             if (languageSwitch.checked) {
-                innerLanguageDescriptions[5].innerText = "JavaScript, also known as JS, is a high-level interpreted programming language that enjoys widespread popularity. Its prevalence is primarily due to being the default language interpreted by browsers, forming, along with HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets), the fundamental foundation of the Web.\n\nIn addition to its essential role in browsers, JavaScript finds application in various non-browser environments such as node.js, Apache CouchDB, and Adobe Acrobat, and can be utilized across all layers of development, whether it be front-end, back-end, or full stack.";
+                innerLanguageDescriptions[5].innerText = "FastAPI is a Python framework focused on API development, with its main characteristics being modern, fast, and simple. It is a relatively new framework, with its first version released on November 15, 2018. However, don't be deceived: despite its novelty, it is not inferior to other frameworks in the market.\n\nAmong its extensive list of features, one that stands out is its automatic documentation. By default, it provides two options: Swagger UI (for interactive navigation, calling, and testing of your API directly from the browser) and an alternative, navigable API documentation with the ReDoc library.";
             } else {
-                innerLanguageDescriptions[5].innerText = "JavaScript, conhecido carinhosamente como JS, é uma linguagem de programação interpretada de alto nível , desfrutando de uma ampla popularidade. Sua predominância deve-se, principalmente, ao fato de ser a linguagem padrão interpretada pelos navegadores, formando, juntamente com o HTML (HiperText Markup Language) e CSS (Cascading Style Sheets), a base fundamental da Web.\n\nAlém de ser essencial para navegadores, o JavaScript encontra aplicação em diversos ambientes sem navegador, como node.js, Apache CouchDB e Adobe Acrobat, podendo ser utilizada em todas as camadas de desenvolvimento, seja front-end, back-end ou full stack.";
+                innerLanguageDescriptions[5].innerText = "O FastAPI é um framework Python focado no desenvolvimento de APIs, tendo como principais características ser moderno, rápido e simples. É um framework relativamente novo, e sua primeira versão lançada no dia 15 de Novembro de 2018. Contudo não se engane: apesar de novo, ele não é inferior aos outros frameworks do mercado.\n\nDentre sua grande lista de funcionalidades, uma das que mais se destacam é  sua documentação automática, uma vez que por padrão ele disponibiliza duas opções, sendo elas Swagger UI (para navegar de forma interativa, chamar e testar sua API diretamente do navegador); e documentação navegável e alternativa da API com a biblioteca ReDoc.";
             }
-        } else if (element.id === "csharp") {
+        } else if (element.id === "flask") {
             innerLanguageDescriptions[6].style.display = "block";
             innerLanguageDescriptions[6].style.visibility = "visible"
             innerLanguageDescriptions[6].style["boxShadow"] = "0 4px 6px -6px gray";
 
             if (languageSwitch.checked) {
-                innerLanguageDescriptions[6].innerText = "C# (pronounced as \"C Sharp\") is a modern, object-oriented, and strongly typed programming language that empowers developers to create applications on the .NET platform. With roots in the C language family, C# is immediately recognizable to proficient programmers in C, C++, Java, and JavaScript.\n\nProfessionals in desktop application development and/or web solutions find numerous advantages in adopting this technology. Moreover, it is widely used in the mobile landscape, creating flexible applications for various devices and platforms. It is also increasingly employed in game development, utilized with the Unity platform, providing a simplified creation experience.";
+                innerLanguageDescriptions[6].innerText = "Flask is a web development framework in Python known for its simplicity and flexibility. With it, you can quickly and efficiently create websites, web applications, and APIs. Its \"one drop at a time\" approach allows you to add functionalities gradually, starting with the simplest form of a website and then incrementally incorporating features.\n\nIt is labeled as a micro web development framework, but that doesn't mean it can't build complete solutions. This designation is precisely because it starts with simplicity and advances in complexity as functionalities are added. Due to this characteristic, it becomes lighter, easier to use, and more flexible, allowing for better control over applications.";
             } else {
-                innerLanguageDescriptions[6].innerText = "O C# (pronunciado como \"C Sharp\") é uma linguagem de programação moderna, orientada a objetos e de tipagem forte, capacitando os desenvolvedores a criar aplicativos na plataforma .NET. Com raízes na família de linguagens C, o C# é imediatamente reconhecido por programadores proeficientes em C, C++, Java e JavaScript.\n\nProfissionais do desenvolvimento de aplicações desktop e/ou soluções web encontram inúmeras vantagens ao adotar essa tecnologia. Além disso, ela é amplamente utilizada no cenário mobile, criando aplicações flexíveis para diversos dispositivos e plataformas. Vem também sendo usada no desenvolvimento de jogos e empregada com a plataforma Unity, proporcionando uma experiência de criação simplificada.";
+                innerLanguageDescriptions[6].innerText = "O Flask é um framework de desenvolvimento web no Python conhecido por sua simplicidade e flexibilidade. Com ele, é possível criar sites, aplicativos web e APIs de forma rápida e eficiente. Sua abordagem “one drop at a time” permite adicionar funcionalidades gradualmente, tendo como ideia que você comece um site da forma mais simples possível e depois vá adicionando funcionalidades.\n\nEle é conhecido como um micro framework de desenvolvimento web, mas isso não significa que ele não desenvolva soluções completas. Essa nominação se dá justamente por ele começar simples e ir ficando mais complexo à medida que se acrescentam funcionalidades. Por essa característica, ele se torna mais leve, mais fácil de usar e mais flexível porque você pode conduzir melhor as aplicações.";
             }
-        } else if (element.id === "java") {
+        } else if (element.id === "javascript") {
             innerLanguageDescriptions[7].style.display = "block";
             innerLanguageDescriptions[7].style.visibility = "visible"
             innerLanguageDescriptions[7].style["boxShadow"] = "0 4px 6px -6px gray";
 
             if (languageSwitch.checked) {
-                innerLanguageDescriptions[7].innerText = "The Java programming platform was born in 1995 within the laboratories of Sun Microsystems as a result of extensive scientific and technological research. Java stands out as one of the most widely used platforms for application development worldwide.\n\nThe Java platform provides a comprehensive environment for the development and execution of programs, consisting of a high-level object-oriented programming language, a virtual machine (Java Virtual Machine or JVM), Java Runtime Environment (JRE), and Java Development Kit (JDK).";
+                innerLanguageDescriptions[7].innerText = "JavaScript, also known as JS, is a high-level interpreted programming language that enjoys widespread popularity. Its prevalence is primarily due to being the default language interpreted by browsers, forming, along with HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets), the fundamental foundation of the Web.\n\nIn addition to its essential role in browsers, JavaScript finds application in various non-browser environments such as node.js, Apache CouchDB, and Adobe Acrobat, and can be utilized across all layers of development, whether it be front-end, back-end, or full stack.";
             } else {
-                innerLanguageDescriptions[7].innerText = "A plataforma de programação Java teve sua origem no ano de 1995, originando-se nos laboratórios da empresa Sun Microsystems como resultado de uma extensa pesquisa científica e tecnológica. Java destaca-se como uma das plataformas mais amplamente utilizadas para o desenvolvimento de aplicações em escala global.\n\nEssa plataforma oferece um ambiente abrangente para a criação e execução de programas, compreendendo uma linguagem de programação de alto nível orientada a objetos, uma máquina virtual (Java Virtual Machine ou JVM), o Java Runtime Environment (JRE) e o Java Development Kit (JDK).";
+                innerLanguageDescriptions[7].innerText = "JavaScript, conhecido carinhosamente como JS, é uma linguagem de programação interpretada de alto nível , desfrutando de uma ampla popularidade. Sua predominância deve-se, principalmente, ao fato de ser a linguagem padrão interpretada pelos navegadores, formando, juntamente com o HTML (HiperText Markup Language) e CSS (Cascading Style Sheets), a base fundamental da Web.\n\nAlém de ser essencial para navegadores, o JavaScript encontra aplicação em diversos ambientes sem navegador, como node.js, Apache CouchDB e Adobe Acrobat, podendo ser utilizada em todas as camadas de desenvolvimento, seja front-end, back-end ou full stack.";
             }
-        } else if (element.id === "sql") {
+        } else if (element.id === "csharp") {
             innerLanguageDescriptions[8].style.display = "block";
             innerLanguageDescriptions[8].style.visibility = "visible"
             innerLanguageDescriptions[8].style["boxShadow"] = "0 4px 6px -6px gray";
 
             if (languageSwitch.checked) {
-                innerLanguageDescriptions[8].innerText = "SQL, short for Structured Query Language, was created in the mid-1970s. The main motivation for  its creation was the complexity of data management systems. It is a standard language for working with relational databases, widely used by professionals in various fields, from data scientists to Excel users.\n\nThe SQL language is relatively similar among the main Database Management Systems (DBMS) in the market, such as Oracle, MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, among others.";
+                innerLanguageDescriptions[8].innerText = "C# (pronounced as \"C Sharp\") is a modern, object-oriented, and strongly typed programming language that empowers developers to create applications on the .NET platform. With roots in the C language family, C# is immediately recognizable to proficient programmers in C, C++, Java, and JavaScript.\n\nProfessionals in desktop application development and/or web solutions find numerous advantages in adopting this technology. Moreover, it is widely used in the mobile landscape, creating flexible applications for various devices and platforms. It is also increasingly employed in game development, utilized with the Unity platform, providing a simplified creation experience.";
             } else {
-                innerLanguageDescriptions[8].innerText = "O SQL, abreviação de Structured Query Language, teve sua origem na metade da década de 1970, motivado principalmente pela complexidade dos sistemas de gerenciamento de dados. Trata-se de uma linguagem padrão para interação com bancos de dados relacionais, sendo amplamente adotada por profissionais de diversas áreas, desde cientistas de dados até usuários do Excel.\n\nA linguagem SQL apresenta uma notável semelhança entre os principais Sistemas Gerenciadores de Banco de Dados (SGBDs) disponíveis no mercado, incluindo Oracle, MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, entre outros.";
+                innerLanguageDescriptions[8].innerText = "O C# (pronunciado como \"C Sharp\") é uma linguagem de programação moderna, orientada a objetos e de tipagem forte, capacitando os desenvolvedores a criar aplicativos na plataforma .NET. Com raízes na família de linguagens C, o C# é imediatamente reconhecido por programadores proeficientes em C, C++, Java e JavaScript.\n\nProfissionais do desenvolvimento de aplicações desktop e/ou soluções web encontram inúmeras vantagens ao adotar essa tecnologia. Além disso, ela é amplamente utilizada no cenário mobile, criando aplicações flexíveis para diversos dispositivos e plataformas. Vem também sendo usada no desenvolvimento de jogos e empregada com a plataforma Unity, proporcionando uma experiência de criação simplificada.";
+            }
+        } else if (element.id === "java") {
+            innerLanguageDescriptions[9].style.display = "block";
+            innerLanguageDescriptions[9].style.visibility = "visible"
+            innerLanguageDescriptions[9].style["boxShadow"] = "0 4px 6px -6px gray";
+
+            if (languageSwitch.checked) {
+                innerLanguageDescriptions[9].innerText = "The Java programming platform was born in 1995 within the laboratories of Sun Microsystems as a result of extensive scientific and technological research. Java stands out as one of the most widely used platforms for application development worldwide.\n\nThe Java platform provides a comprehensive environment for the development and execution of programs, consisting of a high-level object-oriented programming language, a virtual machine (Java Virtual Machine or JVM), Java Runtime Environment (JRE), and Java Development Kit (JDK).";
+            } else {
+                innerLanguageDescriptions[9].innerText = "A plataforma de programação Java teve sua origem no ano de 1995, originando-se nos laboratórios da empresa Sun Microsystems como resultado de uma extensa pesquisa científica e tecnológica. Java destaca-se como uma das plataformas mais amplamente utilizadas para o desenvolvimento de aplicações em escala global.\n\nEssa plataforma oferece um ambiente abrangente para a criação e execução de programas, compreendendo uma linguagem de programação de alto nível orientada a objetos, uma máquina virtual (Java Virtual Machine ou JVM), o Java Runtime Environment (JRE) e o Java Development Kit (JDK).";
+            }
+        } else if (element.id === "sql") {
+            innerLanguageDescriptions[10].style.display = "block";
+            innerLanguageDescriptions[10].style.visibility = "visible"
+            innerLanguageDescriptions[10].style["boxShadow"] = "0 4px 6px -6px gray";
+
+            if (languageSwitch.checked) {
+                innerLanguageDescriptions[10].innerText = "SQL, short for Structured Query Language, was created in the mid-1970s. The main motivation for  its creation was the complexity of data management systems. It is a standard language for working with relational databases, widely used by professionals in various fields, from data scientists to Excel users.\n\nThe SQL language is relatively similar among the main Database Management Systems (DBMS) in the market, such as Oracle, MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, among others.";
+            } else {
+                innerLanguageDescriptions[10].innerText = "O SQL, abreviação de Structured Query Language, teve sua origem na metade da década de 1970, motivado principalmente pela complexidade dos sistemas de gerenciamento de dados. Trata-se de uma linguagem padrão para interação com bancos de dados relacionais, sendo amplamente adotada por profissionais de diversas áreas, desde cientistas de dados até usuários do Excel.\n\nA linguagem SQL apresenta uma notável semelhança entre os principais Sistemas Gerenciadores de Banco de Dados (SGBDs) disponíveis no mercado, incluindo Oracle, MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, entre outros.";
             }
         }
     }
@@ -454,10 +504,12 @@ function changeHRef() {
         languageAnchors[2].href = "#bootstrap-anchor"
         languageAnchors[3].href = "#react-anchor"
         languageAnchors[4].href = "#python-anchor"
-        languageAnchors[5].href = "#javascript-anchor"
-        languageAnchors[6].href = "#csharp-anchor"
-        languageAnchors[7].href = "#java-anchor"
-        languageAnchors[8].href = "#sql-anchor"
+        languageAnchors[5].href = "#fastapi-anchor"
+        languageAnchors[6].href = "#flask-anchor"
+        languageAnchors[7].href = "#javascript-anchor"
+        languageAnchors[8].href = "#csharp-anchor"
+        languageAnchors[9].href = "#java-anchor"
+        languageAnchors[10].href = "#sql-anchor"
     }
 }
 
