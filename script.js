@@ -117,7 +117,7 @@ function changeLanguage() {
         languagePlaceholder.innerText = "language"
         themePlaceholder.innerText = "theme"
 
-        resumeButton.href = "https://fliphtml5.com/api/download/download-file?bookId=21800902&type=1";
+        resumeButton.href = "https://download854.mediafire.com/crye4cqujmcgUJmw-_iZt4k8YmBA7A6lr6jBu9pO_gDUkaV_w_h2waLqBFA8ez4eY0jTfqs-AsrKNG92eNTm1-vo9vC2GU6sLIa82HxIrmcXLyvCQF9NWp4vG3bcNPVJu2cWoTtktu0XlJ04iRLiK0KzJcFO3HZhBSaBikgaeFkAGKLo/zby13mtyrn4gamk/CV+-+Henrique+Parreira+Castro+%2805-01-2024%29+-+English.pdf";
         resumeText.innerText = "Résumé";
 
         sectionTitles[0].innerText = "About me";
@@ -190,7 +190,7 @@ function changeLanguage() {
         languagePlaceholder.innerText = "idioma"
         themePlaceholder.innerText = "tema"
 
-        resumeButton.href = "https://fliphtml5.com/api/download/download-file?bookId=82531099&type=1";
+        resumeButton.href = "https://download1474.mediafire.com/ajsei4x46vhgtM2K7yOwK7SOAgEPSuxYhetAvZpBGZrHN9QiGpmYvZQLiRosRMa8g5qlkoIlitWHd7dq1IzhJRig5Se5twdVSmcB9fK2feYX8MkdWOS9henXovHhUW2RaNQOzbS1U9CMphiEn0bE43QE1nAkj4uNZ3-9M7dO3Hk9KjWj/5u3gi45wpazx4al/CV+-+Henrique+Parreira+Castro+%2805-01-2024%29.pdf";
         resumeText.innerText = "Currículo";
 
         sectionTitles[0].innerText = "Sobre mim";
