@@ -552,6 +552,7 @@ td {
 
 .language-icon {
     max-height: 25px;
+    max-width: 35px;
     width: auto;
     margin-top: auto;
     margin-bottom: auto;

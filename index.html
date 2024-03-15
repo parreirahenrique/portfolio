@@ -115,8 +115,8 @@
                             <p class="home-button-text" id="linkedin-text">LinkedIn</p>
                         </button>
                     </a>
-                    <a href="docs/CV - Henrique Parreira Castro (05-01-2024).pdf" target=”_blank” class="home-anchor" download="CV - Henrique Castro"
-                        id="cv-anchor">
+                    <a href="docs/CV - Henrique Parreira Castro (05-01-2024).pdf" target=”_blank” class="home-anchor"
+                        download="CV - Henrique Castro" id="cv-anchor">
                         <button class="home-button">
                             <i class="fa fa-file home-button-logo" aria-hidden="true" id="cv-logo"></i>
                             <p class="home-button-text" id="cv-text">Currículo</p>
@@ -220,28 +220,7 @@
                                 angariou significativa popularidade, sendo adotado por desenvolvedores de diversos
                                 níveis de habilidade sem orientação externa.
                             </div>
-                            <div class="anchor-placement" id="react-anchor"></div>
-                            <a href="#languages-container" class="language-anchor">
-                                <div class="language-wrapper" id="react" onclick="changeDescriptionClick(this)">
-                                    <div class="language-icon-container">
-                                        <img src="imgs/react.png" alt="" class="language-icon">
-                                    </div>
-                                    <div class="language-name-container">
-                                        <p class="language-name">React</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="inner-language-description"
-                                style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
-                                O React, desenvolvido pelo Facebook (atualmente Meta), representa um framework
-                                JavaScript empregado na criação de interfaces de usuário (UI) para aplicativos web. Sua
-                                popularidade advém da facilidade de uso, notável flexibilidade e escalabilidade, sendo
-                                adotado por diversas empresas de tecnologia, tais como Facebook, Instagram e
-                                Airbnb.\n\nSe você utiliza redes sociais, é provável que tenha notado comportamentos
-                                distintos em determinadas partes da tela. Para enfrentar esse desafio, a equipe de
-                                desenvolvedores do Facebook concebeu uma abordagem altamente especializada na
-                                manipulação de dados e na atualização dessas pequenas porções da aplicação: o React.
-                            </div>
+
                         </div>
                         <div id="backend-container">
                             <h2 class="language-title">Backend</h2>
@@ -315,6 +294,32 @@
                                 medida que se acrescentam funcionalidades. Por essa característica, ele se torna mais
                                 leve, mais fácil de usar e mais flexível porque você pode conduzir melhor as aplicações.
                             </div>
+                            <div class="anchor-placement" id="django-anchor"></div>
+                            <a href="#django-anchor" class="language-anchor">
+                                <div class="language-wrapper" id="django" onclick="changeDescriptionClick(this)">
+                                    <div class="anchor-placement"></div>
+                                    <div class="language-icon-container">
+                                        <img src="imgs/django.png" alt="" class="language-icon">
+                                    </div>
+                                    <div class="language-name-container">
+                                        <p class="language-name">Django</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="inner-language-description"
+                                style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
+                                Django é um framework web em Python amplamente reconhecido pela sua eficiência e
+                                facilidade de uso no desenvolvimento de aplicações web robustas e escaláveis. Sua
+                                modularidade e extensibilidade oferecem uma ampla gama de funcionalidades prontas para
+                                uso, como autenticação de usuários, administração de dados e ORM (Object-Relational
+                                Mapping), simplificando o processo de desenvolvimento e manutenção de aplicações
+                                web.\n\nCom uma abordagem pragmática e uma filosofia de "batteries-included", Django
+                                fornece uma
+                                experiência de desenvolvimento web completa e coerente, tornando-o uma escolha popular
+                                entre os desenvolvedores. Sua forte comunidade e vasta documentação garantem suporte
+                                contínuo, permitindo que os desenvolvedores inovem e entreguem valor aos usuários finais
+                                de forma eficiente.
+                            </div>
                             <div class="anchor-placement" id="javascript-anchor"></div>
                             <a href="#javascript-anchor" class="language-anchor">
                                 <div class="language-wrapper" id="javascript" onclick="changeDescriptionClick(this)">
@@ -361,28 +366,7 @@
                                 usada no desenvolvimento de jogos e empregada com a plataforma Unity, proporcionando uma
                                 experiência de criação simplificada.
                             </div>
-                            <div class="anchor-placement" id="java-anchor"></div>
-                            <a href="#java-anchor" class="language-anchor">
-                                <div class="language-wrapper" id="java" onclick="changeDescriptionClick(this)">
-                                    <div class="language-icon-container">
-                                        <img src="imgs/java.png" alt="" class="language-icon">
-                                    </div>
-                                    <div class="language-name-container">
-                                        <p class="language-name">Java</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="inner-language-description"
-                                style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
-                                A plataforma de programação Java teve sua origem no ano de 1995, originando-se nos
-                                laboratórios da empresa Sun Microsystems como resultado de uma extensa pesquisa
-                                científica e tecnológica. Java destaca-se como uma das plataformas mais amplamente
-                                utilizadas para o desenvolvimento de aplicações em escala global.\n\nEssa plataforma
-                                oferece um ambiente abrangente para a criação e execução de programas, compreendendo uma
-                                linguagem de programação de alto nível orientada a objetos, uma máquina virtual (Java
-                                Virtual Machine ou JVM), o Java Runtime Environment (JRE) e o Java Development Kit
-                                (JDK).
-                            </div>
+
                             <div class="anchor-placement" id="sql-anchor"></div>
                             <a href="#sql-anchor" class="language-anchor">
                                 <div class="language-wrapper" id="sql" onclick="changeDescriptionClick(this)">
@@ -531,6 +515,38 @@
             <div id="inner-projects-container">
                 <h1 class="section-title">Projetos</h1>
                 <div id="projects-grid">
+                    <div class="project">
+                        <img src="imgs/great-kart.png" class="project-image">
+                        <h2 class="project-title">GreatKart</h2>
+                        <p class="project-paragraph">
+                            GreatKart é um projeto desenvolvido para uma loja virtual de roupas e acessórios. Os
+                            clientes, para realização de suas compras, devem primeiramente realizar um cadastro, e a
+                            validação de seus perfis de usuário é feita por e-mail para garantir autenticidade e
+                            segurança. É possível que os compradores encontrem os produtos desejados forma rápida
+                            fazendo uma pesquisa pela categoria do produto ou pelo seu nome. Os produtos são inseridos
+                            em seu carrinho de compras, que é integrado ao PayPal para processamento de pagamentos de
+                            forma rápida e segura. Além disso, os clientes podem avaliar e deixar feedback sobre os
+                            produtos adquiridos, com um sistema de classificação por estrelas.
+                        </p>
+                        <div class="used-languages-wrapper">
+                            <p class="used-languages-paragraph">
+                                Linguagens e frameworks utilizados:
+                            </p>
+                            <img src="imgs/django.png" alt="" class="language-icon">
+                            <img src="imgs/python.png" alt="" class="language-icon">
+                            <img src="imgs/bootstrap.png" alt="" class="language-icon">
+                            <img src="imgs/javascript.png" alt="" class="language-icon">
+                            <img src="imgs/html5.png" alt="" class="language-icon">
+                            <img src="imgs/css3.png" alt="" class="language-icon">
+                        </div>
+                        <a class="check-button">
+                            Em progresso
+                        </a>
+                        <a href="https://github.com/parreirahenrique/great-kart" target="_blank"
+                            class="repository-button">
+                            Repositório
+                        </a>
+                    </div>
                     <div class="project">
                         <img src="imgs/data-input.png" class="project-image">
                         <h2 class="project-title">Entrada de dados para projetos fotovoltaicos</h2>

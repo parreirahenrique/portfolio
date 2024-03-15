@@ -23,13 +23,14 @@ const descriptionContainer = document.getElementById("description-container");
 const html5Tr = document.getElementById("html5");
 const css3Tr = document.getElementById("css3");
 const bootstrapTr = document.getElementById("bootstrap");
-const reactTr = document.getElementById("react");
+// React element comes here
 const pythonTr = document.getElementById("python");
 const fastapiTr = document.getElementById("fastapi");
 const flaskTr = document.getElementById("flask");
+const djangoTr = document.getElementById("django");
 const javascriptTr = document.getElementById("javascript");
 const csharpTr = document.getElementById("csharp");
-const javaTr = document.getElementById("java");
+// Java element comes here
 const sqlTr = document.getElementById("sql");
 const descriptionTitle = document.getElementById("description-title");
 const descriptionText = document.getElementById("description-text");
@@ -299,15 +300,11 @@ function changeDescription() {
             } else {
                 descriptionText.innerText = "Bootstrap emerge como um framework front-end que disponibiliza estruturas de CSS para a construção ágil e descomplicada de websites e aplicações responsivas. Adicionalmente, sua capacidade abrange tanto sites destinados a desktops quanto páginas otimizadas para dispositivos móveis.\n\nInicialmente concebido para o Twitter por um grupo de desenvolvedores liderados por Mark Otto e Jacob Thornton, o Bootstrap, antes de se tornar uma estrutura de código aberto, era reconhecido como Twitter Blueprint. Após alguns meses de desenvolvimento, durante a primeira Hack Week do Twitter, o projeto angariou significativa popularidade, sendo adotado por desenvolvedores de diversos níveis de habilidade sem orientação externa.";
             }
-        } else if (reactTr.matches(':hover')) {
-            descriptionTitle.innerText = "React";
-
-            if (languageSwitch.checked) {
-                descriptionText.innerText = "React is a JavaScript framework created by Facebook (now Meta) used for building user interfaces (UI) in web applications. Its popularity stems from being user-friendly, highly flexible, and scalable, and it is utilized by numerous technology companies, including Facebook, Instagram, and Airbnb.\n\nIf you are a social media user, you've likely observed that certain parts of the screen exhibit special or independent behaviors. To address this, the Facebook development team devised a highly specific approach to handle displayed data and update these small sections of the application: React.";
-            } else {
-                descriptionText.innerText = "O React, desenvolvido pelo Facebook (atualmente Meta), representa um framework JavaScript empregado na criação de interfaces de usuário (UI) para aplicativos web. Sua popularidade advém da facilidade de uso, notável flexibilidade e escalabilidade, sendo adotado por diversas empresas de tecnologia, tais como Facebook, Instagram e Airbnb.\n\nSe você utiliza redes sociais, é provável que tenha notado comportamentos distintos em determinadas partes da tela. Para enfrentar esse desafio, a equipe de desenvolvedores do Facebook concebeu uma abordagem altamente especializada na manipulação de dados e na atualização dessas pequenas porções da aplicação: o React.";
-            }
-        } else if (pythonTr.matches(':hover')) {
+        } 
+        
+        // React logic comes here
+        
+        else if (pythonTr.matches(':hover')) {
             descriptionTitle.innerText = "Python";
 
             if (languageSwitch.checked) {
@@ -331,13 +328,13 @@ function changeDescription() {
             } else {
                 descriptionText.innerText = "O Flask é um framework de desenvolvimento web no Python conhecido por sua simplicidade e flexibilidade. Com ele, é possível criar sites, aplicativos web e APIs de forma rápida e eficiente. Sua abordagem “one drop at a time” permite adicionar funcionalidades gradualmente, tendo como ideia que você comece um site da forma mais simples possível e depois vá adicionando funcionalidades.\n\nEle é conhecido como um micro framework de desenvolvimento web, mas isso não significa que ele não desenvolva soluções completas. Essa nominação se dá justamente por ele começar simples e ir ficando mais complexo à medida que se acrescentam funcionalidades. Por essa característica, ele se torna mais leve, mais fácil de usar e mais flexível porque você pode conduzir melhor as aplicações.";
             }
-        } else if (flaskTr.matches(':hover')) {
-            descriptionTitle.innerText = "Flask";
+        } else if (djangoTr.matches(':hover')) {
+            descriptionTitle.innerText = "Django";
 
             if (languageSwitch.checked) {
-                descriptionText.innerText = "Python, a high-level programming language, is applied in various contexts, including desktop, web, servers, and data science. Conceived by Guido Van Rossum in the '90s, it aims to enhance the developer's experience by simplifying the creation of clear, straightforward, and readable code.\n\nThe language incorporates features such as dynamic and robust typing, object-oriented programming, multiparadigm support, and leverages powerful resources in its standard library, as well as through modules and frameworks developed by the community. Python is open-source, free to use, and compatible with nearly all operating systems.";
+                descriptionText.innerText = "Django is a Python web framework widely recognized for its efficiency and ease of use in developing robust and scalable web applications. Its modularity and extensibility offer a wide range of ready-to-use functionalities, such as user authentication, data administration, and ORM (Object-Relational Mapping), simplifying the process of web development and maintenance.\n\nWith a pragmatic approach and a philosophy of \"batteries-included\", Django provides a complete and cohesive web development experience, making it a popular choice among developers. Its strong community and extensive documentation ensure ongoing support, enabling developers to innovate and deliver value to end-users efficiently.";
             } else {
-                descriptionText.innerText = "Python, uma linguagem de programação de alto nível, é aplicada em diversos contextos, incluindo desktop, web, servidores e ciência de dados. Concebida por Guido Van Rossum na década de 90, visa aprimorar a experiência do desenvolvedor, simplificando a criação de código claro, direto e legível.\n\nA linguagem incorpora características como tipagem dinâmica e robusta, programação orientada a objetos, multiparadigmas, além de dispor de recursos poderosos em biblioteca padrão e por meio de módulos e frameworks desenvolvidos pela comunidade. Python é de código aberto, gratuito e compatível com quase todos os sistemas operacionais.";
+                descriptionText.innerText = "Django é um framework web em Python amplamente reconhecido pela sua eficiência e facilidade de uso no desenvolvimento de aplicações web robustas e escaláveis. Sua modularidade e extensibilidade oferecem uma ampla gama de funcionalidades prontas para uso, como autenticação de usuários, administração de dados e ORM (Object-Relational Mapping), simplificando o processo de desenvolvimento e manutenção de aplicações web.\n\nCom uma abordagem pragmática e uma filosofia de \"batteries-included\", Django fornece uma experiência de desenvolvimento web completa e coerente, tornando-o uma escolha popular entre os desenvolvedores. Sua forte comunidade e vasta documentação garantem suporte contínuo, permitindo que os desenvolvedores inovem e entreguem valor aos usuários finais de forma eficiente.";
             }
         } else if (javascriptTr.matches(':hover')) {
             descriptionTitle.innerText = "JavaScript";
@@ -355,15 +352,11 @@ function changeDescription() {
             } else {
                 descriptionText.innerText = "O C# (pronunciado como \"C Sharp\") é uma linguagem de programação moderna, orientada a objetos e de tipagem forte, capacitando os desenvolvedores a criar aplicativos na plataforma .NET. Com raízes na família de linguagens C, o C# é imediatamente reconhecido por programadores proeficientes em C, C++, Java e JavaScript.\n\nProfissionais do desenvolvimento de aplicações desktop e/ou soluções web encontram inúmeras vantagens ao adotar essa tecnologia. Além disso, ela é amplamente utilizada no cenário mobile, criando aplicações flexíveis para diversos dispositivos e plataformas. Vem também sendo usada no desenvolvimento de jogos e empregada com a plataforma Unity, proporcionando uma experiência de criação simplificada.";
             }
-        } else if (javaTr.matches(':hover')) {
-            descriptionTitle.innerText = "Java";
+        } 
+        
+        // Java logic comes here
 
-            if (languageSwitch.checked) {
-                descriptionText.innerText = "The Java programming platform was born in 1995 within the laboratories of Sun Microsystems as a result of extensive scientific and technological research. Java stands out as one of the most widely used platforms for application development worldwide.\n\nThe Java platform provides a comprehensive environment for the development and execution of programs, consisting of a high-level object-oriented programming language, a virtual machine (Java Virtual Machine or JVM), Java Runtime Environment (JRE), and Java Development Kit (JDK).";
-            } else {
-                descriptionText.innerText = "A plataforma de programação Java teve sua origem no ano de 1995, originando-se nos laboratórios da empresa Sun Microsystems como resultado de uma extensa pesquisa científica e tecnológica. Java destaca-se como uma das plataformas mais amplamente utilizadas para o desenvolvimento de aplicações em escala global.\n\nEssa plataforma oferece um ambiente abrangente para a criação e execução de programas, compreendendo uma linguagem de programação de alto nível orientada a objetos, uma máquina virtual (Java Virtual Machine ou JVM), o Java Runtime Environment (JRE) e o Java Development Kit (JDK).";
-            }
-        } else if (sqlTr.matches(':hover')) {
+        else if (sqlTr.matches(':hover')) {
             descriptionTitle.innerText = "SQL";
 
             if (languageSwitch.checked) {
@@ -397,8 +390,6 @@ function changeDescriptionClick(element) {
         innerLanguageDescriptions[8].style.visibility = "hidden";
         innerLanguageDescriptions[9].style.display = "none";
         innerLanguageDescriptions[9].style.visibility = "hidden";
-        innerLanguageDescriptions[10].style.display = "none";
-        innerLanguageDescriptions[10].style.visibility = "hidden";
 
         if (element.id === "html5") {
             innerLanguageDescriptions[0].style.display = "block";
@@ -430,45 +421,45 @@ function changeDescriptionClick(element) {
             } else {
                 innerLanguageDescriptions[2].innerText = "Bootstrap emerge como um framework front-end que disponibiliza estruturas de CSS para a construção ágil e descomplicada de websites e aplicações responsivas. Adicionalmente, sua capacidade abrange tanto sites destinados a desktops quanto páginas otimizadas para dispositivos móveis.\n\nInicialmente concebido para o Twitter por um grupo de desenvolvedores liderados por Mark Otto e Jacob Thornton, o Bootstrap, antes de se tornar uma estrutura de código aberto, era reconhecido como Twitter Blueprint. Após alguns meses de desenvolvimento, durante a primeira Hack Week do Twitter, o projeto angariou significativa popularidade, sendo adotado por desenvolvedores de diversos níveis de habilidade sem orientação externa.";
             }
-        } else if (element.id === "react") {
+        } else if (element.id === "python") {
             innerLanguageDescriptions[3].style.display = "block";
             innerLanguageDescriptions[3].style.visibility = "visible"
             innerLanguageDescriptions[3].style["boxShadow"] = "0 4px 6px -6px gray";
 
             if (languageSwitch.checked) {
-                innerLanguageDescriptions[3].innerText = "React is a JavaScript framework created by Facebook (now Meta) used for building user interfaces (UI) in web applications. Its popularity stems from being user-friendly, highly flexible, and scalable, and it is utilized by numerous technology companies, including Facebook, Instagram, and Airbnb.\n\nIf you are a social media user, you've likely observed that certain parts of the screen exhibit special or independent behaviors. To address this, the Facebook development team devised a highly specific approach to handle displayed data and update these small sections of the application: React.";
+                innerLanguageDescriptions[3].innerText = "Python, a high-level programming language, is applied in various contexts, including desktop, web, servers, and data science. Conceived by Guido Van Rossum in the '90s, it aims to enhance the developer's experience by simplifying the creation of clear, straightforward, and readable code.\n\nThe language incorporates features such as dynamic and robust typing, object-oriented programming, multiparadigm support, and leverages powerful resources in its standard library, as well as through modules and frameworks developed by the community. Python is open-source, free to use, and compatible with nearly all operating systems.";
             } else {
-                innerLanguageDescriptions[3].innerText = "O React, desenvolvido pelo Facebook (atualmente Meta), representa um framework JavaScript empregado na criação de interfaces de usuário (UI) para aplicativos web. Sua popularidade advém da facilidade de uso, notável flexibilidade e escalabilidade, sendo adotado por diversas empresas de tecnologia, tais como Facebook, Instagram e Airbnb.\n\nSe você utiliza redes sociais, é provável que tenha notado comportamentos distintos em determinadas partes da tela. Para enfrentar esse desafio, a equipe de desenvolvedores do Facebook concebeu uma abordagem altamente especializada na manipulação de dados e na atualização dessas pequenas porções da aplicação: o React.";
+                innerLanguageDescriptions[3].innerText = "Python, uma linguagem de programação de alto nível, é aplicada em diversos contextos, incluindo desktop, web, servidores e ciência de dados. Concebida por Guido Van Rossum na década de 90, visa aprimorar a experiência do desenvolvedor, simplificando a criação de código claro, direto e legível.\n\nA linguagem incorpora características como tipagem dinâmica e robusta, programação orientada a objetos, multiparadigmas, além de dispor de recursos poderosos em biblioteca padrão e por meio de módulos e frameworks desenvolvidos pela comunidade. Python é de código aberto, gratuito e compatível com quase todos os sistemas operacionais.";
             }
-        } else if (element.id === "python") {
+        } else if (element.id === "fastapi") {
             innerLanguageDescriptions[4].style.display = "block";
             innerLanguageDescriptions[4].style.visibility = "visible"
             innerLanguageDescriptions[4].style["boxShadow"] = "0 4px 6px -6px gray";
 
             if (languageSwitch.checked) {
-                innerLanguageDescriptions[4].innerText = "Python, a high-level programming language, is applied in various contexts, including desktop, web, servers, and data science. Conceived by Guido Van Rossum in the '90s, it aims to enhance the developer's experience by simplifying the creation of clear, straightforward, and readable code.\n\nThe language incorporates features such as dynamic and robust typing, object-oriented programming, multiparadigm support, and leverages powerful resources in its standard library, as well as through modules and frameworks developed by the community. Python is open-source, free to use, and compatible with nearly all operating systems.";
+                innerLanguageDescriptions[4].innerText = "FastAPI is a Python framework focused on API development, with its main characteristics being modern, fast, and simple. It is a relatively new framework, with its first version released on November 15, 2018. However, don't be deceived: despite its novelty, it is not inferior to other frameworks in the market.\n\nAmong its extensive list of features, one that stands out is its automatic documentation. By default, it provides two options: Swagger UI (for interactive navigation, calling, and testing of your API directly from the browser) and an alternative, navigable API documentation with the ReDoc library.";
             } else {
-                innerLanguageDescriptions[4].innerText = "Python, uma linguagem de programação de alto nível, é aplicada em diversos contextos, incluindo desktop, web, servidores e ciência de dados. Concebida por Guido Van Rossum na década de 90, visa aprimorar a experiência do desenvolvedor, simplificando a criação de código claro, direto e legível.\n\nA linguagem incorpora características como tipagem dinâmica e robusta, programação orientada a objetos, multiparadigmas, além de dispor de recursos poderosos em biblioteca padrão e por meio de módulos e frameworks desenvolvidos pela comunidade. Python é de código aberto, gratuito e compatível com quase todos os sistemas operacionais.";
+                innerLanguageDescriptions[4].innerText = "O FastAPI é um framework Python focado no desenvolvimento de APIs, tendo como principais características ser moderno, rápido e simples. É um framework relativamente novo, e sua primeira versão lançada no dia 15 de Novembro de 2018. Contudo não se engane: apesar de novo, ele não é inferior aos outros frameworks do mercado.\n\nDentre sua grande lista de funcionalidades, uma das que mais se destacam é  sua documentação automática, uma vez que por padrão ele disponibiliza duas opções, sendo elas Swagger UI (para navegar de forma interativa, chamar e testar sua API diretamente do navegador); e documentação navegável e alternativa da API com a biblioteca ReDoc.";
             }
-        } else if (element.id === "fastapi") {
+        } else if (element.id === "flask") {
             innerLanguageDescriptions[5].style.display = "block";
             innerLanguageDescriptions[5].style.visibility = "visible"
             innerLanguageDescriptions[5].style["boxShadow"] = "0 4px 6px -6px gray";
 
             if (languageSwitch.checked) {
-                innerLanguageDescriptions[5].innerText = "FastAPI is a Python framework focused on API development, with its main characteristics being modern, fast, and simple. It is a relatively new framework, with its first version released on November 15, 2018. However, don't be deceived: despite its novelty, it is not inferior to other frameworks in the market.\n\nAmong its extensive list of features, one that stands out is its automatic documentation. By default, it provides two options: Swagger UI (for interactive navigation, calling, and testing of your API directly from the browser) and an alternative, navigable API documentation with the ReDoc library.";
+                innerLanguageDescriptions[5].innerText = "Flask is a web development framework in Python known for its simplicity and flexibility. With it, you can quickly and efficiently create websites, web applications, and APIs. Its \"one drop at a time\" approach allows you to add functionalities gradually, starting with the simplest form of a website and then incrementally incorporating features.\n\nIt is labeled as a micro web development framework, but that doesn't mean it can't build complete solutions. This designation is precisely because it starts with simplicity and advances in complexity as functionalities are added. Due to this characteristic, it becomes lighter, easier to use, and more flexible, allowing for better control over applications.";
             } else {
-                innerLanguageDescriptions[5].innerText = "O FastAPI é um framework Python focado no desenvolvimento de APIs, tendo como principais características ser moderno, rápido e simples. É um framework relativamente novo, e sua primeira versão lançada no dia 15 de Novembro de 2018. Contudo não se engane: apesar de novo, ele não é inferior aos outros frameworks do mercado.\n\nDentre sua grande lista de funcionalidades, uma das que mais se destacam é  sua documentação automática, uma vez que por padrão ele disponibiliza duas opções, sendo elas Swagger UI (para navegar de forma interativa, chamar e testar sua API diretamente do navegador); e documentação navegável e alternativa da API com a biblioteca ReDoc.";
+                innerLanguageDescriptions[5].innerText = "O Flask é um framework de desenvolvimento web no Python conhecido por sua simplicidade e flexibilidade. Com ele, é possível criar sites, aplicativos web e APIs de forma rápida e eficiente. Sua abordagem “one drop at a time” permite adicionar funcionalidades gradualmente, tendo como ideia que você comece um site da forma mais simples possível e depois vá adicionando funcionalidades.\n\nEle é conhecido como um micro framework de desenvolvimento web, mas isso não significa que ele não desenvolva soluções completas. Essa nominação se dá justamente por ele começar simples e ir ficando mais complexo à medida que se acrescentam funcionalidades. Por essa característica, ele se torna mais leve, mais fácil de usar e mais flexível porque você pode conduzir melhor as aplicações.";
             }
-        } else if (element.id === "flask") {
+        } else if (element.id === "django") {
             innerLanguageDescriptions[6].style.display = "block";
             innerLanguageDescriptions[6].style.visibility = "visible"
             innerLanguageDescriptions[6].style["boxShadow"] = "0 4px 6px -6px gray";
 
             if (languageSwitch.checked) {
-                innerLanguageDescriptions[6].innerText = "Flask is a web development framework in Python known for its simplicity and flexibility. With it, you can quickly and efficiently create websites, web applications, and APIs. Its \"one drop at a time\" approach allows you to add functionalities gradually, starting with the simplest form of a website and then incrementally incorporating features.\n\nIt is labeled as a micro web development framework, but that doesn't mean it can't build complete solutions. This designation is precisely because it starts with simplicity and advances in complexity as functionalities are added. Due to this characteristic, it becomes lighter, easier to use, and more flexible, allowing for better control over applications.";
+                innerLanguageDescriptions[6].innerText = "Django is a Python web framework widely recognized for its efficiency and ease of use in developing robust and scalable web applications. Its modularity and extensibility offer a wide range of ready-to-use functionalities, such as user authentication, data administration, and ORM (Object-Relational Mapping), simplifying the process of web development and maintenance.\n\nWith a pragmatic approach and a philosophy of \"batteries-included\", Django provides a complete and cohesive web development experience, making it a popular choice among developers. Its strong community and extensive documentation ensure ongoing support, enabling developers to innovate and deliver value to end-users efficiently.";
             } else {
-                innerLanguageDescriptions[6].innerText = "O Flask é um framework de desenvolvimento web no Python conhecido por sua simplicidade e flexibilidade. Com ele, é possível criar sites, aplicativos web e APIs de forma rápida e eficiente. Sua abordagem “one drop at a time” permite adicionar funcionalidades gradualmente, tendo como ideia que você comece um site da forma mais simples possível e depois vá adicionando funcionalidades.\n\nEle é conhecido como um micro framework de desenvolvimento web, mas isso não significa que ele não desenvolva soluções completas. Essa nominação se dá justamente por ele começar simples e ir ficando mais complexo à medida que se acrescentam funcionalidades. Por essa característica, ele se torna mais leve, mais fácil de usar e mais flexível porque você pode conduzir melhor as aplicações.";
+                innerLanguageDescriptions[6].innerText = "Django é um framework web em Python amplamente reconhecido pela sua eficiência e facilidade de uso no desenvolvimento de aplicações web robustas e escaláveis. Sua modularidade e extensibilidade oferecem uma ampla gama de funcionalidades prontas para uso, como autenticação de usuários, administração de dados e ORM (Object-Relational Mapping), simplificando o processo de desenvolvimento e manutenção de aplicações web.\n\nCom uma abordagem pragmática e uma filosofia de \"batteries-included\", Django fornece uma experiência de desenvolvimento web completa e coerente, tornando-o uma escolha popular entre os desenvolvedores. Sua forte comunidade e vasta documentação garantem suporte contínuo, permitindo que os desenvolvedores inovem e entreguem valor aos usuários finais de forma eficiente.";
             }
         } else if (element.id === "javascript") {
             innerLanguageDescriptions[7].style.display = "block";
@@ -490,25 +481,15 @@ function changeDescriptionClick(element) {
             } else {
                 innerLanguageDescriptions[8].innerText = "O C# (pronunciado como \"C Sharp\") é uma linguagem de programação moderna, orientada a objetos e de tipagem forte, capacitando os desenvolvedores a criar aplicativos na plataforma .NET. Com raízes na família de linguagens C, o C# é imediatamente reconhecido por programadores proeficientes em C, C++, Java e JavaScript.\n\nProfissionais do desenvolvimento de aplicações desktop e/ou soluções web encontram inúmeras vantagens ao adotar essa tecnologia. Além disso, ela é amplamente utilizada no cenário mobile, criando aplicações flexíveis para diversos dispositivos e plataformas. Vem também sendo usada no desenvolvimento de jogos e empregada com a plataforma Unity, proporcionando uma experiência de criação simplificada.";
             }
-        } else if (element.id === "java") {
+        } else if (element.id === "sql") {
             innerLanguageDescriptions[9].style.display = "block";
             innerLanguageDescriptions[9].style.visibility = "visible"
             innerLanguageDescriptions[9].style["boxShadow"] = "0 4px 6px -6px gray";
 
             if (languageSwitch.checked) {
-                innerLanguageDescriptions[9].innerText = "The Java programming platform was born in 1995 within the laboratories of Sun Microsystems as a result of extensive scientific and technological research. Java stands out as one of the most widely used platforms for application development worldwide.\n\nThe Java platform provides a comprehensive environment for the development and execution of programs, consisting of a high-level object-oriented programming language, a virtual machine (Java Virtual Machine or JVM), Java Runtime Environment (JRE), and Java Development Kit (JDK).";
+                innerLanguageDescriptions[9].innerText = "SQL, short for Structured Query Language, was created in the mid-1970s. The main motivation for  its creation was the complexity of data management systems. It is a standard language for working with relational databases, widely used by professionals in various fields, from data scientists to Excel users.\n\nThe SQL language is relatively similar among the main Database Management Systems (DBMS) in the market, such as Oracle, MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, among others.";
             } else {
-                innerLanguageDescriptions[9].innerText = "A plataforma de programação Java teve sua origem no ano de 1995, originando-se nos laboratórios da empresa Sun Microsystems como resultado de uma extensa pesquisa científica e tecnológica. Java destaca-se como uma das plataformas mais amplamente utilizadas para o desenvolvimento de aplicações em escala global.\n\nEssa plataforma oferece um ambiente abrangente para a criação e execução de programas, compreendendo uma linguagem de programação de alto nível orientada a objetos, uma máquina virtual (Java Virtual Machine ou JVM), o Java Runtime Environment (JRE) e o Java Development Kit (JDK).";
-            }
-        } else if (element.id === "sql") {
-            innerLanguageDescriptions[10].style.display = "block";
-            innerLanguageDescriptions[10].style.visibility = "visible"
-            innerLanguageDescriptions[10].style["boxShadow"] = "0 4px 6px -6px gray";
-
-            if (languageSwitch.checked) {
-                innerLanguageDescriptions[10].innerText = "SQL, short for Structured Query Language, was created in the mid-1970s. The main motivation for  its creation was the complexity of data management systems. It is a standard language for working with relational databases, widely used by professionals in various fields, from data scientists to Excel users.\n\nThe SQL language is relatively similar among the main Database Management Systems (DBMS) in the market, such as Oracle, MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, among others.";
-            } else {
-                innerLanguageDescriptions[10].innerText = "O SQL, abreviação de Structured Query Language, teve sua origem na metade da década de 1970, motivado principalmente pela complexidade dos sistemas de gerenciamento de dados. Trata-se de uma linguagem padrão para interação com bancos de dados relacionais, sendo amplamente adotada por profissionais de diversas áreas, desde cientistas de dados até usuários do Excel.\n\nA linguagem SQL apresenta uma notável semelhança entre os principais Sistemas Gerenciadores de Banco de Dados (SGBDs) disponíveis no mercado, incluindo Oracle, MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, entre outros.";
+                innerLanguageDescriptions[9].innerText = "O SQL, abreviação de Structured Query Language, teve sua origem na metade da década de 1970, motivado principalmente pela complexidade dos sistemas de gerenciamento de dados. Trata-se de uma linguagem padrão para interação com bancos de dados relacionais, sendo amplamente adotada por profissionais de diversas áreas, desde cientistas de dados até usuários do Excel.\n\nA linguagem SQL apresenta uma notável semelhança entre os principais Sistemas Gerenciadores de Banco de Dados (SGBDs) disponíveis no mercado, incluindo Oracle, MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, entre outros.";
             }
         }
     }

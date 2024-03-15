@@ -1,0 +1,52 @@
+const reactTr = document.getElementById("react");
+
+const javaTr = document.getElementById("java");
+
+else if (reactTr.matches(':hover')) {
+            descriptionTitle.innerText = "React";
+
+            if (languageSwitch.checked) {
+                descriptionText.innerText = "React is a JavaScript framework created by Facebook (now Meta) used for building user interfaces (UI) in web applications. Its popularity stems from being user-friendly, highly flexible, and scalable, and it is utilized by numerous technology companies, including Facebook, Instagram, and Airbnb.\n\nIf you are a social media user, you've likely observed that certain parts of the screen exhibit special or independent behaviors. To address this, the Facebook development team devised a highly specific approach to handle displayed data and update these small sections of the application: React.";
+            } else {
+                descriptionText.innerText = "O React, desenvolvido pelo Facebook (atualmente Meta), representa um framework JavaScript empregado na criação de interfaces de usuário (UI) para aplicativos web. Sua popularidade advém da facilidade de uso, notável flexibilidade e escalabilidade, sendo adotado por diversas empresas de tecnologia, tais como Facebook, Instagram e Airbnb.\n\nSe você utiliza redes sociais, é provável que tenha notado comportamentos distintos em determinadas partes da tela. Para enfrentar esse desafio, a equipe de desenvolvedores do Facebook concebeu uma abordagem altamente especializada na manipulação de dados e na atualização dessas pequenas porções da aplicação: o React.";
+            }
+        } 
+
+else if (javaTr.matches(':hover')) {
+            descriptionTitle.innerText = "Java";
+
+            if (languageSwitch.checked) {
+                descriptionText.innerText = "The Java programming platform was born in 1995 within the laboratories of Sun Microsystems as a result of extensive scientific and technological research. Java stands out as one of the most widely used platforms for application development worldwide.\n\nThe Java platform provides a comprehensive environment for the development and execution of programs, consisting of a high-level object-oriented programming language, a virtual machine (Java Virtual Machine or JVM), Java Runtime Environment (JRE), and Java Development Kit (JDK).";
+            } else {
+                descriptionText.innerText = "A plataforma de programação Java teve sua origem no ano de 1995, originando-se nos laboratórios da empresa Sun Microsystems como resultado de uma extensa pesquisa científica e tecnológica. Java destaca-se como uma das plataformas mais amplamente utilizadas para o desenvolvimento de aplicações em escala global.\n\nEssa plataforma oferece um ambiente abrangente para a criação e execução de programas, compreendendo uma linguagem de programação de alto nível orientada a objetos, uma máquina virtual (Java Virtual Machine ou JVM), o Java Runtime Environment (JRE) e o Java Development Kit (JDK).";
+            }
+        }
+
+
+
+
+
+
+else if (element.id === "react") {
+            innerLanguageDescriptions[3].style.display = "block";
+            innerLanguageDescriptions[3].style.visibility = "visible"
+            innerLanguageDescriptions[3].style["boxShadow"] = "0 4px 6px -6px gray";
+
+            if (languageSwitch.checked) {
+                innerLanguageDescriptions[3].innerText = "React is a JavaScript framework created by Facebook (now Meta) used for building user interfaces (UI) in web applications. Its popularity stems from being user-friendly, highly flexible, and scalable, and it is utilized by numerous technology companies, including Facebook, Instagram, and Airbnb.\n\nIf you are a social media user, you've likely observed that certain parts of the screen exhibit special or independent behaviors. To address this, the Facebook development team devised a highly specific approach to handle displayed data and update these small sections of the application: React.";
+            } else {
+                innerLanguageDescriptions[3].innerText = "O React, desenvolvido pelo Facebook (atualmente Meta), representa um framework JavaScript empregado na criação de interfaces de usuário (UI) para aplicativos web. Sua popularidade advém da facilidade de uso, notável flexibilidade e escalabilidade, sendo adotado por diversas empresas de tecnologia, tais como Facebook, Instagram e Airbnb.\n\nSe você utiliza redes sociais, é provável que tenha notado comportamentos distintos em determinadas partes da tela. Para enfrentar esse desafio, a equipe de desenvolvedores do Facebook concebeu uma abordagem altamente especializada na manipulação de dados e na atualização dessas pequenas porções da aplicação: o React.";
+            }
+        }
+
+else if (element.id === "java") {
+            innerLanguageDescriptions[9].style.display = "block";
+            innerLanguageDescriptions[9].style.visibility = "visible"
+            innerLanguageDescriptions[9].style["boxShadow"] = "0 4px 6px -6px gray";
+
+            if (languageSwitch.checked) {
+                innerLanguageDescriptions[9].innerText = "The Java programming platform was born in 1995 within the laboratories of Sun Microsystems as a result of extensive scientific and technological research. Java stands out as one of the most widely used platforms for application development worldwide.\n\nThe Java platform provides a comprehensive environment for the development and execution of programs, consisting of a high-level object-oriented programming language, a virtual machine (Java Virtual Machine or JVM), Java Runtime Environment (JRE), and Java Development Kit (JDK).";
+            } else {
+                innerLanguageDescriptions[9].innerText = "A plataforma de programação Java teve sua origem no ano de 1995, originando-se nos laboratórios da empresa Sun Microsystems como resultado de uma extensa pesquisa científica e tecnológica. Java destaca-se como uma das plataformas mais amplamente utilizadas para o desenvolvimento de aplicações em escala global.\n\nEssa plataforma oferece um ambiente abrangente para a criação e execução de programas, compreendendo uma linguagem de programação de alto nível orientada a objetos, uma máquina virtual (Java Virtual Machine ou JVM), o Java Runtime Environment (JRE) e o Java Development Kit (JDK).";
+            }
+        } 

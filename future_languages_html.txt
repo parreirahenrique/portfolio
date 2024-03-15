@@ -1,0 +1,49 @@
+                            
+                            <div class="anchor-placement" id="react-anchor"></div>
+                            <a href="#languages-container" class="language-anchor">
+                                <div class="language-wrapper" id="react" onclick="changeDescriptionClick(this)">
+                                    <div class="language-icon-container">
+                                        <img src="imgs/react.png" alt="" class="language-icon">
+                                    </div>
+                                    <div class="language-name-container">
+                                        <p class="language-name">React</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="inner-language-description"
+                                style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
+                                O React, desenvolvido pelo Facebook (atualmente Meta), representa um framework
+                                JavaScript empregado na criação de interfaces de usuário (UI) para aplicativos web. Sua
+                                popularidade advém da facilidade de uso, notável flexibilidade e escalabilidade, sendo
+                                adotado por diversas empresas de tecnologia, tais como Facebook, Instagram e
+                                Airbnb.\n\nSe você utiliza redes sociais, é provável que tenha notado comportamentos
+                                distintos em determinadas partes da tela. Para enfrentar esse desafio, a equipe de
+                                desenvolvedores do Facebook concebeu uma abordagem altamente especializada na
+                                manipulação de dados e na atualização dessas pequenas porções da aplicação: o React.
+                            </div>                         
+                            
+
+
+                            
+                            <div class="anchor-placement" id="java-anchor"></div>
+                            <a href="#java-anchor" class="language-anchor">
+                                <div class="language-wrapper" id="java" onclick="changeDescriptionClick(this)">
+                                    <div class="language-icon-container">
+                                        <img src="imgs/java.png" alt="" class="language-icon">
+                                    </div>
+                                    <div class="language-name-container">
+                                        <p class="language-name">Java</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="inner-language-description"
+                                style="font-family: var(--paragraph-font); text-align: justify; margin: 10px; color: var(--title-font-color);">
+                                A plataforma de programação Java teve sua origem no ano de 1995, originando-se nos
+                                laboratórios da empresa Sun Microsystems como resultado de uma extensa pesquisa
+                                científica e tecnológica. Java destaca-se como uma das plataformas mais amplamente
+                                utilizadas para o desenvolvimento de aplicações em escala global.\n\nEssa plataforma
+                                oferece um ambiente abrangente para a criação e execução de programas, compreendendo uma
+                                linguagem de programação de alto nível orientada a objetos, uma máquina virtual (Java
+                                Virtual Machine ou JVM), o Java Runtime Environment (JRE) e o Java Development Kit
+                                (JDK).
+                            </div>
