@@ -155,13 +155,14 @@ function changeLanguage() {
         certificationWorkloads[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
         certificationWorkloads[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
 
-        projectTitles[0].innerText = "Data input for photovoltaic projects";
-        projectTitles[1].innerText = "Market place";
-        projectTitles[2].innerText = "Music player";
+        projectTitles[1].innerText = "Data input for photovoltaic projects";
+        projectTitles[2].innerText = "Market place";
+        projectTitles[3].innerText = "Music player";
 
-        projectParagraphs[0].innerText = "Project developed during my time at the last company where I worked, due to the inefficiency found in filling out the spreadsheets and forms required for photovoltaic projects. Therefore, an automation of this process was developed, so that the user only needs to provide the necessary data for the project, and the respective forms would be filled out correctly.";
-        projectParagraphs[1].innerText = "Project created for a marketplace where users can buy products listed by others and add their own products for sale.";
-        projectParagraphs[2].innerText = "Basic music player enabling the playback of copyright-free music provided by the freeCodeCamp.org platform.";
+        projectParagraphs[0].innerText = "GreatKart is a project developed for an online store of clothing and accessories. Customers, in order to make their purchases, must first register, and the validation of their user profiles is done via email to ensure authenticity and security. Buyers can quickly find desired products by searching either by product category or by its name. The products are added to their shopping cart, which is integrated with PayPal for quick and secure payment processing. Additionally, customers can rate and leave feedback on the purchased products, with a star rating system.";
+        projectParagraphs[1].innerText = "Project developed during my time at the last company where I worked, due to the inefficiency found in filling out the spreadsheets and forms required for photovoltaic projects. Therefore, an automation of this process was developed, so that the user only needs to provide the necessary data for the project, and the respective forms would be filled out correctly.";
+        projectParagraphs[2].innerText = "Project created for a marketplace where users can buy products listed by others and add their own products for sale.";
+        projectParagraphs[3].innerText = "Basic music player enabling the playback of copyright-free music provided by the freeCodeCamp.org platform.";
         
         for (let i = 0; i < usedLanguagesParagraphs.length; i++) {
             usedLanguagesParagraphs[i].innerText = "Languages and frameworks used:"
@@ -228,13 +229,14 @@ function changeLanguage() {
         certificationWorkloads[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
         certificationWorkloads[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
 
-        projectTitles[0].innerText = "Entrada de dados para projetos fotovoltaicos";
-        projectTitles[1].innerText = "Market place";
-        projectTitles[2].innerText = "Reprodutor de músicas";
-
-        projectParagraphs[0].innerText = "Projeto elaborado durante meu tempo na última empresa onde trabalhei, devido a ineficência encontrada no preenchimento das planilhas e formulários necessários aos projetos fotovoltaicos. Logo, uma automatização desse processo foi desenvolvida, de modo que o usuário necessita apenas fornecer os dados necessários para o projeto, e os devidos formulários seriam preenchidos corretamente.";
-        projectParagraphs[1].innerText = "Projeto feito para um Market Place, onde usuários podem comprar produtos dispostos por outros e incluir seus próprios produtos para venda.";
-        projectParagraphs[2].innerText = "Reprodutor de músicas básico, que permite a reprodução de músicas sem direitos autorais disponibilizadas pela plataforma freeCodeCamp.org.";
+        projectTitles[1].innerText = "Entrada de dados para projetos fotovoltaicos";
+        projectTitles[2].innerText = "Market place";
+        projectTitles[3].innerText = "Reprodutor de músicas";
+        
+        projectParagraphs[0].innerText = "GreatKart é um projeto desenvolvido para uma loja virtual de roupas e acessórios. Os clientes, para realização de suas compras, devem primeiramente realizar um cadastro, e a validação de seus perfis de usuário é feita por e-mail, para garantir autenticidade e segurança. É possível que os compradores encontrem os produtos desejados de forma rápida fazendo uma pesquisa pela categoria do produto ou pelo seu nome. Os produtos são inseridos em seu carrinho de compras, que é integrado ao PayPal para processamento de pagamentos de forma rápida e segura. Além disso, os clientes podem avaliar e deixar feedback sobre os produtos adquiridos, com um sistema de classificação por estrelas.";
+        projectParagraphs[1].innerText = "Projeto elaborado durante meu tempo na última empresa onde trabalhei, devido a ineficência encontrada no preenchimento das planilhas e formulários necessários aos projetos fotovoltaicos. Logo, uma automatização desse processo foi desenvolvida, de modo que o usuário necessita apenas fornecer os dados necessários para o projeto, e os devidos formulários seriam preenchidos corretamente.";
+        projectParagraphs[2].innerText = "Projeto feito para um Market Place, onde usuários podem comprar produtos dispostos por outros e incluir seus próprios produtos para venda.";
+        projectParagraphs[3].innerText = "Reprodutor de músicas básico, que permite a reprodução de músicas sem direitos autorais disponibilizadas pela plataforma freeCodeCamp.org.";
         
         for (let i = 0; i < usedLanguagesParagraphs.length; i++) {
             usedLanguagesParagraphs[i].innerText = "Linguagens e frameworks utilizados:"
