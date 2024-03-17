@@ -160,10 +160,10 @@ function changeLanguage() {
         projectTitles[3].innerText = "Music player";
 
         projectParagraphs[0].innerText = "GreatKart is a project developed for an online store of clothing and accessories. Customers, in order to make their purchases, must first register, and the validation of their user profiles is done via email to ensure authenticity and security. Buyers can quickly find desired products by searching either by product category or by its name. The products are added to their shopping cart, which is integrated with PayPal for quick and secure payment processing. Additionally, customers can rate and leave feedback on the purchased products, with a star rating system.";
-        projectParagraphs[1].innerText = "Project developed during my time at the last company where I worked, due to the inefficiency found in filling out the spreadsheets and forms required for photovoltaic projects. Therefore, an automation of this process was developed, so that the user only needs to provide the necessary data for the project, and the respective forms would be filled out correctly.";
-        projectParagraphs[2].innerText = "Project created for a marketplace where users can buy products listed by others and add their own products for sale.";
-        projectParagraphs[3].innerText = "Basic music player enabling the playback of copyright-free music provided by the freeCodeCamp.org platform.";
-        
+        projectParagraphs[1].innerText = "Project developed during my time at the last company where I worked, due to the inefficiency found in filling out the spreadsheets and forms required for photovoltaic projects. To gain access, the person must have their username and password at hand, credentials that can only be created by the administrator. The registered user can then create, modify, or even delete instances in the database related to: clients (individuals who requested the project), installations (locations where the projects will be installed), inverters, photovoltaic modules, and finally, the project itself. The developed automation will then correctly fill out the necessary documents, which must be attached to the electrical distribution company's website.";
+        projectParagraphs[2].innerText = "The Market Place is an online platform that allows its users to buy and sell various products. With a user authentication system, customers can create and manage their accounts to access the platform's functionalities. This includes the ability to add, edit, or delete products, provided they have been registered by the user themselves. Additionally, as previously described, they can purchase products listed by other users, provided they have sufficient credits for it.";
+        projectParagraphs[3].innerText = "The project consists of a music player, which offers its user the essential functionalities of such an application: pausing, resuming, skipping forward or backward, and allows the user to shuffle the playlist. In total, 10 songs can be played, and users can remove unwanted tracks. An option to restart the playlist will be available if all songs are removed. Developed as a web player, the project uses copyright-free music provided by the website freeCodeCamp.org.";
+
         for (let i = 0; i < usedLanguagesParagraphs.length; i++) {
             usedLanguagesParagraphs[i].innerText = "Languages and frameworks used:"
         }
@@ -175,6 +175,7 @@ function changeLanguage() {
         for (let i = 0; i < repositoryButtons.length; i++) {
             repositoryButtons[i].innerText = "Repository"
         }
+
     } else {
         navigationAnchors[0].innerText = "página inicial";
         navigationAnchors[1].innerText = "sobre mim";
@@ -232,12 +233,12 @@ function changeLanguage() {
         projectTitles[1].innerText = "Entrada de dados para projetos fotovoltaicos";
         projectTitles[2].innerText = "Market place";
         projectTitles[3].innerText = "Reprodutor de músicas";
-        
+
         projectParagraphs[0].innerText = "GreatKart é um projeto desenvolvido para uma loja virtual de roupas e acessórios. Os clientes, para realização de suas compras, devem primeiramente realizar um cadastro, e a validação de seus perfis de usuário é feita por e-mail, para garantir autenticidade e segurança. É possível que os compradores encontrem os produtos desejados de forma rápida fazendo uma pesquisa pela categoria do produto ou pelo seu nome. Os produtos são inseridos em seu carrinho de compras, que é integrado ao PayPal para processamento de pagamentos de forma rápida e segura. Além disso, os clientes podem avaliar e deixar feedback sobre os produtos adquiridos, com um sistema de classificação por estrelas.";
-        projectParagraphs[1].innerText = "Projeto elaborado durante meu tempo na última empresa onde trabalhei, devido a ineficência encontrada no preenchimento das planilhas e formulários necessários aos projetos fotovoltaicos. Logo, uma automatização desse processo foi desenvolvida, de modo que o usuário necessita apenas fornecer os dados necessários para o projeto, e os devidos formulários seriam preenchidos corretamente.";
-        projectParagraphs[2].innerText = "Projeto feito para um Market Place, onde usuários podem comprar produtos dispostos por outros e incluir seus próprios produtos para venda.";
-        projectParagraphs[3].innerText = "Reprodutor de músicas básico, que permite a reprodução de músicas sem direitos autorais disponibilizadas pela plataforma freeCodeCamp.org.";
-        
+        projectParagraphs[1].innerText = "Projeto elaborado durante meu tempo na última empresa onde trabalhei, devido a ineficência encontrada no preenchimento das planilhas e formulários necessários aos projetos fotovoltaicos. Para ter acesso, a pessoa deve ter em mãos seu usuário e sua senha, credenciais essas que só podem ser criadas pelo administrador. O usuário cadastrado pode então criar, alterar ou mesmo deletar instâncias no banco de dados relativas a: clientes (pessoas que requisitaram o projeto), instalações (locais onde os projetos serão instalados), inversores, módulos fotovoltaicos e, por fim, o projeto. A automatização desenvolvida irá então preencher corretamente os documentos necessários, que devem ser anexados ao site da concessionária de energia.";
+        projectParagraphs[2].innerText = "O  Market Place é uma plataforma online que permite aos seus usuários a compra e venda de diversos produtos. Com um sistema de autenticação de usuário, os clientes podem criar e gerenciar suas contas para acessar as funcionalidades da plataforma. Isso inclui a capacidade de adicionar, editar ou excluir produtos, desde que tenham sido cadastrados pelo próprio usuário. Além disso, como descrito anteriormente, ele pode realizar a compra de produtos dispostos por demais usuários, desde que tenha créditos suficientes para isso.";
+        projectParagraphs[3].innerText = "O projeto consiste em um reprodutor de músicas, que oferece ao seu usuário as funcionalidades essenciais de um aplicativo como esse: pausar, retomar, avançar ou retroceder a faixa em reprodução, e permitir ao usuário reproduzir a playlist em ordem aleatória. A playlist é composta por 10 músicas, e os usuários podem remover as faixas indesejadas. Uma opção para reiniciar a playlist será disponibilizada caso todas as músicas sejam removidas. Desenvolvido como um reprodutor web, o projeto utiliza músicas sem direitos autorais disponibilizadas pelo site freeCodeCamp.org.";
+
         for (let i = 0; i < usedLanguagesParagraphs.length; i++) {
             usedLanguagesParagraphs[i].innerText = "Linguagens e frameworks utilizados:"
         }
@@ -249,13 +250,12 @@ function changeLanguage() {
         for (let i = 0; i < repositoryButtons.length; i++) {
             repositoryButtons[i].innerText = "Repositório"
         }
-
     }
+
+    setHeight();
 }
 
 function changeDescription() {
-    var windowWidth = window.innerWidth;
-
     if (window.innerWidth >= 800) {
         innerLanguageDescriptions[0].style.display = "none";
         innerLanguageDescriptions[0].style.visibility = "hidden";
@@ -302,10 +302,10 @@ function changeDescription() {
             } else {
                 descriptionText.innerText = "Bootstrap emerge como um framework front-end que disponibiliza estruturas de CSS para a construção ágil e descomplicada de websites e aplicações responsivas. Adicionalmente, sua capacidade abrange tanto sites destinados a desktops quanto páginas otimizadas para dispositivos móveis.\n\nInicialmente concebido para o Twitter por um grupo de desenvolvedores liderados por Mark Otto e Jacob Thornton, o Bootstrap, antes de se tornar uma estrutura de código aberto, era reconhecido como Twitter Blueprint. Após alguns meses de desenvolvimento, durante a primeira Hack Week do Twitter, o projeto angariou significativa popularidade, sendo adotado por desenvolvedores de diversos níveis de habilidade sem orientação externa.";
             }
-        } 
-        
+        }
+
         // React logic comes here
-        
+
         else if (pythonTr.matches(':hover')) {
             descriptionTitle.innerText = "Python";
 
@@ -354,8 +354,8 @@ function changeDescription() {
             } else {
                 descriptionText.innerText = "O C# (pronunciado como \"C Sharp\") é uma linguagem de programação moderna, orientada a objetos e de tipagem forte, capacitando os desenvolvedores a criar aplicativos na plataforma .NET. Com raízes na família de linguagens C, o C# é imediatamente reconhecido por programadores proeficientes em C, C++, Java e JavaScript.\n\nProfissionais do desenvolvimento de aplicações desktop e/ou soluções web encontram inúmeras vantagens ao adotar essa tecnologia. Além disso, ela é amplamente utilizada no cenário mobile, criando aplicações flexíveis para diversos dispositivos e plataformas. Vem também sendo usada no desenvolvimento de jogos e empregada com a plataforma Unity, proporcionando uma experiência de criação simplificada.";
             }
-        } 
-        
+        }
+
         // Java logic comes here
 
         else if (sqlTr.matches(':hover')) {
@@ -518,17 +518,20 @@ function changeHRef() {
 }
 
 function setHeight() {
-    let maxValue = -1;
+    if (window.innerWidth >= 800) {
+        let maxValue = -1;
 
-    for (let i = 0; i < projects.length; i++) {
-        if (projects[i].offsetHeight > maxValue) {
-            maxValue = projects[i].offsetHeight;
+        for (let i = 0; i < projects.length; i++) {
+            if (projects[i].offsetHeight > maxValue) {
+                maxValue = projects[i].offsetHeight;
+            }
         }
-    }
-    console.log(maxValue)
-    for (let i = 0; i < projects.length; i++) {
-        console.log(maxValue.toString() + "px")
-        projects[i].style.height = maxValue.toString() + "px";
+
+        for (let i = 0; i < projects.length; i++) {
+            console.log(maxValue.toString() + "px")
+            projects[i].style.height = maxValue.toString() + "px";
+        }
+        console.log(maxValue)
     }
 }
 
