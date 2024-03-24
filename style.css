@@ -907,8 +907,8 @@ td {
     padding-bottom: auto;
     margin: 0;
     padding: 0;
-    border-left: 1px groove #aaaaaa;
-    border-bottom: 1px groove #aaaaaa;
+    border-left: 2px groove linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    border-bottom: 2px groove linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
     border-radius: 5px 0 0 5px;
     box-shadow: -2px 2px 6px -4px aaaaaa;
     padding-left: 3px;
@@ -931,8 +931,8 @@ td {
     padding: 5px;
     margin: 0;
     margin-top: 1px;
-    border-right: 1px groove #777777;
-    border-bottom: 1px groove #777777;
+    border-right: 2px groove linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    border-bottom: 2px groove linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
     border-radius: 0 5px 5px 0;
     box-shadow: -2px 2px 6px -4px #777777;
     font-size: var(--paragraph-font-size);
