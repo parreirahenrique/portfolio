@@ -1,6 +1,10 @@
 const themeSwitch = document.getElementById("theme-switch");
 const rootElement = document.documentElement;
 const sidebarImage = document.getElementById("sidebar-icon");
+const copyButtons = document.getElementsByClassName("copy-button");
+const demoUserParagraphs = document.getElementsByClassName("demo-user-paragraph");
+console.log(copyButtons)
+console.log(demoUserParagraphs)
 
 const languageSwitch = document.getElementById("language-switch");
 const navigationAnchors = document.getElementsByClassName("header-anchor")
@@ -63,7 +67,15 @@ function changeTheme() {
         rootElement.style.setProperty("--button-font-color", "black");
         rootElement.style.setProperty("--dark-background", "linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)10%)");
         rootElement.style.setProperty("--light-background", "linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)10%)");
-        rootElement.style.setProperty("--project-bottom-wrapper-background", "linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)100%)")
+        rootElement.style.setProperty("--project-bottom-wrapper-background", "linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)100%)");
+        
+        for (let i = 0; i < copyButtons.length; i++) {
+            copyButtons[i].style.filter = "invert(100%)";
+        }
+        
+        for (let i = 0; i < demoUserParagraphs.length; i++) {
+            demoUserParagraphs[i].style.filter = "invert(0%)";
+        }
     } else {
         rootElement.style.setProperty("--anchor-hover", "linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)100%)");
         rootElement.style.setProperty("--nav-background-color", "white");
@@ -75,7 +87,15 @@ function changeTheme() {
         rootElement.style.setProperty("--button-font-color", "white");
         rootElement.style.setProperty("--dark-background", "linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)100%)");
         rootElement.style.setProperty("--light-background", "linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)100%)");
-        rootElement.style.setProperty("--project-bottom-wrapper-background", "linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)100%)")
+        rootElement.style.setProperty("--project-bottom-wrapper-background", "linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)100%)");
+        
+        for (let i = 0; i < copyButtons.length; i++) {
+            copyButtons[i].style.filter = "invert(0%)";
+        }
+        
+        for (let i = 0; i < demoUserParagraphs.length; i++) {
+            demoUserParagraphs[i].style.filter = "invert(100%)";
+        }
     }
 }
 
