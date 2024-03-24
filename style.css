@@ -35,6 +35,7 @@
 
     --dark-background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)100%);
     --light-background: linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)100%);
+    --project-bottom-wrapper-background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)100%)
 
     --box-shadow: 8px 8px 10px black;
 }
@@ -778,19 +779,54 @@ td {
     margin-bottom: 60px;
     border-radius: var(--container-border-radius);
     position: absolute;
-    left: 10px;
-    right: 10px;
+    left: 15px;
+    right: 15px;
     bottom: 50px;
-    background-image: linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)100%)
+    background-image: var(--project-bottom-wrapper-background);
 }
 
-.used-languages-paragraph {
-    margin-right: var(--inner-container-margin);
+.used-languages-title {
+    margin: 10px 10px 0 0.625em 0;
+    line-height: 1.875em;
+    position: relative;
+    left: -0.6em;
+    width: 105%;
+    border-radius: 0 0.156em 0.156em 0;
     font-family: var(--title-font);
-    font-size: var(--paragraph-font-size);
-    color: var(--button-font-color);
-    text-align: center;
+    font-size: 14px;
+    text-align: left;
+    color: var(--title-font-color);
+    background: var(--title-background);
+    box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
 }
+
+.used-languages-title::before,
+.used-languages-title::after {
+    position: absolute;
+    content: '';
+    display: block;
+}
+
+.used-languages-title::before {
+    padding: 0 0 0.938em;
+    border-radius: 0.313em 0 0 0.313em;
+    width: 0.569em;
+    height: 121%;
+    top: 0;
+    left: -0.569em;
+    background: var(--title-background);
+}
+
+.used-languages-title::after {
+    width: 0.313em;
+    height: 0.313em;
+    border-radius: 0.313em 0 0 0.313em;
+    bottom: -0.313em;
+    left: -0.313em;
+    background: rgba(0, 0, 0, 0.35);
+    box-shadow: inset -1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
 
 .used-languages-wrapper {
     margin-right: auto;
@@ -802,8 +838,6 @@ td {
 }
 
 .used-laguages-images {
-    margin-right: auto;
-    margin-left: auto;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -812,31 +846,72 @@ td {
 
 .demo-user-wrapper {
     padding-top: 30px;
-    /* margin-right: auto;
-    margin-left: auto; */
     display: flex;
     flex-direction: column;
     vertical-align: middle;
 }
 
 .demo-user-title {
-    margin: 0;
-    margin-bottom: 5px;
-    padding: 0;
-    text-align: center;
+    margin: 10px 10px 0 0.625em 0;
+    line-height: 1.875em;
+    position: relative;
+    left: -0.6em;
+    width: 105%;
+    border-radius: 0 0.156em 0.156em 0;
     font-family: var(--title-font);
-    font-size: var(--paragraph-font-size);
+    font-size: 14px;
     color: var(--title-font-color);
+    background: var(--title-background);
+    box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.demo-user-title::before,
+.demo-user-title::after {
+    position: absolute;
+    content: '';
+    display: block;
+}
+
+.demo-user-title::before {
+    padding: 0 0 0.938em;
+    border-radius: 0.313em 0 0 0.313em;
+    width: 0.569em;
+    height: 121%;
+    top: 0;
+    left: -0.569em;
+    background: var(--title-background);
+}
+
+.demo-user-title::after {
+    width: 0.313em;
+    height: 0.313em;
+    border-radius: 0.313em 0 0 0.313em;
+    bottom: -0.313em;
+    left: -0.313em;
+    background: rgba(0, 0, 0, 0.35);
+    box-shadow: inset -1px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .demo-user-table {
-    margin-right: auto;
-    margin-left: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.demo-user-table td, .demo-user-table th {
+    padding: 0;
+}
+
+.demo-user-table tr {
+    margin: 0;
+}
+
+.demo-user-table td:last-child {
+    padding-right: 0;
 }
 
 .demo-user-paragraph {
     height: 25px;
-    width: 250px;
+    width: 100%;
     padding-top: auto;
     padding-bottom: auto;
     margin: 0;
@@ -851,7 +926,7 @@ td {
     font-weight: 400;
     font-style: normal;
     font-size: 12px;
-    color: var(--title-font-color);
+    color: white;
     background-color: #333333;
 }
 
@@ -861,7 +936,9 @@ td {
 
 .copy-button {
     height: 25px;
+    width: 23.25px;
     padding: 5px;
+    margin: 0;
     margin-top: 1px;
     border-right: 1px groove #777777;
     border-bottom: 1px groove #777777;
