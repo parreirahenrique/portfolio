@@ -551,11 +551,45 @@ function showSidebar() {
 }
 
 function copyToClipboard(text) {
-    navigator.clipboard.writeText(text);
-  
-    
-    alert("Copied the text: " + copyText.value);
-  }
+    navigator.clipboard.writeText(text).then(function () {
+        var alertBox = document.createElement('div');
+        alertBox.classList.add('alert');
+
+        if (languageSwitch.checked) {
+            alertBox.textContent = "Text copied!";
+        } else {
+            alertBox.textContent = "Texto copiado!";
+        }
+
+        document.body.appendChild(alertBox);
+
+        alertBox.classList.add('show');
+        alertBox.style.position = 'fixed';
+        alertBox.style.left = '50%';
+        alertBox.style.transform = 'translateX(-50%)';
+        alertBox.style.bottom = '20px';
+
+        if (window.innerWidth >= 800) {
+            alertBox.style.width = '400px';
+        } else {
+            alertBox.style.width = '250px';
+        }
+
+        alertBox.style.textAlign = 'center';
+        alertBox.style.borderTopRightRadius = '50px';
+        alertBox.style.borderBottomRightRadius = '50px';
+        alertBox.style.borderBottomLeftRadius = '50px';
+        alertBox.style.borderTopLeftRadius = '50px';
+
+        setTimeout(function () {
+            alertBox.classList.remove('show');
+            setTimeout(function () {
+                alertBox.remove();
+            }, 500);
+        }, 2000);
+    });
+}
 
 themeSwitch.addEventListener("click", changeTheme);
 languageSwitch.addEventListener("click", changeLanguage);
+

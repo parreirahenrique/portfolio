@@ -35,9 +35,7 @@
 
     --dark-background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)100%);
     --light-background: linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)100%);
-    --project-bottom-wrapper-background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)100%)
-
-    --box-shadow: 8px 8px 10px black;
+    --project-bottom-wrapper-background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)100%) --box-shadow: 8px 8px 10px black;
 }
 
 * {
@@ -157,14 +155,6 @@ nav {
     display: flex;
     flex-direction: column;
 }
-
-/* #theme-switch-container {
-    right: -40px;
-}
-
-#language-switch-container {
-    right: -40px;
-} */
 
 .switch-placeholder {
     margin: 0;
@@ -897,7 +887,8 @@ td {
     width: 100%;
 }
 
-.demo-user-table td, .demo-user-table th {
+.demo-user-table td,
+.demo-user-table th {
     padding: 0;
 }
 
@@ -950,6 +941,24 @@ td {
     cursor: pointer;
 }
 
+.alert {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8de4bc;
+    color: white;
+    padding: 15px;
+    border-radius: 50px 10px 10px 50px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.alert.show {
+    opacity: 1;
+}
+
 .copy-button:hover {
     background-color: #999999;
 }
@@ -977,7 +986,6 @@ td {
 }
 
 .repository-button {
-    /* margin-right: 10px; */
     margin-bottom: 10px;
     padding: 10px;
     border-radius: var(--container-border-radius);
@@ -1310,8 +1318,6 @@ td {
     #frontend-container {
         margin-right: 20px;
         margin-left: 20px;
-        /* padding-right: 100%; */
-        /* width: 100%; */
         display: flex;
         flex-direction: column;
     }
@@ -1319,7 +1325,6 @@ td {
     #backend-container {
         margin-right: 20px;
         margin-left: 20px;
-        /* width: 100%; */
         flex-direction: column;
         background-image: var(--inner-container-background);
         box-shadow: var(--box-shadow);
