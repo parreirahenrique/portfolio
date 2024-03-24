@@ -2,9 +2,7 @@ const themeSwitch = document.getElementById("theme-switch");
 const rootElement = document.documentElement;
 const sidebarImage = document.getElementById("sidebar-icon");
 const copyButtons = document.getElementsByClassName("copy-button");
-const demoUserParagraphs = document.getElementsByClassName("demo-user-paragraph");
-console.log(copyButtons)
-console.log(demoUserParagraphs)
+const demoUserParagraphs = document.getElementsByClassName("demo-user-paragraph")
 
 const languageSwitch = document.getElementById("language-switch");
 const navigationAnchors = document.getElementsByClassName("header-anchor")
@@ -17,7 +15,8 @@ const homeParagraph = document.getElementById("home-paragraph");
 const aboutMeParagraphs = document.getElementsByClassName("about-me-paragraph");
 const projectTitles = document.getElementsByClassName("project-title");
 const projectParagraphs = document.getElementsByClassName("project-paragraph");
-const usedLanguagesParagraphs = document.getElementsByClassName("used-languages-paragraph");
+const usedLanguagesTitles = document.getElementsByClassName("used-languages-title");
+const demoUserTitle = document.getElementsByClassName("demo-user-title");
 const checkProjectButtons = document.getElementsByClassName("check-button");
 const repositoryButtons = document.getElementsByClassName("repository-button");
 const projects = document.getElementsByClassName("project");
@@ -186,8 +185,12 @@ function changeLanguage() {
         projectParagraphs[2].innerText = "The Market Place is an online platform that allows its users to buy and sell various products. With a user authentication system, customers can create and manage their accounts to access the platform's functionalities. This includes the ability to add, edit, or delete products, provided they have been registered by the user themselves. Additionally, as previously described, they can purchase products listed by other users, provided they have sufficient credits for it.";
         projectParagraphs[3].innerText = "The project consists of a music player, which offers its user the essential functionalities of such an application: pausing, resuming, skipping forward or backward, and allows the user to shuffle the playlist. In total, 10 songs can be played, and users can remove unwanted tracks. An option to restart the playlist will be available if all songs are removed. Developed as a web player, the project uses copyright-free music provided by the website freeCodeCamp.org.";
 
-        for (let i = 0; i < usedLanguagesParagraphs.length; i++) {
-            usedLanguagesParagraphs[i].innerText = "Languages and frameworks used:"
+        for (let i = 0; i < usedLanguagesTitles.length; i++) {
+            usedLanguagesTitles[i].innerText = "Languages and frameworks used"
+        }
+
+        for (let i = 0; i < demoUserTitle.length; i++) {
+            demoUserTitle[i].innerText = "Demo user"
         }
 
         for (let i = 0; i < checkProjectButtons.length; i++) {
@@ -261,12 +264,12 @@ function changeLanguage() {
         projectParagraphs[2].innerText = "O  Market Place é uma plataforma online que permite aos seus usuários a compra e venda de diversos produtos. Com um sistema de autenticação de usuário, os clientes podem criar e gerenciar suas contas para acessar as funcionalidades da plataforma. Isso inclui a capacidade de adicionar, editar ou excluir produtos, desde que tenham sido cadastrados pelo próprio usuário. Além disso, como descrito anteriormente, ele pode realizar a compra de produtos dispostos por demais usuários, desde que tenha créditos suficientes para isso.";
         projectParagraphs[3].innerText = "O projeto consiste em um reprodutor de músicas, que oferece ao seu usuário as funcionalidades essenciais de um aplicativo como esse: pausar, retomar, avançar ou retroceder a faixa em reprodução, e permitir ao usuário reproduzir a playlist em ordem aleatória. A playlist é composta por 10 músicas, e os usuários podem remover as faixas indesejadas. Uma opção para reiniciar a playlist será disponibilizada caso todas as músicas sejam removidas. Desenvolvido como um reprodutor web, o projeto utiliza músicas sem direitos autorais disponibilizadas pelo site freeCodeCamp.org.";
 
-        for (let i = 0; i < usedLanguagesParagraphs.length; i++) {
-            usedLanguagesParagraphs[i].innerText = "Linguagens e frameworks utilizados:"
+        for (let i = 0; i < usedLanguagesTitles.length; i++) {
+            usedLanguagesTitles[i].innerText = "Linguagens e frameworks utilizados"
         }
 
-        for (let i = 0; i < checkProjectButtons.length; i++) {
-            checkProjectButtons[i].innerText = "Checar projeto"
+        for (let i = 0; i < demoUserTitle.length; i++) {
+            demoUserTitle[i].innerText = "Usuário de demonstração"
         }
 
         for (let i = 0; i < repositoryButtons.length; i++) {
