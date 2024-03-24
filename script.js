@@ -548,5 +548,12 @@ function showSidebar() {
     }
 }
 
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text);
+  
+    
+    alert("Copied the text: " + copyText.value);
+  }
+
 themeSwitch.addEventListener("click", changeTheme);
 languageSwitch.addEventListener("click", changeLanguage);

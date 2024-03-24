@@ -516,7 +516,7 @@
             <div id="inner-projects-container">
                 <h1 class="section-title">Projetos</h1>
                 <div id="projects-grid">
-                    <div class="project">
+                    <div class="project" onresize="setHeight()">
                         <img src="imgs/great-kart.png" class="project-image">
                         <h2 class="project-title">GreatKart</h2>
                         <p class="project-paragraph">
@@ -529,16 +529,44 @@
                             forma rápida e segura. Além disso, os clientes podem avaliar e deixar feedback sobre os
                             produtos adquiridos, com um sistema de classificação por estrelas.
                         </p>
-                        <div class="used-languages-wrapper">
-                            <p class="used-languages-paragraph">
-                                Linguagens e frameworks utilizados:
-                            </p>
-                            <img src="imgs/django.png" alt="" class="language-icon">
-                            <img src="imgs/python.png" alt="" class="language-icon">
-                            <img src="imgs/bootstrap.png" alt="" class="language-icon">
-                            <img src="imgs/javascript.png" alt="" class="language-icon">
-                            <img src="imgs/html5.png" alt="" class="language-icon">
-                            <img src="imgs/css3.png" alt="" class="language-icon">
+                        <div class="project-bottom-wrapper">
+                            <div class="used-languages-wrapper">
+                                <p class="used-languages-paragraph">
+                                    Linguagens e frameworks utilizados:
+                                </p>
+                                <div class="used-languages-images">
+                                    <img src="imgs/django.png" alt="" class="language-icon">
+                                    <img src="imgs/python.png" alt="" class="language-icon">
+                                    <img src="imgs/bootstrap.png" alt="" class="language-icon">
+                                    <img src="imgs/javascript.png" alt="" class="language-icon">
+                                    <img src="imgs/html5.png" alt="" class="language-icon">
+                                    <img src="imgs/css3.png" alt="" class="language-icon">
+                                </div>
+                            </div>
+                            <div class="demo-user-wrapper">
+                                <p class="demo-user-title">Usuário de demonstração</p>
+                                <table class="demo-user-table">
+                                    <tr style="margin: 0; padding: 0;">
+                                        <td style="margin: 0; padding: 0;">
+                                            <input class="demo-user-paragraph" value="demonstration.userdemo@gmail.com"
+                                                readonly>
+                                        </td>
+                                        <td>
+                                            <img class="copy-button" src="imgs/copy-regular.png"
+                                                onclick="copyToClipboard('demonstration.userdemo@gmail.com')">
+                                        </td>
+                                    </tr>
+                                    <tr style="margin: 0; padding: 0;">
+                                        <td style="margin: 0; padding: 0;">
+                                            <input class="demo-user-paragraph" value="senha123" readonly>
+                                        </td>
+                                        <td>
+                                            <img class="copy-button" src="imgs/copy-regular.png"
+                                                onclick="copyToClipboard('senha123')">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                         <a href="https://mysite-kw9s.onrender.com/" target="_blank" class="check-button">
                             Checar projeto
@@ -548,7 +576,7 @@
                             Repositório
                         </a>
                     </div>
-                    <div class="project">
+                    <div class="project" onresize="setHeight()">
                         <img src="imgs/data-input.png" class="project-image">
                         <h2 class="project-title">Entrada de dados para projetos fotovoltaicos</h2>
                         <p class="project-paragraph">
@@ -562,15 +590,43 @@
                             desenvolvida irá então preencher corretamente os documentos necessários, que devem ser
                             anexados ao site da concessionária de energia.
                         </p>
-                        <div class="used-languages-wrapper">
-                            <p class="used-languages-paragraph">
-                                Linguagens e frameworks utilizados:
-                            </p>
-                            <img src="imgs/fastapi.svg" alt="" class="language-icon">
-                            <img src="imgs/python.png" alt="" class="language-icon">
-                            <img src="imgs/javascript.png" alt="" class="language-icon">
-                            <img src="imgs/html5.png" alt="" class="language-icon">
-                            <img src="imgs/css3.png" alt="" class="language-icon">
+                        <div class="project-bottom-wrapper">
+                            <div class="used-languages-wrapper">
+                                <p class="used-languages-paragraph">
+                                    Linguagens e frameworks utilizados:
+                                </p>
+                                <div class="used-languages-images">
+                                    <img src="imgs/fastapi.svg" alt="" class="language-icon">
+                                    <img src="imgs/python.png" alt="" class="language-icon">
+                                    <img src="imgs/javascript.png" alt="" class="language-icon">
+                                    <img src="imgs/html5.png" alt="" class="language-icon">
+                                    <img src="imgs/css3.png" alt="" class="language-icon">
+                                </div>
+                            </div>
+                            <div class="demo-user-wrapper">
+                                <p class="demo-user-title">Usuário de demonstração</p>
+                                <table class="demo-user-table">
+                                    <tr style="margin: 0; padding: 0;">
+                                        <td style="margin: 0; padding: 0;">
+                                            <input class="demo-user-paragraph" value="Demo"
+                                                readonly>
+                                        </td>
+                                        <td>
+                                            <img class="copy-button" src="imgs/copy-regular.png"
+                                                onclick="copyToClipboard('Demo')">
+                                        </td>
+                                    </tr>
+                                    <tr style="margin: 0; padding: 0;">
+                                        <td style="margin: 0; padding: 0;">
+                                            <input class="demo-user-paragraph" value="password123" readonly>
+                                        </td>
+                                        <td>
+                                            <img class="copy-button" src="imgs/copy-regular.png"
+                                                onclick="copyToClipboard('password123')">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                         <a href="https://parreirahenrique.github.io/entrada-dados-frontend/" target="_blank"
                             class="check-button">
@@ -581,7 +637,7 @@
                             Repositório
                         </a>
                     </div>
-                    <div class="project">
+                    <div class="project" onresize="setHeight()">
                         <img src="imgs/market-place.png" class="project-image">
                         <h2 class="project-title">Market place</h2>
                         <p class="project-paragraph">
@@ -592,14 +648,42 @@
                             próprio usuário. Além disso, como descrito anteriormente, ele pode realizar a compra de
                             produtos dispostos por demais usuários, desde que tenha créditos suficientes para isso.
                         </p>
-                        <div class="used-languages-wrapper">
-                            <p class="used-languages-paragraph">
-                                Linguagens e frameworks utilizados:
-                            </p>
-                            <img src="imgs/flask.png" alt="" class="language-icon">
-                            <img src="imgs/python.png" alt="" class="language-icon">
-                            <img src="imgs/bootstrap.png" alt="" class="language-icon">
-                            <img src="imgs/html5.png" alt="" class="language-icon">
+                        <div class="project-bottom-wrapper">
+                            <div class="used-languages-wrapper">
+                                <p class="used-languages-paragraph">
+                                    Linguagens e frameworks utilizados:
+                                </p>
+                                <div class="used-languages-images">
+                                    <img src="imgs/flask.png" alt="" class="language-icon">
+                                    <img src="imgs/python.png" alt="" class="language-icon">
+                                    <img src="imgs/bootstrap.png" alt="" class="language-icon">
+                                    <img src="imgs/html5.png" alt="" class="language-icon">
+                                </div>
+                            </div>
+                            <div class="demo-user-wrapper">
+                                <p class="demo-user-title">Usuário de demonstração</p>
+                                <table class="demo-user-table">
+                                    <tr style="margin: 0; padding: 0;">
+                                        <td style="margin: 0; padding: 0;">
+                                            <input class="demo-user-paragraph" value="DemoUser"
+                                                readonly>
+                                        </td>
+                                        <td>
+                                            <img class="copy-button" src="imgs/copy-regular.png"
+                                                onclick="copyToClipboard('DemoUser')">
+                                        </td>
+                                    </tr>
+                                    <tr style="margin: 0; padding: 0;">
+                                        <td style="margin: 0; padding: 0;">
+                                            <input class="demo-user-paragraph" value="senha123" readonly>
+                                        </td>
+                                        <td>
+                                            <img class="copy-button" src="imgs/copy-regular.png"
+                                                onclick="copyToClipboard('senha123')">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                         <a href="https://flask-market-xcqg.onrender.com/home" target="_blank" class="check-button">
                             Checar projeto
@@ -609,7 +693,7 @@
                             Repositório
                         </a>
                     </div>
-                    <div class="project">
+                    <div class="project" onresize="setHeight()">
                         <img src="imgs/music-player.png" class="project-image">
                         <h2 class="project-title">Reprodutor de músicas</h2>
                         <p class="project-paragraph">
@@ -621,13 +705,20 @@
                             sejam removidas. Desenvolvido como um reprodutor web, o projeto utiliza músicas sem direitos
                             autorais disponibilizadas pelo site freeCodeCamp.org.
                         </p>
-                        <div class="used-languages-wrapper">
-                            <p class="used-languages-paragraph">
-                                Linguagens e frameworks utilizados:
-                            </p>
-                            <img src="imgs/javascript.png" alt="" class="language-icon">
-                            <img src="imgs/html5.png" alt="" class="language-icon">
-                            <img src="imgs/css3.png" alt="" class="language-icon">
+                        <div class="project-bottom-wrapper">
+                            <div class="used-languages-wrapper">
+                                <p class="used-languages-paragraph">
+                                    Linguagens e frameworks utilizados:
+                                </p>
+                                <div class="used-languages-images">
+                                    <img src="imgs/django.png" alt="" class="language-icon">
+                                    <img src="imgs/python.png" alt="" class="language-icon">
+                                    <img src="imgs/bootstrap.png" alt="" class="language-icon">
+                                    <img src="imgs/javascript.png" alt="" class="language-icon">
+                                    <img src="imgs/html5.png" alt="" class="language-icon">
+                                    <img src="imgs/css3.png" alt="" class="language-icon">
+                                </div>
+                            </div>
                         </div>
                         <a href="https://parreirahenrique.github.io/music-player/" target="_blank" class="check-button">
                             Checar projeto
