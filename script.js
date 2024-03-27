@@ -52,6 +52,9 @@ const messageInput = document.getElementById("message-input");
 
 const languageAnchors = document.getElementsByClassName("language-anchor")
 
+const btnLeft = document.getElementById('btn-left');
+const btnRight = document.getElementById('btn-right');
+
 var clickCounter = 0;
 
 function changeTheme() {
@@ -67,11 +70,11 @@ function changeTheme() {
         rootElement.style.setProperty("--dark-background", "linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)10%)");
         rootElement.style.setProperty("--light-background", "linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)10%)");
         rootElement.style.setProperty("--project-bottom-wrapper-background", "linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)100%)");
-        
+
         for (let i = 0; i < copyButtons.length; i++) {
             copyButtons[i].style.filter = "invert(100%)";
         }
-        
+
         for (let i = 0; i < demoUserParagraphs.length; i++) {
             demoUserParagraphs[i].style.filter = "invert(0%)";
         }
@@ -87,11 +90,11 @@ function changeTheme() {
         rootElement.style.setProperty("--dark-background", "linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)100%)");
         rootElement.style.setProperty("--light-background", "linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)100%)");
         rootElement.style.setProperty("--project-bottom-wrapper-background", "linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)100%)");
-        
+
         for (let i = 0; i < copyButtons.length; i++) {
             copyButtons[i].style.filter = "invert(0%)";
         }
-        
+
         for (let i = 0; i < demoUserParagraphs.length; i++) {
             demoUserParagraphs[i].style.filter = "invert(100%)";
         }
@@ -176,6 +179,10 @@ function changeLanguage() {
         certificationWorkloads[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
         certificationWorkloads[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
 
+        for (let i = 0; i < certificationButtons.length; i++) {
+            certificationButtons[i].innerText = "Check certification";
+        }
+
         projectTitles[1].innerText = "Data input for photovoltaic projects";
         projectTitles[2].innerText = "Market place";
         projectTitles[3].innerText = "Music player";
@@ -186,11 +193,11 @@ function changeLanguage() {
         projectParagraphs[3].innerText = "The project consists of a music player, which offers its user the essential functionalities of such an application: pausing, resuming, skipping forward or backward, and allows the user to shuffle the playlist. In total, 10 songs can be played, and users can remove unwanted tracks. An option to restart the playlist will be available if all songs are removed. Developed as a web player, the project uses copyright-free music provided by the website freeCodeCamp.org.";
 
         for (let i = 0; i < usedLanguagesTitles.length; i++) {
-            usedLanguagesTitles[i].innerText = "Languages and frameworks used"
+            usedLanguagesTitles[i].innerText = "Languages and frameworks used";
         }
 
         for (let i = 0; i < demoUserTitle.length; i++) {
-            demoUserTitle[i].innerText = "Demo user"
+            demoUserTitle[i].innerText = "Demo user";
         }
 
         for (let i = 0; i < checkProjectButtons.length; i++) {
@@ -255,6 +262,10 @@ function changeLanguage() {
         certificationWorkloads[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
         certificationWorkloads[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
 
+        for (let i = 0; i < certificationButtons.length; i++) {
+            certificationButtons[i].innerText = "Checar certificação";
+        }
+
         projectTitles[1].innerText = "Entrada de dados para projetos fotovoltaicos";
         projectTitles[2].innerText = "Market place";
         projectTitles[3].innerText = "Reprodutor de músicas";
@@ -263,13 +274,17 @@ function changeLanguage() {
         projectParagraphs[1].innerText = "Projeto elaborado durante meu tempo na última empresa onde trabalhei, devido a ineficência encontrada no preenchimento das planilhas e formulários necessários aos projetos fotovoltaicos. Para ter acesso, a pessoa deve ter em mãos seu usuário e sua senha, credenciais essas que só podem ser criadas pelo administrador. O usuário cadastrado pode então criar, alterar ou mesmo deletar instâncias no banco de dados relativas a: clientes (pessoas que requisitaram o projeto), instalações (locais onde os projetos serão instalados), inversores, módulos fotovoltaicos e, por fim, o projeto. A automatização desenvolvida irá então preencher corretamente os documentos necessários, que devem ser anexados ao site da concessionária de energia.";
         projectParagraphs[2].innerText = "O  Market Place é uma plataforma online que permite aos seus usuários a compra e venda de diversos produtos. Com um sistema de autenticação de usuário, os clientes podem criar e gerenciar suas contas para acessar as funcionalidades da plataforma. Isso inclui a capacidade de adicionar, editar ou excluir produtos, desde que tenham sido cadastrados pelo próprio usuário. Além disso, como descrito anteriormente, ele pode realizar a compra de produtos dispostos por demais usuários, desde que tenha créditos suficientes para isso.";
         projectParagraphs[3].innerText = "O projeto consiste em um reprodutor de músicas, que oferece ao seu usuário as funcionalidades essenciais de um aplicativo como esse: pausar, retomar, avançar ou retroceder a faixa em reprodução, e permitir ao usuário reproduzir a playlist em ordem aleatória. A playlist é composta por 10 músicas, e os usuários podem remover as faixas indesejadas. Uma opção para reiniciar a playlist será disponibilizada caso todas as músicas sejam removidas. Desenvolvido como um reprodutor web, o projeto utiliza músicas sem direitos autorais disponibilizadas pelo site freeCodeCamp.org.";
-
+        
         for (let i = 0; i < usedLanguagesTitles.length; i++) {
             usedLanguagesTitles[i].innerText = "Linguagens e frameworks utilizados"
         }
 
         for (let i = 0; i < demoUserTitle.length; i++) {
             demoUserTitle[i].innerText = "Usuário de demonstração"
+        }
+
+        for (let i = 0; i < checkProjectButtons.length; i++) {
+            checkProjectButtons[i].innerText = "Checar projeto"
         }
 
         for (let i = 0; i < repositoryButtons.length; i++) {
@@ -531,14 +546,13 @@ function changeHRef() {
         languageAnchors[0].href = "#html5-anchor"
         languageAnchors[1].href = "#css3-anchor"
         languageAnchors[2].href = "#bootstrap-anchor"
-        languageAnchors[3].href = "#react-anchor"
-        languageAnchors[4].href = "#python-anchor"
-        languageAnchors[5].href = "#fastapi-anchor"
-        languageAnchors[6].href = "#flask-anchor"
+        languageAnchors[3].href = "#python-anchor"
+        languageAnchors[4].href = "#fastapi-anchor"
+        languageAnchors[5].href = "#flask-anchor"
+        languageAnchors[6].href = "#django-anchor"
         languageAnchors[7].href = "#javascript-anchor"
         languageAnchors[8].href = "#csharp-anchor"
-        languageAnchors[9].href = "#java-anchor"
-        languageAnchors[10].href = "#sql-anchor"
+        languageAnchors[9].href = "#sql-anchor"
     }
 }
 
@@ -553,15 +567,12 @@ function setHeight() {
         }
 
         for (let i = 0; i < projects.length; i++) {
-            console.log(maxValue.toString() + "px")
             projects[i].style.height = maxValue.toString() + "px";
         }
-        console.log(maxValue)
     }
 }
 
 function showSidebar() {
-    console.log(clickCounter)
     if (clickCounter === 0) {
         sidebarContainer.style.display = "flex";
         sidebarContainer.style.visibility = "visible";
@@ -613,6 +624,87 @@ function copyToClipboard(text) {
     });
 }
 
+function rotateContent(direction) {
+    const centerElement = document.getElementById('center-certification');
+    const leftElement = document.getElementById('left-certification');
+    const rightElement = document.getElementById('right-certification');
+    const certifications = document.getElementsByClassName('certification');
+
+    if (direction === "initial") {
+        step = 0;
+
+    } else if (direction === 'right') {
+        step = 1;
+
+        leftElement.style.transition = 'none';
+        centerElement.style.transition = 'none';
+        rightElement.style.transition = 'none';
+
+        setTimeout(() => {
+            leftElement.style.transition = 'transform 0.5s ease';
+            centerElement.style.transition = 'transform 0.5s ease';
+            rightElement.style.transition = 'transform 0.5s ease';
+        }, 50);
+
+    } else if (direction === 'left') {
+        step = -1;
+
+        leftElement.style.transition = 'none';
+        centerElement.style.transition = 'none';
+        rightElement.style.transition = 'none';
+
+        setTimeout(() => {
+            leftElement.style.transition = 'transform 0.5s ease';
+            centerElement.style.transition = 'transform 0.5s ease';
+            rightElement.style.transition = 'transform 0.5s ease';
+        }, 50);
+    }
+
+    for (let i = 0; i < certifications.length; i++) {
+        if (centerElement == certifications[i]) {
+            index = i + step;
+        }
+    }
+
+    if (index < 0) {
+        index = certifications.length - 1;
+        previous = certifications.length - 2;
+        next = 0;
+    } else if (index == 0) {
+        previous = certifications.length - 1;
+        next = 1;
+    } else if (index == certifications.length - 1) {
+        previous = certifications.length - 2;
+        next = 0;
+    } else if (index >= certifications.length - 1) {
+        index = 0;
+        previous = certifications.length - 1;
+        next = 1;
+    } else {
+        previous = index - 1;
+        next = index + 1;
+    }
+
+    document.getElementById('left-certification').id = "";
+    document.getElementById('center-certification').id = "";
+    document.getElementById('right-certification').id = "";
+
+    certifications[previous].id = 'left-certification';
+    certifications[index].id = 'center-certification';
+    certifications[next].id = 'right-certification';
+
+    for (let i = 0; i < certifications.length; i++) {
+        if (i != previous && i != index && i != next) {
+            certifications[i].id = 'hidden-certification'
+        }
+    }
+}
+
 themeSwitch.addEventListener("click", changeTheme);
 languageSwitch.addEventListener("click", changeLanguage);
-
+btnLeft.addEventListener('click', function () {
+    rotateContent('left');
+});
+btnRight.addEventListener('click', function () {
+    rotateContent('right');
+});

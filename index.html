@@ -54,7 +54,7 @@
     <script defer src="script.js"></script>
 </head>
 
-<body onload="changeTheme(); changeHRef(); setHeight()" onresize="setHeight(); changeHRef()">
+<body onload="changeTheme(); changeHRef(); setHeight(); rotateContent('initial')" onresize="setHeight(); changeHRef()">
     <header>
         <div id="sidebar-container">
             <a href="#home-container" class="header-anchor">página inicial</a>
@@ -401,115 +401,174 @@
         <div id="certifications-container">
             <div id="inner-certifications-container">
                 <h1 class="section-title">Certificações</h1>
-                <div class="certification">
-                    <h2 class="certification-title">HTML Web Developer</h2>
-                    <p class="certification-content">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Conteúdo: </strong> Fundamentos
-                        de HTML5, CSS3 e JavaScript
-                    </p>
-                    <p class="certification-date">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Data: </strong> 25/08/2021
-                    </p>
-                    <p class="certification-workload">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Carga horária: </strong> 27
-                        horas
-                    </p>
-                    <a href="https://www.dio.me/certificate/4ACED382/share" target="_blank" class="check-certification">
-                        Checar certificação
-                    </a>
+                <div id="certification-grid">
+                    <div class="certification" id="center-certification">
+                        <div class="left-part-certification">
+                            <h2 class="certification-title">HTML Web Developer</h2>
+                            <p class="certification-content">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Conteúdo: </strong>
+                                Fundamentos
+                                de HTML5, CSS3 e JavaScript
+                            </p>
+                            <p class="certification-date">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Data: </strong>
+                                25/08/2021
+                            </p>
+                            <p class="certification-workload">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Carga horária:
+                                </strong> 27
+                                horas
+                            </p>
+                            <a href="https://www.dio.me/certificate/4ACED382/share" target="_blank"
+                                class="check-certification">
+                                Checar certificação
+                            </a>
+                        </div>
+                        <div class="right-part-certification">
+                            <img src="imgs/html-web-developer.jpg" alt="" class="certification-image">
+                        </div>
+                    </div>
+                    <div class="certification" id="right-certification">
+                        <div class="left-part-certification">
+                            <h2 class="certification-title">Scientific Computing with Python</h2>
+                            <p class="certification-content">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Conteúdo: </strong>
+                                Fundamentos
+                                de Python
+                            </p>
+                            <p class="certification-date">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Data: </strong>
+                                22/05/2023
+                            </p>
+                            <p class="certification-workload">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Carga horária:
+                                </strong>
+                                300
+                                horas
+                            </p>
+                            <a href="https://www.freecodecamp.org/certification/parreirahenrique/scientific-computing-with-python-v7"
+                                target="_blank" class="check-certification">
+                                Checar certificação
+                            </a>
+                        </div>
+                        <div class="right-part-certification">
+                            <img src="imgs/scientific-computing-with-python.jpg" alt="" class="certification-image">
+                        </div>
+                    </div>
+                    <div class="certification" id="hidden-certification">
+                        <div class="left-part-certification">
+                            <h2 class="certification-title">Data Analysis with Python</h2>
+                            <p class="certification-content">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Conteúdo: </strong>
+                                Fundamentos
+                                de análise de dados, bibliotecas Pandas, Seaborn e
+                                Matplotlib
+                            </p>
+                            <p class="certification-date">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Data: </strong>
+                                30/05/2023
+                            </p>
+                            <p class="certification-workload">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Carga horária:
+                                </strong>
+                                300
+                                horas
+                            </p>
+                            <a href="https://www.freecodecamp.org/certification/parreirahenrique/data-analysis-with-python-v7"
+                                target="_blank" class="check-certification">
+                                Checar certificação
+                            </a>
+                        </div>
+                        <div class="right-part-certification">
+                            <img src="imgs/data-analysis-with-python.jpg" alt="" class="certification-image">
+                        </div>
+                    </div>
+                    <div class="certification" id="hidden-certification">
+                        <div class="left-part-certification">
+                            <h2 class="certification-title">Machine Learning with Python</h2>
+                            <p class="certification-content">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Conteúdo: </strong>
+                                Fundamentos
+                                de machine learning, bibliotecas TensorFlow e
+                                Scikit-Learn
+                            </p>
+                            <p class="certification-date">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Data: </strong>
+                                28/06/2023
+                            </p>
+                            <p class="certification-workload">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Carga horária:
+                                </strong>
+                                300
+                                horas
+                            </p>
+                            <a href="https://www.freecodecamp.org/certification/parreirahenrique/machine-learning-with-python-v7"
+                                target="_blank" class="check-certification">
+                                Checar certificação
+                            </a>
+                        </div>
+                        <div class="right-part-certification">
+                            <img src="imgs/machine-learning-with-python.png" alt="" class="certification-image">
+                        </div>
+                    </div>
+                    <div class="certification" id="hidden-certification">
+                        <div class="left-part-certification">
+                            <h2 class="certification-title">Foundational C# with Microsoft</h2>
+                            <p class="certification-content">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Conteúdo: </strong>
+                                Fundamentos
+                                de C# e .NET Framework
+                            </p>
+                            <p class="certification-date">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Data: </strong>
+                                21/12/2023
+                            </p>
+                            <p class="certification-workload">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Carga horária:
+                                </strong>
+                                300
+                                horas
+                            </p>
+                            <a href="https://www.freecodecamp.org/certification/parreirahenrique/foundational-c-sharp-with-microsoft"
+                                target="_blank" class="check-certification">
+                                Checar certificação
+                            </a>
+                        </div>
+                        <div class="right-part-certification">
+                            <img src="imgs/foundational-csharp-with-microsoft.png" alt="" class="certification-image">
+                        </div>
+                    </div>
+                    <div class="certification" id="left-certification">
+                        <div class="left-part-certification">
+                            <h2 class="certification-title">JavaScript Algorithms and Data Structures (Beta)</h2>
+                            <p class="certification-content">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Conteúdo: </strong>
+                                Fundamentos
+                                de JavaScript e suas estruturas de dados
+                            </p>
+                            <p class="certification-date">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Data: </strong>
+                                05/01/2024
+                            </p>
+                            <p class="certification-workload">
+                                <strong style="font-family: var(--title-font); font-size: 19px;">Carga horária:
+                                </strong>
+                                300
+                                horas
+                            </p>
+                            <a href="https://www.freecodecamp.org/certification/parreirahenrique/javascript-algorithms-and-data-structures-v8"
+                                target="_blank" class="check-certification">
+                                Checar certificação
+                            </a>
+                        </div>
+                        <div class="right-part-certification">
+                            <img src="imgs/javascript-algorithms-and-data-structures-beta.png" alt=""
+                                class="certification-image">
+                        </div>
+                    </div>
                 </div>
-                <div class="certification">
-                    <h2 class="certification-title">Scientific Computing with Python</h2>
-                    <p class="certification-content">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Conteúdo: </strong> Fundamentos
-                        de Python
-                    </p>
-                    <p class="certification-date">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Data: </strong> 22/05/2023
-                    </p>
-                    <p class="certification-workload">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Carga horária: </strong> 300
-                        horas
-                    </p>
-                    <a href="https://www.freecodecamp.org/certification/parreirahenrique/scientific-computing-with-python-v7"
-                        target="_blank" class="check-certification">
-                        Checar certificação
-                    </a>
-                </div>
-                <div class="certification">
-                    <h2 class="certification-title">Data Analysis with Python</h2>
-                    <p class="certification-content">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Conteúdo: </strong> Fundamentos
-                        de análise de dados, bibliotecas Pandas, Seaborn e
-                        Matplotlib
-                    </p>
-                    <p class="certification-date">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Data: </strong> 30/05/2023
-                    </p>
-                    <p class="certification-workload">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Carga horária: </strong> 300
-                        horas
-                    </p>
-                    <a href="https://www.freecodecamp.org/certification/parreirahenrique/data-analysis-with-python-v7"
-                        target="_blank" class="check-certification">
-                        Checar certificação
-                    </a>
-                </div>
-                <div class="certification">
-                    <h2 class="certification-title">Machine Learning with Python</h2>
-                    <p class="certification-content">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Conteúdo: </strong> Fundamentos
-                        de machine learning, bibliotecas TensorFlow e
-                        Scikit-Learn
-                    </p>
-                    <p class="certification-date">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Data: </strong> 28/06/2023
-                    </p>
-                    <p class="certification-workload">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Carga horária: </strong> 300
-                        horas
-                    </p>
-                    <a href="https://www.freecodecamp.org/certification/parreirahenrique/machine-learning-with-python-v7"
-                        target="_blank" class="check-certification">
-                        Checar certificação
-                    </a>
-                </div>
-                <div class="certification">
-                    <h2 class="certification-title">Foundational C# with Microsoft</h2>
-                    <p class="certification-content">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Conteúdo: </strong> Fundamentos
-                        de C# e .NET Framework
-                    </p>
-                    <p class="certification-date">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Data: </strong> 21/12/2023
-                    </p>
-                    <p class="certification-workload">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Carga horária: </strong> 300
-                        horas
-                    </p>
-                    <a href="https://www.freecodecamp.org/certification/parreirahenrique/foundational-c-sharp-with-microsoft"
-                        target="_blank" class="check-certification">
-                        Checar certificação
-                    </a>
-                </div>
-                <div class="certification">
-                    <h2 class="certification-title">JavaScript Algorithms and Data Structures (Beta)</h2>
-                    <p class="certification-content">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Conteúdo: </strong> Fundamentos
-                        de JavaScript e suas estruturas de dados
-                    </p>
-                    <p class="certification-date">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Data: </strong> 05/01/2024
-                    </p>
-                    <p class="certification-workload">
-                        <strong style="font-family: var(--title-font); font-size: 19px;">Carga horária: </strong> 300
-                        horas
-                    </p>
-                    <a href="https://www.freecodecamp.org/certification/parreirahenrique/javascript-algorithms-and-data-structures-v8"
-                        target="_blank" class="check-certification">
-                        Checar certificação
-                    </a>
-                </div>
+                <button id="btn-left"><img src="imgs/arrow-left.png" class="arrow-image"></button>
+                <button id="btn-right"><img src="imgs/arrow-right.png" class="arrow-image"></button>
             </div>
         </div>
         <div id="projects-container">
@@ -608,8 +667,7 @@
                                 <table class="demo-user-table" cellspacing="0">
                                     <tr style="margin: 0; padding: 0;">
                                         <td style="margin: 0; padding: 0;">
-                                            <input class="demo-user-paragraph" value="Demo"
-                                                readonly>
+                                            <input class="demo-user-paragraph" value="Demo" readonly>
                                         </td>
                                         <td style="margin: 0; padding: 0; width: 23.25px;">
                                             <img class="copy-button" src="imgs/copy-regular.png"
@@ -665,8 +723,7 @@
                                 <table class="demo-user-table" cellspacing="0">
                                     <tr style="margin: 0; padding: 0;">
                                         <td style="margin: 0; padding: 0;">
-                                            <input class="demo-user-paragraph" value="DemoUser"
-                                                readonly>
+                                            <input class="demo-user-paragraph" value="DemoUser" readonly>
                                         </td>
                                         <td style="margin: 0; padding: 0; width: 23.25px;">
                                             <img class="copy-button" src="imgs/copy-regular.png"

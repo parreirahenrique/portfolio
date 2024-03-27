@@ -68,7 +68,7 @@ body {
 nav {
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 3;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -606,43 +606,113 @@ td {
     padding-right: var(--container-padding);
     padding-bottom: 20px;
     width: var(--container-width);
+    display: flex;
+    flex-direction: column;
+    position: relative;
     background-color: var(--container-background);
     border-radius: var(--container-border-radius);
     box-shadow: var(--box-shadow);
 }
 
-.certification {
+#certification-grid {
+    margin-top: var(--inner-container-margin);
     margin-right: auto;
     margin-left: auto;
-    padding: 20px;
-    width: 600px;
-    position: relative;
+    min-width: 690px;
+    min-height: 400px;
     display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 8px -8px gray;
-    transition: .3s;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
 }
 
-.certification:hover {
-    margin-right: 70px;
+.certification {
     border-radius: 10px;
+    height: 400px;
+    max-width: 70%;
+    display: flex;
+    flex-direction: row;
     background-color: var(--inner-container-background);
     box-shadow: var(--box-shadow);
     color: var(--button-font-color);
-    transition: .3s;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+#left-certification {
+    height: 360px;
+    position: absolute;
+    z-index: 0;
+    left: 5%;
+    top: 5%;
+    filter: brightness(0.7) blur(2px);
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+#left-certification .certification-title,
+#right-certification .certification-title {
+    font-size: 22.5px;
+}
+
+#center-certification {
+    position: absolute;
+    z-index: 1;
+    left: 15%;
+    top: 0%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+#right-certification {
+    height: 360px;
+    position: absolute;
+    z-index: 0;
+    left: 25%;
+    top: 5%;
+    filter: brightness(0.7) blur(2px);
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+#hidden-certification {
+    display: none;
+    visibility: hidden;
+}
+
+.left-part-certification {
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-part-certification {
+    border-radius: 10px;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.certification-image {
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+    overflow-x: hidden;
+    max-width: 275px;
+    z-index: -1;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .certification-title {
-    margin-left: 50px;
-    max-width: 500px;
+    margin-bottom: 20px;
+    max-width: 400px;
     font-family: var(--title-font);
     font-weight: bold;
     font-size: var(--inner-container-title-font-size);
-    text-align: justify;
+    text-align: left;
 }
 
 .certification-content {
-    margin-left: 50px;
     margin-bottom: 0;
     max-width: 500px;
     font-family: var(--paragraph-font);
@@ -651,7 +721,6 @@ td {
 }
 
 .certification-date {
-    margin-left: 50px;
     margin-bottom: 0;
     max-width: 500px;
     font-family: var(--paragraph-font);
@@ -660,7 +729,6 @@ td {
 }
 
 .certification-workload {
-    margin-left: 50px;
     margin-bottom: 0;
     max-width: 500px;
     font-family: var(--paragraph-font);
@@ -670,7 +738,6 @@ td {
 
 .check-certification {
     margin-top: 20px;
-    margin-left: 50px;
     padding: 10px;
     border-radius: 10px;
     width: 200px;
@@ -685,6 +752,44 @@ td {
 .check-certification:hover {
     background-image: var(--button-hover-background);
     color: var(--button-font-color);
+}
+
+#left-right-buttons {
+    height: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow-image {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--title-background);
+    cursor: pointer;
+}
+
+#btn-left {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    z-index: 2;
+    border: none;
+    font-size: 20px;
+    cursor: context-menu;
+    background-color: transparent;
+}
+
+#btn-right {
+    position: absolute;
+    top: 50%;
+    left: 92%;
+    z-index: 2;
+    border: none;
+    font-size: 20px;
+    cursor: context-menu;
+    background-color: transparent;
 }
 
 #projects-container {
@@ -1359,18 +1464,50 @@ td {
         width: auto;
     }
 
-    .certification {
-        margin: 20px;
-        padding-top: 20px 0 20px 0;
-        width: calc(100% - 40px);
-        color: var(--button-font-color);
-        border-radius: 10px;
-        background-color: var(--inner-container-background);
-        box-shadow: var(--box-shadow);
+    #certification-grid {
+        min-width: calc(10vw);
+        width: calc(100vw - 80px);
+        height: 590px;
     }
 
-    .certification:hover {
-        margin-right: 20px;
+    .certification {
+        height: 100%;
+        max-width: 70%;
+        flex-direction: column-reverse;
+    }
+
+    #left-certification {
+        height: 90%;
+    }
+
+    #right-certification {
+        height: 90%;
+    }
+
+    #left-certification .certification-title,
+    #right-certification .certification-title {
+        font-size: 18px;
+    }
+
+    .left-part-certification {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .right-part-certification {
+        width: 100%;
+        position: relative;
+    }
+
+    .certification-image {
+        min-width: 100%;
+        height: auto;
+        overflow-y: hidden;
+        max-width: 100%;
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
     }
 
     .certification-title {
@@ -1378,19 +1515,23 @@ td {
     }
 
     .certification-content {
-        margin-left: 0;
+        text-align: left;
     }
 
     .certification-date {
-        margin-left: 0;
+        text-align: left;
     }
 
     .certification-workload {
-        margin-left: 0;
+        text-align: left;
     }
 
     .check-certification {
-        margin-left: 0;
+        max-width: 95%;
+    }
+
+    #btn-right {
+        left: 90%;
     }
 
     #projects-container {
