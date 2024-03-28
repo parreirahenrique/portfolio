@@ -38,6 +38,7 @@
     --project-bottom-wrapper-background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)100%) --box-shadow: 8px 8px 10px black;
     --copy-button-color: #888888;
     --input-color: #555555;
+    --table-text-background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, .4));
 }
 
 * {

@@ -70,6 +70,7 @@ function changeTheme() {
         rootElement.style.setProperty("--dark-background", "linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)10%)");
         rootElement.style.setProperty("--light-background", "linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)10%)");
         rootElement.style.setProperty("--project-bottom-wrapper-background", "linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)100%)");
+        rootElement.style.setProperty("--table-text-background", "linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, .4))");
 
         for (let i = 0; i < copyButtons.length; i++) {
             copyButtons[i].style.filter = "invert(100%)";
@@ -90,6 +91,7 @@ function changeTheme() {
         rootElement.style.setProperty("--dark-background", "linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)100%)");
         rootElement.style.setProperty("--light-background", "linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)100%)");
         rootElement.style.setProperty("--project-bottom-wrapper-background", "linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)100%)");
+        rootElement.style.setProperty("--table-text-background", "linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, .7))");
 
         for (let i = 0; i < copyButtons.length; i++) {
             copyButtons[i].style.filter = "invert(0%)";
@@ -102,24 +104,10 @@ function changeTheme() {
 }
 
 function changeLanguage() {
-    innerLanguageDescriptions[0].style.display = "none";
-    innerLanguageDescriptions[0].style.visibility = "hidden";
-    innerLanguageDescriptions[1].style.display = "none";
-    innerLanguageDescriptions[1].style.visibility = "hidden";
-    innerLanguageDescriptions[2].style.display = "none";
-    innerLanguageDescriptions[2].style.visibility = "hidden";
-    innerLanguageDescriptions[3].style.display = "none";
-    innerLanguageDescriptions[3].style.visibility = "hidden";
-    innerLanguageDescriptions[4].style.display = "none";
-    innerLanguageDescriptions[4].style.visibility = "hidden";
-    innerLanguageDescriptions[5].style.display = "none";
-    innerLanguageDescriptions[5].style.visibility = "hidden";
-    innerLanguageDescriptions[6].style.display = "none";
-    innerLanguageDescriptions[6].style.visibility = "hidden";
-    innerLanguageDescriptions[7].style.display = "none";
-    innerLanguageDescriptions[7].style.visibility = "hidden";
-    innerLanguageDescriptions[8].style.display = "none";
-    innerLanguageDescriptions[8].style.visibility = "hidden";
+    for (let i = 0; i < innerLanguageDescriptions.length; i++) {
+        innerLanguageDescriptions[i].style.display = "none";
+        innerLanguageDescriptions[i].style.visibility = "hidden";
+    }
 
     descriptionTitle.innerText = "";
     descriptionText.innerText = "";
@@ -274,7 +262,7 @@ function changeLanguage() {
         projectParagraphs[1].innerText = "Projeto elaborado durante meu tempo na última empresa onde trabalhei, devido a ineficência encontrada no preenchimento das planilhas e formulários necessários aos projetos fotovoltaicos. Para ter acesso, a pessoa deve ter em mãos seu usuário e sua senha, credenciais essas que só podem ser criadas pelo administrador. O usuário cadastrado pode então criar, alterar ou mesmo deletar instâncias no banco de dados relativas a: clientes (pessoas que requisitaram o projeto), instalações (locais onde os projetos serão instalados), inversores, módulos fotovoltaicos e, por fim, o projeto. A automatização desenvolvida irá então preencher corretamente os documentos necessários, que devem ser anexados ao site da concessionária de energia.";
         projectParagraphs[2].innerText = "O  Market Place é uma plataforma online que permite aos seus usuários a compra e venda de diversos produtos. Com um sistema de autenticação de usuário, os clientes podem criar e gerenciar suas contas para acessar as funcionalidades da plataforma. Isso inclui a capacidade de adicionar, editar ou excluir produtos, desde que tenham sido cadastrados pelo próprio usuário. Além disso, como descrito anteriormente, ele pode realizar a compra de produtos dispostos por demais usuários, desde que tenha créditos suficientes para isso.";
         projectParagraphs[3].innerText = "O projeto consiste em um reprodutor de músicas, que oferece ao seu usuário as funcionalidades essenciais de um aplicativo como esse: pausar, retomar, avançar ou retroceder a faixa em reprodução, e permitir ao usuário reproduzir a playlist em ordem aleatória. A playlist é composta por 10 músicas, e os usuários podem remover as faixas indesejadas. Uma opção para reiniciar a playlist será disponibilizada caso todas as músicas sejam removidas. Desenvolvido como um reprodutor web, o projeto utiliza músicas sem direitos autorais disponibilizadas pelo site freeCodeCamp.org.";
-        
+
         for (let i = 0; i < usedLanguagesTitles.length; i++) {
             usedLanguagesTitles[i].innerText = "Linguagens e frameworks utilizados"
         }
