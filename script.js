@@ -3,6 +3,7 @@ const rootElement = document.documentElement;
 const sidebarImage = document.getElementById("sidebar-icon");
 const copyButtons = document.getElementsByClassName("copy-button");
 const demoUserParagraphs = document.getElementsByClassName("demo-user-paragraph");
+let circleindicatorColor = ["#E0E0E0", "#808080"];
 
 const languageSwitch = document.getElementById("language-switch");
 const navigationAnchors = document.getElementsByClassName("header-anchor");
@@ -72,6 +73,8 @@ function changeTheme() {
         rootElement.style.setProperty("--light-background", "linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)10%)");
         rootElement.style.setProperty("--project-bottom-wrapper-background", "linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)100%)");
         rootElement.style.setProperty("--table-text-background", "linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, .4))");
+        circleindicatorColor = ["#E0E0E0", "#606060"];
+        rotateContent("initial");
 
         for (let i = 0; i < copyButtons.length; i++) {
             copyButtons[i].style.filter = "invert(100%)";
@@ -93,6 +96,8 @@ function changeTheme() {
         rootElement.style.setProperty("--light-background", "linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)100%)");
         rootElement.style.setProperty("--project-bottom-wrapper-background", "linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)100%)");
         rootElement.style.setProperty("--table-text-background", "linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, .7))");
+        circleindicatorColor = ["#606060", "#E0E0E0"];
+        rotateContent("initial");
 
         for (let i = 0; i < copyButtons.length; i++) {
             copyButtons[i].style.filter = "invert(0%)";
@@ -645,6 +650,7 @@ function rotateContent(direction) {
     const leftElement = document.getElementById('left-certification');
     const rightElement = document.getElementById('right-certification');
     const certifications = document.getElementsByClassName('certification');
+    const circleIndicators = document.getElementsByClassName('circle-indicator');
 
     if (direction === "initial") {
         step = 0;
@@ -710,6 +716,12 @@ function rotateContent(direction) {
     certifications[next].id = 'right-certification';
 
     for (let i = 0; i < certifications.length; i++) {
+        if (i == index) {
+            circleIndicators[i].innerHTML = `<path fill="${circleindicatorColor[0]}" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/>`;
+        } else {
+            circleIndicators[i].innerHTML = `<path fill="${circleindicatorColor[1]}" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/>`;
+        }
+
         if (i != previous && i != index && i != next) {
             certifications[i].id = 'hidden-certification'
         }

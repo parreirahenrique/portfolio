@@ -622,6 +622,7 @@ td {
     margin-top: var(--inner-container-margin);
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 20px;
     min-width: 690px;
     min-height: 400px;
     display: flex;
@@ -794,6 +795,25 @@ td {
     font-size: 20px;
     cursor: context-menu;
     background-color: transparent;
+}
+
+#certifications-indicator {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    right: calc(50% - 100px);
+    bottom: 2.5%;
+}
+
+.circle-indicator {
+    margin: 2px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    color: gray;
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)); */
 }
 
 #projects-container {
@@ -1548,6 +1568,10 @@ td {
 
     #btn-right {
         left: 87.5%;
+    }
+
+    #certifications-indicator {
+        bottom: 2%;
     }
 
     #projects-container {
