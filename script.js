@@ -2,10 +2,10 @@ const themeSwitch = document.getElementById("theme-switch");
 const rootElement = document.documentElement;
 const sidebarImage = document.getElementById("sidebar-icon");
 const copyButtons = document.getElementsByClassName("copy-button");
-const demoUserParagraphs = document.getElementsByClassName("demo-user-paragraph")
+const demoUserParagraphs = document.getElementsByClassName("demo-user-paragraph");
 
 const languageSwitch = document.getElementById("language-switch");
-const navigationAnchors = document.getElementsByClassName("header-anchor")
+const navigationAnchors = document.getElementsByClassName("header-anchor");
 const languagePlaceholder = document.getElementById("language-placeholder");
 const themePlaceholder = document.getElementById("theme-placeholder");
 const resumeButton = document.getElementById("cv-anchor");
@@ -13,6 +13,7 @@ const resumeText = document.getElementById("cv-text");
 const sectionTitles = document.getElementsByClassName("section-title");
 const homeParagraph = document.getElementById("home-paragraph");
 const aboutMeParagraphs = document.getElementsByClassName("about-me-paragraph");
+const certificationTitles = document.getElementsByClassName("certification-title");
 const projectTitles = document.getElementsByClassName("project-title");
 const projectParagraphs = document.getElementsByClassName("project-paragraph");
 const usedLanguagesTitles = document.getElementsByClassName("used-languages-title");
@@ -50,7 +51,7 @@ const emailInput = document.getElementById("email-input");
 const subjectInput = document.getElementById("subject-input");
 const messageInput = document.getElementById("message-input");
 
-const languageAnchors = document.getElementsByClassName("language-anchor")
+const languageAnchors = document.getElementsByClassName("language-anchor");
 
 const btnLeft = document.getElementById('btn-left');
 const btnRight = document.getElementById('btn-right');
@@ -146,26 +147,39 @@ function changeLanguage() {
         aboutMeParagraphs[2].innerText = "The decision to transition to a career in development came in 2023, and since then, I have committed myself to ongoing learning and continual improvement, acquiring knowledge in new languages and technologies.";
         aboutMeParagraphs[3].innerText = "I hope to be able to work with you soon!";
 
-        certificationContents[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>HTML5, CSS3 and JavaScript fundamentals";
-        certificationContents[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>Python fundamentals";
-        certificationContents[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>Data analysis fundamentals, Pandas, Seaborn and Matplotlib libraries";
-        certificationContents[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>Machine learning fundamentals, TensorFlow and Scikit-Learn libraries";
-        certificationContents[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>C# e .NET Framework fundamentals";
-        certificationContents[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>JavaScript fundamentals and its data structures";
+        certificationTitles[0].innerText = "Introduction to Git and GitHub";
+        certificationTitles[7].innerText = "Code versioning with Git and GitHub";
+        certificationTitles[8].innerText = "Introduction to Relational Databases (SQL)";
 
-        certificationDates[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 25/08/2021";
-        certificationDates[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 22/05/2023";
-        certificationDates[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 30/05/2023";
-        certificationDates[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 28/06/2023";
-        certificationDates[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 21/12/2023";
-        certificationDates[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 05/01/2024";
+        certificationContents[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>Code versioning fundamentals using Git and GitHub";
+        certificationContents[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>HTML5, CSS3 and JavaScript fundamentals";
+        certificationContents[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>Python fundamentals";
+        certificationContents[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>Data analysis fundamentals, Pandas, Seaborn and Matplotlib libraries";
+        certificationContents[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>Machine learning fundamentals, TensorFlow and Scikit-Learn libraries";
+        certificationContents[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>C# e .NET Framework fundamentals";
+        certificationContents[6].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>JavaScript fundamentals and its data structures";
+        certificationContents[7].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>Code versioning fundamentals using Git and GitHub";
+        certificationContents[8].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Content: </strong>SQL, databases and MariaDB fundamentals";
 
-        certificationWorkloads[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 27 hours";
-        certificationWorkloads[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
+        certificationDates[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 11/08/2021";
+        certificationDates[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 25/08/2021";
+        certificationDates[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 22/05/2023";
+        certificationDates[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 30/05/2023";
+        certificationDates[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 28/06/2023";
+        certificationDates[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 21/12/2023";
+        certificationDates[6].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 05/01/2024";
+        certificationDates[7].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 20/03/2024";
+        certificationDates[8].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Date: </strong> 26/03/2024";
+
+        certificationWorkloads[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 5 hours";
+        certificationWorkloads[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 27 hours";
         certificationWorkloads[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
         certificationWorkloads[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
         certificationWorkloads[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
         certificationWorkloads[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
+        certificationWorkloads[6].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 300 hours";
+        certificationWorkloads[7].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 2 hours";
+        certificationWorkloads[8].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Workload: </strong> 3 hours";
 
         for (let i = 0; i < certificationButtons.length; i++) {
             certificationButtons[i].innerText = "Check certification";
@@ -229,26 +243,40 @@ function changeLanguage() {
         aboutMeParagraphs[2].innerText = "A decisão de realizar a transição de carreira para o campo do desenvolvimento veio em 2023, e desde então tenho dedicado meu tempo ao estudo e aprimoramento constante, adquirindo conhecimentos em novas linguagens e tecnologias.";
         aboutMeParagraphs[3].innerText = "Espero poder logo trabalhar com vocês!";
 
-        certificationContents[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de HTML5, CSS3 e JavaScript";
-        certificationContents[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de Python";
-        certificationContents[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de análise de dados, bibliotecas Pandas, Seaborn e Matplotlib";
-        certificationContents[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de machine learning, bibliotecas TensorFlow e Scikit-Learn";
-        certificationContents[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de C# e .NET Framework";
-        certificationContents[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de JavaScript e suas estruturas de dados";
+        certificationTitles[0].innerText = "Introdução to Git and GitHub";
+        certificationTitles[7].innerText = "Versionamento de Código com Git e GitHub";
+        certificationTitles[8].innerText = "Introdução a Banco de Dados Relacionais (SQL)";
 
-        certificationDates[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 25/08/2021";
-        certificationDates[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 22/05/2023";
-        certificationDates[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 30/05/2023";
-        certificationDates[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 28/06/2023";
-        certificationDates[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 21/12/2023";
-        certificationDates[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 05/01/2024";
+        certificationContents[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de versionamento de código usando Git e GitHub";
+        certificationContents[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de HTML5, CSS3 e JavaScript";
+        certificationContents[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de Python";
+        certificationContents[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de análise de dados, bibliotecas Pandas, Seaborn e Matplotlib";
+        certificationContents[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de machine learning, bibliotecas TensorFlow e Scikit-Learn";
+        certificationContents[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de C# e .NET Framework";
+        certificationContents[6].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de JavaScript e suas estruturas de dados";
+        certificationContents[6].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de versionamento de código usando Git e GitHub";
+        certificationContents[7].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de JavaScript e suas estruturas de dados";
+        certificationContents[8].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Conteúdo: </strong> Fundamentos de SQL, bancos de dados e MariaDB";
 
-        certificationWorkloads[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 27 horas";
-        certificationWorkloads[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
+        certificationDates[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 11/08/2021";
+        certificationDates[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 25/08/2021";
+        certificationDates[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 22/05/2023";
+        certificationDates[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 30/05/2023";
+        certificationDates[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 28/06/2023";
+        certificationDates[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 21/12/2023";
+        certificationDates[6].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 05/01/2024";
+        certificationDates[7].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 20/03/2024";
+        certificationDates[8].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Data: </strong> 26/03/2024";
+
+        certificationWorkloads[0].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 5 horas";
+        certificationWorkloads[1].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 27 horas";
         certificationWorkloads[2].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
         certificationWorkloads[3].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
         certificationWorkloads[4].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
         certificationWorkloads[5].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
+        certificationWorkloads[6].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 300 horas";
+        certificationWorkloads[7].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 2 horas";
+        certificationWorkloads[8].innerHTML = "<strong style=\"font-family: var(--title-font); font-size: 19px;\">Carga horária: </strong> 3 horas";
 
         for (let i = 0; i < certificationButtons.length; i++) {
             certificationButtons[i].innerText = "Checar certificação";
